@@ -1,0 +1,80 @@
+/*================*/
+/*===Pre Build Codes From easyUI===*/
+/*===============*/
+
+:root {
+  --accent: #02aba8; /*289997*/
+  --white: #ffffffff;
+}
+
+.btn {
+  display: inline-flex;
+  margin: 0;
+  border-width: 0;
+  border-color: transparent;
+  padding: 8px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.btn-sm {
+  padding: 7.5px 22.5px !important;
+  font-size: 15px;
+}
+
+.btn.btn-md {
+  padding: 8px 24px !important;
+  font-size: 15px;
+}
+
+.btn.btn-lg {
+  padding: 13px 30px !important;
+  font-size: 16.5px; /*Added*/
+  border-radius: 7px !important; /*Added*/
+}
+
+.btn.btn-custom {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.btn.btn-custom:hover {
+  background-color: #009794;
+}
+
+.btn.btn-custom .btn-outline {
+  border: 1.2px solid var(--accent);
+  background-color: var(--white);
+  color: var(--accent);
+}
+
+.btn.btn-custom .btn-outline:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.btn.btn-custom:disabled {
+  pointer-events: none;
+}
+
+.btn.btn-custom:active {
+  scale: 0.95;
+  color: var(--white);
+}
+
+@media screen and (max-width: 450px) {
+  .btn {
+    font-size: 14px !important;
+  }
+}
+
+.btn.btn-about {
+  font-family: Poppins !important;
+  font-weight: 400 !important;
+  padding: 16.2px 40.3px !important;
+  font-size: 18.5px !important;
+  border-radius: 8px !important;
+}

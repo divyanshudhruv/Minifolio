@@ -22,7 +22,7 @@
 
 <br>
 
-> <code><a href="https://github.com/divyanshudhruv/Minifolio/blob/master/CODE_OF_CONDUCT">Code Of Conduct</a></code>
+> <code><a href="https://github.com/divyanshudhruv/Minifolio/blob/master/CODE_OF_CONDUCT.md">Code Of Conduct</a></code>
 
 <br>
 

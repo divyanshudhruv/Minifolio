@@ -109,10 +109,10 @@ Files Changed
 <br>
 
 ```markdown
----
+<!--
 name: "🐛 Bug report"
 title: "🐛 <title>"
----
+-->
 
 <!--
 Note: Please search to see if an issue already exists for the bug you encountered.
@@ -171,10 +171,10 @@ Links? References? Anything that will give us more context about the issue that 
 <br>
 
 ```markdown
----
+<!--
 name: "✏️ Typo report"
 title: "✏️ <title>"
----
+-->
 
 <!--
 Note: Please search to see if an issue already exists for the typo you encountered.
@@ -230,10 +230,10 @@ Note: Please search to see if an issue already exists for the typo you encounter
 <br>
 
 ```markdown
----
+<!--
 name: "✨ Feature request"
 title: "✨ <title>"
----
+-->
 
 <!--
 Note: Please search to see if an issue already exists for the same feature request.
@@ -301,10 +301,10 @@ Note: Please search to see if an issue already exists for the same feature reque
 <br>
 
 ```markdown
----
+<!--
 name: "🔥 Enhancement"
 title: "🔥 <title>"
----
+-->
 
 <!--
 Note: Please search to see if an issue already exists for the same enhancement.

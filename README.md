@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/divyanshudhruv/Private-Repository/assets/71079602/70151d23-508f-4896-8b54-01d9e93274bc" width="120" height="120"></p>
+<p align="center"><img src="Minifolio.png" width="120" height="120"></p>
 <h1 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minifolio ⚡</h1>
 <br>
 <p align="center"><code>A minimal portfolio template for developers</code></p>

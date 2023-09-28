@@ -139,6 +139,11 @@ a:visited {
 }
 
 @media screen and (max-width: 915px) {
+
+  .home{
+    height: 60vh;
+
+  }
   .home .container {
     font-size: 41px;
     text-align: center;

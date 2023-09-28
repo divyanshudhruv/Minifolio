@@ -42,7 +42,10 @@
 }
 
 .btn.btn-custom:hover {
-  background-color: #009794;
+  color: #009794;
+  background-color: white;
+  border:1px solid var(--accent);
+  font-weight:500;
 }
 
 .btn.btn-custom .btn-outline {
@@ -69,12 +72,18 @@
   .btn {
     font-size: 14px !important;
   }
+.btn.btn-custom:hover {
+  background-color: #009794;
+  color: white;
 }
 
 .btn.btn-about {
-  font-family: Poppins !important;
-  font-weight: 400 !important;
-  padding: 16.2px 40.3px !important;
-  font-size: 18.5px !important;
-  border-radius: 8px !important;
+
+  padding: 16.2px 20px !important;
+
 }
+
+}
+
+
+

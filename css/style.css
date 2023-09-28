@@ -256,7 +256,7 @@ a:visited {
 .aboutC .container .leftC {
   display: flex;
   position: relative;
-  width: 60%;
+  width: 100%;
   padding-right: 50px;
   height: fit-content;
   min-height: 292.5px;

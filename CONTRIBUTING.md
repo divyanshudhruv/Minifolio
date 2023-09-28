@@ -30,6 +30,18 @@
 
 <br>
 
+## ⚠️ Merging
+
+<br>
+
+> **`1`** Please open the pull request in the **`developement`** branch to avoid any conflict
+
+> **`2`** The pull request will be merged in 2-3 days.
+
+> **`3`** Good luck !
+
+ <br>
+
 ## 🐞 Bugs
 
 <br>

@@ -571,7 +571,6 @@ a:visited {
   display: flex;
   position: relative;
   width: 600px;
-  height: 80px;
   background-color: none;
   align-items: center;
   justify-content: center;
@@ -589,16 +588,12 @@ a:visited {
   border-top: 1.89px solid #ddd;
 }
 
-.footer div{
-  width: 100%;
-}
-
-.footer div .icon-heart {
+.footer span .icon-heart {
   color: #f87272;
   font-size: 20px;
 }
 
-.footer div a {
+.footer span a {
   display: inline !important;
   font-weight: 300;
   transition: 0.3s;

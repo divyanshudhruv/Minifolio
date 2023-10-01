@@ -582,6 +582,35 @@ a:visited {
   text-align: center;
 }
 
+.socialC .main .textBig {
+  margin: auto;
+  padding: 24px;
+  align-items: start;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 58px;
+  text-align: center;
+  line-height: 1.2em;
+  color: #272341;
+  letter-spacing: 0.5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.socialC .main .textSmall {
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 18px;
+  text-align: center;
+  line-height: 1.2em;
+  color: #96989b;
+  flex-wrap: wrap;
+  letter-spacing: 0.3px;
+  flex-direction: row;
+}
+
 .socialC .title {
   display: flex;
   position: relative;
@@ -605,10 +634,10 @@ a:visited {
   display: flex;
   position: relative;
   height: fit-content;
-  min-height: 292.5px;
+  width: 800px;
   background-color: none;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   left: 0;
   right: 0;
@@ -617,13 +646,11 @@ a:visited {
 
 .socialC button {
   display: flex;
+  margin: 12px 24px;
+  padding: 14px 24px;
+  font-size: 24px;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  padding: 12px;
-  border-radius: 12px;
-  border: 2px solid #000;
-  margin: 8px 0;
 }
 
 .socialC button a{
@@ -632,7 +659,6 @@ a:visited {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 20px;
 }
 
 .socialC button ion-icon{

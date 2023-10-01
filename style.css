@@ -564,12 +564,89 @@ a:visited {
 } */
 
 /*================*/
-/*===Footer===*/
+/*===Socials===*/
 /*===============*/
 
-.footer {
+.socialC {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-bottom: 12px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.socialC .title {
   display: flex;
   position: relative;
+  top: 0;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+}
+
+.socialC .container{
+  display: flex;
+  position: relative;
+  height: fit-content;
+  min-height: 292.5px;
+  background-color: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.socialC button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #000;
+  margin: 8px 0;
+}
+
+.socialC button a{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.socialC button ion-icon{
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/*================*/
+/*===Footer===*/
+/*===============*/
+.footer {
+  display: flex;
   width: 600px;
   height: 80px;
   background-color: none;

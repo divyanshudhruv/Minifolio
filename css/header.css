@@ -1,0 +1,54 @@
+header {
+    font-family: "Poppins";
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > div {
+    max-width: 1280px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.darkmode-btn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: var(--background);
+    outline: none;
+    border: 2px solid var(--primary);
+    transform: scale(1);
+    transition: 300ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.darkmode-btn:is(:hover, :focus) {
+    cursor: pointer;
+    outline: none;
+    transform: scale(1.1);
+}
+
+.mode-dark-icon {
+    display: none;
+}
+
+.dark .mode-dark-icon {
+    display: inline-block;
+    stroke: var(--foreground);
+}
+
+.mode-light-icon {
+    display: inline-block;
+}
+
+.dark .mode-light-icon {
+    display: none;
+}

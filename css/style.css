@@ -6,31 +6,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700");
 
-/*================*/
-/*===HTML===*/
-/*===============*/
+/* css variables for darkmode */
+:root {
+    --background: #ffffff;
+    --foreground: #272341;
+    --primary: #01b3af;
+    --secondary: ;
+    --muted-background: ;
+    --muted-foreground: ;
+}
+
+.dark {
+    --background: #272341;
+    --foreground: #ffffff;
+    --primary: #01b3af;
+    --secondary: ;
+    --muted-background: ;
+    --muted-foreground: ;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    outline: none;
+}
 
 body {
-  background-color: #fff;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  transition: 0.3s;
-  outline: none;
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: 300ms;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  transition: 0.3s;
-}
-html {
-  scroll-behavior: smooth;
-  outline: none;
+main {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    outline: none;
 }
 
 /*================*/
@@ -38,25 +59,25 @@ html {
 /*===============*/
 
 a {
-  text-decoration: none;
-  width: fit-content;
-  display: flex;
+    text-decoration: none;
+    width: fit-content;
+    display: flex;
 }
 
 a:link {
-  color: currentColor;
+    color: currentColor;
 }
 
 /* visited link */
 a:visited {
-  color: currentColor;
+    color: currentColor;
 }
 
 .px50 {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 50px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
 }
 
 /*================*/
@@ -64,20 +85,33 @@ a:visited {
 /*===============*/
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+    background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #37315b;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ddd;
+    background: #ddd;
 }
+
+.dark ::-webkit-scrollbar-thumb {
+    background: hwb(248 24% 56%);
+}
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #ccc;
+    background: #ccc;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #564e8e;
 }
 
 /*================*/
@@ -85,7 +119,7 @@ a:visited {
 /*===============*/
 
 ::selection {
-  background: aliceblue;
+    background: aliceblue;
 }
 
 /*================*/
@@ -93,77 +127,73 @@ a:visited {
 /*===============*/
 
 .home {
-  display: flex;
-  width: 1150px;
-  height: 100vh;
-  background-color: none;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    width: 1150px;
+    height: 100vh;
+    background-color: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .home .container {
-  width: 95%;
-  height: 225px;
-  background-color: none;
-  color: #272341;
-  font-size: 56px;
-  font-family: Montserrat;
-  font-weight: 700;
-  align-items: center;
-  justify-content: center;
+    width: 95%;
+    height: 225px;
+    background-color: none;
+    font-size: 56px;
+    font-family: Montserrat;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
 }
 
 .home .container span {
-  color: #01b3af;
+    color: var(--primary);
 }
 
-.home .container #role
-{
-  color: #272341;
+.home .container #role {
+    color: #272341;
 }
 
-.home .container .typed-cursor
-{
-  color: #272341  ;
+.home .container .typed-cursor {
+    color: #272341;
 }
-
 
 .home .container a.button {
-  position: relative;
-  display: flex;
-  top: 30px;
-  padding: 5.5px 13.5px;
-  width: fit-content;
-  height: fit-content;
-  border: 2px solid #01b3af;
-  color: #01b3af;
-  font-size: 24px;
-  font-family: Montserrat;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
+    position: relative;
+    display: flex;
+    top: 30px;
+    padding: 5.5px 13.5px;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #01b3af;
+    color: #01b3af;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .home .container a.button:hover {
-  color: #fff;
-  background-color: #01b3af;
+    color: #fff;
+    background-color: #01b3af;
 }
 
 @media screen and (max-width: 915px) {
-  .home .container {
-    font-size: 41px;
-    text-align: center;
-    line-height: 1.5em;
-    position: relative;
-  }
+    .home .container {
+        font-size: 41px;
+        text-align: center;
+        line-height: 1.5em;
+        position: relative;
+    }
 
-  .home .container .button {
-    position: relative;
-    line-height: normal !important;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+    .home .container .button {
+        position: relative;
+        line-height: normal !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 
 /*================*/
@@ -171,234 +201,233 @@ a:visited {
 /*===============*/
 
 .aboutC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  background-color: none;
-  min-height: 600px;
-  align-items: start;
-  justify-content: start;
-  overflow: hidden;
-  flex-wrap: wrap;
-  flex-direction: column;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: none;
+    min-height: 600px;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .aboutC .title {
-  display: flex;
-  position: relative;
-  top: 0;
-  width: 750px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 75px;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 55px;
-  background-color: none;
-  text-align: center;
-  color: #272341;
-  letter-spacing: 0.5px;
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 750px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 55px;
+    background-color: none;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 
 .aboutC .titleGap {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 25px;
-  background-color: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: none;
 }
 
 .aboutC .containerGap {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 50px;
-  background-color: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: none;
 }
 .aboutC .titleSmall {
-  display: flex;
-  top: 0;
-  position: relative;
-  width: 750px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 57.5px;
-  align-items: center;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
+    display: flex;
+    top: 0;
+    position: relative;
+    width: 750px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 57.5px;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: none;
+    text-align: center;
+    color: #96989b;
+    flex-wrap: wrap;
+    letter-spacing: 0.3px;
 }
 
 .aboutC .bottomC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100px;
-  bottom: 0;
-  background-color: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-color: none;
 }
 
 .aboutC .container {
-  display: flex;
-  position: relative;
-  width: 750px;
-  height: fit-content;
-  min-height: 292.5px;
-  background-color: none;
-  align-items: start;
-  justify-content: space-between;
-  left: 0;
-  right: 0;
-  margin: auto;
+    display: flex;
+    position: relative;
+    width: 750px;
+    height: fit-content;
+    min-height: 292.5px;
+    background-color: none;
+    align-items: start;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .aboutC .container .leftC {
-  display: flex;
-  position: relative;
-  width: 60%;
-  padding-right: 50px;
-  height: fit-content;
-  min-height: 292.5px;
-  background-color: none;
-  padding-top: 10px;
-  padding-bottom: 35px;
-  align-items: start;
-  justify-content: start;
-  flex-wrap: wrap;
-  flex-direction: column;
+    display: flex;
+    position: relative;
+    width: 60%;
+    padding-right: 50px;
+    height: fit-content;
+    min-height: 292.5px;
+    background-color: none;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .aboutC .container .leftC .text {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 25.5px;
-  color: #01b3af;
-  background-color: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 25.5px;
+    color: #01b3af;
+    background-color: none;
 }
 
 .aboutC .container .leftC .textMain {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 20px;
-  color: #777;
-  line-height: 1.9em;
-  background-color: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 20px;
+    color: #777;
+    line-height: 1.9em;
+    background-color: none;
 }
 
 .aboutC .container .rightC {
-  display: flex;
-  position: relative;
-  width: 32%;
-  height: fit-content;
-  min-height: 292.5px;
-  background-color: none;
-  padding-top: 10px;
-  align-items: start;
-  justify-content: start;
-  flex-wrap: wrap;
-  flex-direction: column;
+    display: flex;
+    position: relative;
+    width: 32%;
+    height: fit-content;
+    min-height: 292.5px;
+    background-color: none;
+    padding-top: 10px;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .aboutC .container .rightC .text {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 25.5px;
-  color: #01b3af;
-  background-color: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 25.5px;
+    color: #01b3af;
+    background-color: none;
 }
 .aboutC .container .rightC .textMain {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 20px;
-  color: #777;
-  line-height: 1.9em;
-  background-color: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 20px;
+    color: #777;
+    line-height: 1.9em;
+    background-color: none;
 }
 
 .aboutC .container .rightC .btnC {
-  display: flex;
-  position: relative;
-  align-items: end;
-  justify-content: start;
-  width: 100%;
-  height: fit-content;
-  min-height: 90px;
-  background-color: none;
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content: start;
+    width: 100%;
+    height: fit-content;
+    min-height: 90px;
+    background-color: none;
 }
 
 @media screen and (max-width: 915px) {
-  .aboutC .title {
-    font-size: 43px;
-    left: 5px;
-    width: 300px;
-  }
+    .aboutC .title {
+        font-size: 43px;
+        left: 5px;
+        width: 300px;
+    }
 
-  .aboutC .titleSmall {
-    font-size: 19.5px;
-    width: 200px;
-  }
+    .aboutC .titleSmall {
+        font-size: 19.5px;
+        width: 200px;
+    }
 
-  .aboutC .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 65%;
-  }
+    .aboutC .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 65%;
+    }
 
-  .aboutC .container .leftC {
-    width: 100%;
-    padding-right: 0;
-    min-height: 225px;
-    align-items: center;
-    justify-content: center;
-  }
+    .aboutC .container .leftC {
+        width: 100%;
+        padding-right: 0;
+        min-height: 225px;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .aboutC .container .rightC {
-    width: 100%;
-    padding-right: 0;
-    flex-wrap: wrap;
-    flex-direction: row;
-    min-height: 200px;
-    align-items: center;
-    justify-content: center;
-  }
+    .aboutC .container .rightC {
+        width: 100%;
+        padding-right: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 200px;
+        align-items: center;
+        justify-content: center;
+    }
 
-  .aboutC .container .rightC .textMain {
-    width: 50%;
-  }
+    .aboutC .container .rightC .textMain {
+        width: 50%;
+    }
 
-  .aboutC .container .rightC .btnC {
-    width: 50%;
-    height: 114px;
-    align-items: center;
-    justify-content: start;
-  }
+    .aboutC .container .rightC .btnC {
+        width: 50%;
+        height: 114px;
+        align-items: center;
+        justify-content: start;
+    }
 }
 /*================*/
 /*===Projects===*/
@@ -579,87 +608,86 @@ a:visited {
 /*===============*/
 
 .footer {
-  display: flex;
-  position: relative;
-  width: 600px;
-  background-color: none;
-  align-items: center;
-  justify-content: center;
-  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
-  flex-wrap: wrap;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  font-family: Poppins;
-  color: #96989b;
-  font-weight: 300;
-  letter-spacing: 1px;
-  border-top: 1.89px solid #ddd;
+    display: flex;
+    position: relative;
+    width: 600px;
+    background-color: none;
+    align-items: center;
+    justify-content: center;
+    /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: Poppins;
+    color: #96989b;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-top: 1.89px solid #ddd;
 }
 
 .footer span .icon-heart {
-  color: #f87272;
-  font-size: 20px;
+    color: #f87272;
+    font-size: 20px;
 }
 
 .footer span a {
-  display: inline !important;
-  font-weight: 300;
-  transition: 0.3s;
+    display: inline !important;
+    font-weight: 300;
+    transition: 0.3s;
 }
 
 .footer a:hover {
-  font-weight: 300;
-  color: #666;
+    font-weight: 300;
+    color: #666;
 }
 
 @media screen and (max-width: 915px) {
-  .footer {
-    width: 100%;
-  }
+    .footer {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
-  .home .container {
-    font-size: 35px;
-  }
+    .home .container {
+        font-size: 35px;
+    }
 
-  .home .container a.button {
-    font-size: 17px;
-  }
-  .aboutC .container .leftC .textMain {
-    font-size: 17px;
-  }
+    .home .container a.button {
+        font-size: 17px;
+    }
+    .aboutC .container .leftC .textMain {
+        font-size: 17px;
+    }
 
-  .aboutC .container .rightC .textMain {
-    font-size: 17px;
-  }
-
+    .aboutC .container .rightC .textMain {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 320px) {
-  .aboutC .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 65%;
-  }
+    .aboutC .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 65%;
+    }
 
-  .aboutC .container .rightC .textMain {
-    width: 100%;
-  }
+    .aboutC .container .rightC .textMain {
+        width: 100%;
+    }
 
-  .aboutC .container .rightC .text {
-    width: 100%;
-    margin-bottom: 18px;
-  }
+    .aboutC .container .rightC .text {
+        width: 100%;
+        margin-bottom: 18px;
+    }
 
-  .aboutC .container .rightC .btnC {
-    width: 100%;
-  }
-  
-  .footer{
-    font-size: 12.5px;
-  }
+    .aboutC .container .rightC .btnC {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 12.5px;
+    }
 }

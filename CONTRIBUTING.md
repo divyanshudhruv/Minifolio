@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/divyanshudhruv/Private-Repository/assets/71079602/70151d23-508f-4896-8b54-01d9e93274bc" width="120" height="120"></p>
+<p align="center"><img src="Minifolio.png" width="120" height="120"></p>
 <h1 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minifolio ⚡</h1>
 <br>
 <p align="center"><code>Thankyou for contributing in the project</code></p>
@@ -29,6 +29,18 @@
 > **`3`** Create **<code><a href="github.com/divyanshudhruv/Minifolio/pulls">Pull Request</a></code>**
 
 <br>
+
+## ⚠️ Merging
+
+<br>
+
+> **`1`** Please open the pull request in the **`developement`** branch to avoid any conflict
+
+> **`2`** The pull request will be merged in 2-3 days.
+
+> **`3`** Good luck !
+
+ <br>
 
 ## 🐞 Bugs
 
@@ -122,7 +134,7 @@ Note: Please search to see if an issue already exists for the bug you encountere
 
 <br>
 
-<!-- A concise description of what you're experiencing. -->
+> A concise description of what you're experiencing
 
 <br>
 
@@ -130,7 +142,7 @@ Note: Please search to see if an issue already exists for the bug you encountere
 
 <br>
 
-<!-- A concise description of what you expected to happen. -->
+> A concise description of what you expected to happen
 
 <br>
 
@@ -138,30 +150,44 @@ Note: Please search to see if an issue already exists for the bug you encountere
 
 <br>
 
-<!--
-Example: steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '...'
-3. Scroll down to '...'
-4. See error
--->
+> **`1`** Go to '...'
+> **`2`** Click on '...'
+> **`3`** Scroll down to '...'
+> **`4`** See error
 
 <br>
 
 ## 🌱 Environment:
 
-<!--
-Example:
-- OS: Ubuntu 20.04
-- Node: 13.14.0
-- npm: 7.6.3
--->
+<br>
+
+> - OS: Windows4
+> - Browser: Edge
+> - Version: 31.45.5.57
+
+<br>
 
 ## 📦 Anything else:
 
-<!--
-Links? References? Anything that will give us more context about the issue that you are encountering!
--->
+<br>
+
+> Links? References? Anything that will give us more context about the issue that you are encountering!
+
+<br>
+
+## 🎉 Hacktoberfest
+
+<br>
+
+> - [] I want to participate <!--Check the box to assign the issue/pull request hacktoberfest label-->
+
+<br>
+  
+## 📌 Related Issue
+
+<br>
+
+> Link to other issues related to this problem
 ```
 
 <br>
@@ -206,7 +232,7 @@ Note: Please search to see if an issue already exists for the typo you encounter
 
 > Provide the corrected text or suggest how to fix the typo
 
- <br>
+<br>
  
 ## 📦 Additional Information
 
@@ -215,12 +241,29 @@ Note: Please search to see if an issue already exists for the typo you encounter
 > Add any other relevant information here.
 
 <br>
+
+## 🌱 Contribute
+
+<br>
+
+> - [] I want to contribute <!--Check the box to assign yourself-->
+
+<br>
+
+## 🎉 Hacktoberfest
+
+<br>
+
+> - [] I want to participate <!--Check the box to assign the issue/pull request hacktoberfest label-->
+
+<br>
   
 ## 📌 Related Issue
 
 <br>
 
 > Link to other issues related to this problem
+
 ```
 
 <br>
@@ -286,7 +329,15 @@ Note: Please search to see if an issue already exists for the same feature reque
 > - [] I want to contribute <!--Check the box to assign yourself-->
 
   <br>
-  
+
+## 🎉 Hacktoberfest
+
+<br>
+
+> - [] I want to participate <!--Check the box to assign the issue/pull request hacktoberfest label-->
+
+<br>
+
 ## 📌 Related Issue
 
 <br>
@@ -357,7 +408,15 @@ Note: Please search to see if an issue already exists for the same enhancement.
 > - [] I want to contribute <!--Check the box to assign yourself-->
 
   <br>
-  
+
+## 🎉 Hacktoberfest
+
+<br>
+
+> - [] I want to participate <!--Check the box to assign the issue/pull request hacktoberfest label-->
+
+<br>
+
 ## 📌 Related Issue
 
 <br>

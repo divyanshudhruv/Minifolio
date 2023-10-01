@@ -400,6 +400,7 @@ a:visited {
     justify-content: start;
   }
 }
+
 /*================*/
 /*===Projects===*/
 /*===============*/
@@ -639,7 +640,7 @@ a:visited {
 
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
   .aboutC .container {
     flex-wrap: wrap;
     flex-direction: column;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minifolio</title>
-    <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
@@ -100,8 +100,11 @@
 
     <div class="footer">
       <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
-      <span>Copyright ©<span id="copyright-year"></span> All Rights Reserved | </span>
-      <span>&nbsp;Template Developed With 
+      <span
+        >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
+      </span>
+      <span
+        >&nbsp;Template Developed With
         <span class="icon-heart">❤️</span>
         By
       </span>
@@ -110,15 +113,7 @@
       </span>
     </div>
     <script src="js/script.js"></script>
-    <script>
-      // Custom the typed strings array based on your roles
-      var typed = new Typed("#role", { 
-      strings: ["the Unknown Developer", "a UI/UX designer", "a Youtuber"], 
-      typeSpeed: 210, 
-      backSpeed: 40, 
-      loop: true, 
-      }); 
-    </script>
+    <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>
   </body>
 </html>

@@ -10,47 +10,6 @@
 /*===HTML===*/
 /*===============*/
 
-
-.navbar {
-  background: #01b3af;
-  width: 100%;
-   color: white;
-   font-size: 20px;
-   padding: 10px 40px;
-   font-weight: bold;
-   font-family: Poppins;
- 
- }
- 
- .container {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
- }
- 
- .logo {
-   font-size: 24px;
- }
- 
- .nav-links {
-   list-style: none;
-   display: flex;
- }
- 
- .nav-links li {
-   margin-right: 40px;
- }
- 
- .nav-links a {
-   text-decoration: none;
-   color: #fff;
-   transition: color 0.3s ease; /* Add a smooth color transition on hover */
- }
- 
- .nav-links a:hover {
-   color: black; /* Change the color on hover */
- }
 body {
   background-color: #fff;
   padding: 0;

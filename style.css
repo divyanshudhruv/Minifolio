@@ -586,7 +586,6 @@ a:visited {
   display: flex;
   position: relative;
   top: 0;
-  width: 750px;
   left: 0;
   right: 0;
   margin: auto;
@@ -704,6 +703,12 @@ a:visited {
   .footer {
     flex-direction: column;
   }
+
+  .socialC button {
+    width: 300px;
+    padding: 5px;
+    margin: 6px 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -729,4 +734,16 @@ a:visited {
   .footer{
     font-size: 12.5px;
   }
+
+  .socialC button {
+    width: 300px;
+    padding: 5px;
+    margin: px 0;
+  }
+
+  .socialC .container {
+      width: 65%;
+      padding: 5px;
+      margin: 3px 0;
+    }
 }

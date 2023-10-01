@@ -144,7 +144,10 @@ Follow the instruction to customize the portfolio
     │   ├── style.css
     │   └── button.css
     └── js
-        └── script.js
+        ├── script.js
+        ├── copyRight.js
+        └── typingAnimation.js
+
 ```
 
 <br>

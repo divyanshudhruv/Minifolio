@@ -647,10 +647,11 @@ a:visited {
 .footer {
   display: flex;
   width: 600px;
-  height: 80px;
   background-color: none;
   align-items: center;
   justify-content: center;
+  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
+  flex-wrap: wrap;
   left: 0;
   right: 0;
   margin: auto;
@@ -663,12 +664,13 @@ a:visited {
   border-top: 1.89px solid #ddd;
 }
 
-.footer ion-icon {
+.footer span .icon-heart {
   color: #f87272;
   font-size: 20px;
 }
 
-.footer a {
+.footer span a {
+  display: inline !important;
   font-weight: 300;
   transition: 0.3s;
 }

@@ -158,6 +158,17 @@ a:visited {
   color: #01b3af;
 }
 
+.home .container #role
+{
+  color: #272341;
+}
+
+.home .container .typed-cursor
+{
+  color: #272341  ;
+}
+
+
 .home .container a.button {
   position: relative;
   display: flex;

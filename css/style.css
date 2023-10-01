@@ -125,7 +125,6 @@ a:visited {
   width: fit-content;
   height: fit-content;
   border: 2px solid #01b3af;
-  border-radius: 10px;
   color: #01b3af;
   font-size: 24px;
   font-family: Montserrat;
@@ -137,7 +136,6 @@ a:visited {
 .home .container a.button:hover {
   color: #fff;
   background-color: #01b3af;
-  box-shadow: 3px 3px 10px #01b3af;
 }
 
 @media screen and (max-width: 915px) {

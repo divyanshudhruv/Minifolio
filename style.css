@@ -1,7 +1,7 @@
 /*================*/
 /*===Fonts===*/
 /*===============*/
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Gideon+Roman&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700");
@@ -94,43 +94,63 @@ a:visited {
 
 .home {
   display: flex;
-  width: 1150px;
+  background-color: #FFF0E0;
+  width: 100%;
   height: 100vh;
   background-color: none;
-  align-items: center;
-  justify-content: center;
+  position: realtive;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.bg-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .home .container {
-  width: 95%;
-  height: 225px;
   background-color: none;
   color: #272341;
-  font-size: 56px;
-  font-family: Montserrat;
-  font-weight: 700;
+  font-size: 60px;
+  font-family: 'Lora', serif;
+  font-weight: 500;
   align-items: center;
   justify-content: center;
 }
 
+.user-img{
+  border-radius: 100%;
+  width: 400px;
+  height : 400px;
+  object-fit: cover;
+  position: absolute;
+  top:30px;
+  right:10px;
+}
+
+
 .home .container span {
-  color: #01b3af;
+  color: #FE91A4;
 }
 
 .home .container a.button {
   position: relative;
   display: flex;
-  top: 30px;
   padding: 5.5px 13.5px;
   width: fit-content;
   height: fit-content;
-  border: 2px solid #01b3af;
-  color: #01b3af;
-  font-size: 24px;
+  border: 2px solid #FE91A4;
+  color: #FE91A4;
+  font-size: 30px;
   font-family: Montserrat;
   font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .home .container a.button:hover {
@@ -171,6 +191,13 @@ a:visited {
   overflow: hidden;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.animate-text,
+.animate-text2 {
+  opacity: 0;
+  transform: translateY(50px); /* Move it below the viewport */
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .aboutC .title {
@@ -647,8 +674,8 @@ a:visited {
   .aboutC .container .rightC .btnC {
     width: 100%;
   }
-  
-  .footer{
+
+  .footer {
     font-size: 12.5px;
   }
 }

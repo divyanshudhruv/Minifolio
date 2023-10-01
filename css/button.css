@@ -78,3 +78,23 @@
   font-size: 18.5px !important;
   border-radius: 8px !important;
 }
+
+/* Back to top */
+#backToTopBtn {
+  display: none; /* Hide the button by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  background-color: #01b3af;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: #0056b3;
+}

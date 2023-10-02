@@ -1,10 +1,10 @@
 /* Additional CSS for the Back to Top button */
 #back-to-top {
   position: fixed;
-  bottom: 20px; /* Adjust the distance from the bottom as needed */
-  right: 20px; /* Adjust the distance from the right as needed */
-  width: 50px; /* Set the width of the button */
-  height: 50px; /* Set the height of the button */
+  bottom: 20px; /*  the distance from the bottom as needed */
+  right: 20px; /* the distance from the right as needed */
+  width: 50px; /*  the width of the button */
+  height: 50px; /*  the height of the button */
   background-color: #f2f2f2; /* Change the background color to a light color */
   border: none;
   border-radius: 7px; /* Make the button rounded with border radius */
@@ -12,12 +12,12 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Add a smooth transition */
+  transition: background-color 0.3s, transform 0.3s; /* a smooth transition */
 }
 
 /* Style the ion-icon inside the button */
 #back-to-top ion-icon {
-  font-size: 24px; /* Set the icon size */
+  font-size: 24px; /* the icon size */
   color: inherit; /* Inherit the text color from the parent element (matching the text color in the home section) */
   margin: 0; /* Remove any margin */
 }
@@ -25,5 +25,5 @@
 /* Style the button on hover */
 #back-to-top:hover {
   background-color: #0056b3; /* Change the background color on hover */
-  transform: scale(1.1); /* Add a slight scale effect on hover */
+  transform: scale(1.1); /* a slight scale effect on hover */
 }

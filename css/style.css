@@ -117,6 +117,17 @@ a:visited {
   color: #01b3af;
 }
 
+.home .container #role
+{
+  color: #272341;
+}
+
+.home .container .typed-cursor
+{
+  color: #272341  ;
+}
+
+
 .home .container a.button {
   position: relative;
   display: flex;
@@ -371,7 +382,6 @@ a:visited {
 
   .aboutC .container .rightC {
     width: 100%;
-    padding-right: 0;
     flex-wrap: wrap;
     flex-direction: row;
     min-height: 200px;
@@ -385,11 +395,13 @@ a:visited {
 
   .aboutC .container .rightC .btnC {
     width: 50%;
-    height: 114px;
+    text-align: center;
     align-items: center;
-    justify-content: start;
+    justify-content:space-between;
+    max-height: 40px;
   }
 }
+
 /*================*/
 /*===Projects===*/
 /*===============*/
@@ -572,10 +584,11 @@ a:visited {
   display: flex;
   position: relative;
   width: 600px;
-  height: 80px;
   background-color: none;
   align-items: center;
   justify-content: center;
+  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
+  flex-wrap: wrap;
   left: 0;
   right: 0;
   margin: auto;
@@ -588,12 +601,13 @@ a:visited {
   border-top: 1.89px solid #ddd;
 }
 
-.footer ion-icon {
+.footer span .icon-heart {
   color: #f87272;
   font-size: 20px;
 }
 
-.footer a {
+.footer span a {
+  display: inline !important;
   font-weight: 300;
   transition: 0.3s;
 }
@@ -618,7 +632,7 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 315px) {
   .home .container {
     font-size: 35px;
   }
@@ -634,12 +648,13 @@ a:visited {
     font-size: 17px;
   }
 
-  .footer {
-    flex-direction: column;
-  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
+  .btn.btn-about {
+    margin-top: 90px; /* Increased the top margin of the button */
+  }
+
   .aboutC .container {
     flex-wrap: wrap;
     flex-direction: column;

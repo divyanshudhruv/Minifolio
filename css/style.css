@@ -640,7 +640,7 @@ a:visited {
 
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 480px) {
   .btn.btn-about {
     margin-top: 90px; /* Increased the top margin of the button */
   }

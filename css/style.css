@@ -383,52 +383,53 @@ a:visited {
 }
 
 @media screen and (max-width: 915px) {
-    .aboutC .title {
-        font-size: 43px;
-        left: 5px;
-        width: 300px;
-    }
+  .aboutC .title {
+    font-size: 43px;
+    left: 5px;
+    width: 300px;
+  }
 
-    .aboutC .titleSmall {
-        font-size: 19.5px;
-        width: 200px;
-    }
+  .aboutC .titleSmall {
+    font-size: 19.5px;
+    width: 200px;
+  }
 
-    .aboutC .container {
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 65%;
-    }
+  .aboutC .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 65%;
+  }
 
-    .aboutC .container .leftC {
-        width: 100%;
-        padding-right: 0;
-        min-height: 225px;
-        align-items: center;
-        justify-content: center;
-    }
+  .aboutC .container .leftC {
+    width: 100%;
+    padding-right: 0;
+    min-height: 225px;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .aboutC .container .rightC {
-        width: 100%;
-        padding-right: 0;
-        flex-wrap: wrap;
-        flex-direction: row;
-        min-height: 200px;
-        align-items: center;
-        justify-content: center;
-    }
+  .aboutC .container .rightC {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .aboutC .container .rightC .textMain {
-        width: 50%;
-    }
+  .aboutC .container .rightC .textMain {
+    width: 50%;
+  }
 
-    .aboutC .container .rightC .btnC {
-        width: 50%;
-        height: 114px;
-        align-items: center;
-        justify-content: start;
-    }
+  .aboutC .container .rightC .btnC {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content:space-between;
+    max-height: 40px;
+  }
 }
+
 /*================*/
 /*===Projects===*/
 /*===============*/
@@ -650,10 +651,17 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 450px) {
-    .home .container {
-        font-size: 35px;
-    }
+@media screen and (max-width: 315px) {
+  .home .container {
+    font-size: 35px;
+  }
+
+  .home .container a.button {
+    font-size: 17px;
+  }
+  .aboutC .container .leftC .textMain {
+    font-size: 17px;
+  }
 
     .home .container a.button {
         font-size: 17px;
@@ -667,12 +675,16 @@ a:visited {
     }
 }
 
-@media screen and (max-width: 320px) {
-    .aboutC .container {
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 65%;
-    }
+@media screen and (max-width: 480px) {
+  .btn.btn-about {
+    margin-top: 90px; /* Increased the top margin of the button */
+  }
+
+  .aboutC .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 65%;
+  }
 
     .aboutC .container .rightC .textMain {
         width: 100%;
@@ -683,11 +695,12 @@ a:visited {
         margin-bottom: 18px;
     }
 
-    .aboutC .container .rightC .btnC {
-        width: 100%;
-    }
 
-    .footer {
-        font-size: 12.5px;
-    }
+  .aboutC .container .rightC .btnC {
+    width: 100%;
+  }
+  
+  .footer{
+    font-size: 12.5px;
+  }
 }

@@ -21,14 +21,18 @@ header > div {
     width: 30px;
     height: 30px;
     border-radius: 6px;
-    background-color: var(--background);
     outline: none;
-    border: 2px solid var(--primary);
+    border: none;
     transform: scale(1);
     transition: 300ms;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.dark .darkmode-btn {
+    background-color: #443d70;
 }
 
 .darkmode-btn:is(:hover, :focus) {

@@ -103,7 +103,7 @@ a:visited {
 }
 
 .dark ::-webkit-scrollbar-thumb {
-    background: hwb(248 24% 56%);
+    background: #443d70;
 }
 
 ::-webkit-scrollbar-thumb:hover {

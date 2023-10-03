@@ -10,12 +10,31 @@
     <link rel="stylesheet" href="button.css" />
   </head>
   <body>
+
+    <div class="header">
+
+      <nav>
+      <a href="#" class="logo"><img src="opensourcelogo.jpg" id="logo"></a>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="https://github.com/priyankashah3107">Portfolio</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="toggle-btn" id="btn">
+
+        <span id="btnText">Dark</span>
+        <img src="moon.png" id="btnIcon">
+    </div> 
+      </nav>
     <div class="home">
       <div class="container">
-        Hi, my name is <span>Your Name</span> <br />I'm the Unknown Developer
+        Hi, my name is <span>Priyanka</span> <br />I'm the FullStack Developer
         <br />
         <a class="button" href="#about">Know more</a>
       </div>
+
+
     </div>
     <div class="px50"></div>
     <div class="px50" id="about"></div>
@@ -30,9 +49,10 @@
           <div class="text">Hi, I'm a developer</div>
           <br />
           <div class="textMain">
-            I design websites. That's the long and short of it. UI and UX,
+           <p > I design websites. That's the long and short of it. UI and UX,
             Sketch, Design, and pretty decent HTML and CSS — with Javascript and
             that nice dabble with Java.
+          </p>
           </div>
         </div>
         <div class="rightC">
@@ -103,6 +123,28 @@
         >Divyanshu Dhruv</a
       >
     </div>
-    <script src="/js/script.js"></script>
+    <!-- <script src="/js/script.js"></script> -->
+    <script>
+       let btn = document.getElementById("btn");
+    let btnText = document.getElementById("btnText");
+    let btnIcon = document.getElementById("btnIcon");
+    let logo = document.getElementById("logo");
+   
+
+    btn.onclick = function() {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")) {
+        btnIcon.src = "sun.png";
+        btnText.innerHTML = "Light";
+        logo.src =  "opensourcelogo.jpg";
+    }
+    else {
+        btnIcon.src = "moon.png";
+        btnText.innerHTML = "Dark";
+        logo.src =  "opensourcelogo.jpg";
+    }
+
+    }
+    </script>
   </body>
 </html>

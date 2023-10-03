@@ -5,25 +5,26 @@
   right: 20px; /* the distance from the right as needed */
   width: 50px; /*  the width of the button */
   height: 50px; /*  the height of the button */
-  background-color: #f2f2f2; /* Change the background color to a light color */
+  background-color: #f2f2f2; /* Initial background color (light color) */
+  color: #000; /* Initial text color (black) */
   border: none;
-  border-radius: 7px; /* Make the button rounded with border radius */
+  border-radius: 7px; /*  the button rounded with border radius */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* a smooth transition */
+  transition: background-color 0.3s, transform 0.3s, color 0.1s; /* a smooth transition for background color, scale, and text color */
 }
 
 /* Style the ion-icon inside the button */
 #back-to-top ion-icon {
   font-size: 24px; /* the icon size */
-  color: inherit; /* Inherit the text color from the parent element (matching the text color in the home section) */
   margin: 0; /* Remove any margin */
 }
 
 /* Style the button on hover */
 #back-to-top:hover {
-  background-color: #0056b3; /* Change the background color on hover */
+  background-color: #01b3af; /* Change the background color to green on hover */
+  color: #fff; /* Change the text color to white on hover */
   transform: scale(1.1); /* a slight scale effect on hover */
 }

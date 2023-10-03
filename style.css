@@ -653,3 +653,84 @@ a:visited {
     font-size: 12.5px;
   }
 }
+
+
+/*======light and dark mode ==========*/
+
+:root {
+  --background-color: #fff;
+  --text-color: #555;
+  --title-color: #000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition:   background 0.8s, color 0.8s;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+
+}
+
+.logo img {
+  width: 40px;
+  position: absolute;
+  top: 1;
+  left: 1;
+  border-radius: 50%; /* Makes the image circular */
+}
+
+
+nav ul{
+  width: 100%;
+  text-align: right;
+  list-style: none;
+  margin-right: 50px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 5px 15px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.dark-theme{
+  --background-color: #000;
+  --text-color: #999;
+  --title-color: #fff;
+}
+.toggle-btn{
+  background: #4864ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle-btn img{
+  width: 25px;
+  margin-left: 10px;
+}
+
+
+
+@keyframes move {
+  100%{
+      margin-left: 40px;
+      margin-top: 20px;
+      opacity: 0.3;
+  }
+}

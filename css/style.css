@@ -343,7 +343,7 @@ a:visited {
 }
 
 .aboutC .container .rightC .btnC {
-  display: flex;
+  display: flex ;
   position: relative;
   align-items: end;
   justify-content: start;
@@ -352,6 +352,65 @@ a:visited {
   min-height: 90px;
   background-color: none;
 }
+
+/* service-section */
+.padd{
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+.service .container{
+  padding-bottom: 40px;
+}
+.service .service-item{
+  margin-bottom: 30px;
+  flex: 0 00 33.33%;
+  max-width: 33.33%;
+}
+.service .service-item .service-item-inner{
+  background-color: #f2f2f2;
+  border:1px solid #e8dfec;
+  border-radius: 10px;
+  padding: 30px 15px;
+  text-align: center;
+  transition: all .035 ease;
+}
+.service .service-item .service-item-inner:hover{
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+.service .service-item .service-item-inner .icon{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  text-align: center;
+  transform: all 0.3 ease;
+}
+.service .service-item .service-item-inner .icon .fa{
+  font-size: 40px;
+  line-height: 60px;
+  color: rgb(0, 0, 0);
+}
+.service .service-item .service-item-inner:hover .icon{
+  background: rgb(0, 0, 0);
+}
+.service .service-item .service-item-inner:hover .icon .fa{
+  font-size: 25px;
+  color: #7567d2;
+}
+.service .service-item .service-item-inner h4{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #110d0d;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.service .service-item .service-item-inner p{
+  font-size: 16px;
+  color: #bd4242;
+  line-height: 25px;
+}
+
 
 @media screen and (max-width: 915px) {
   .aboutC .title {

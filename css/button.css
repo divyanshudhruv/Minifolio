@@ -1,14 +1,14 @@
 /* Additional CSS for the Back to Top button */
 #back-to-top {
   position: fixed;
-  bottom: 20px; /*  the distance from the bottom as needed */
+  bottom: 20px; /* the distance from the bottom as needed */
   right: 20px; /* the distance from the right as needed */
-  width: 50px; /*  the width of the button */
-  height: 50px; /*  the height of the button */
-  background-color: #f2f2f2; /* Initial background color (light color) */
-  color: #000; /* Initial text color (black) */
+  width: 50px; /* the width of the button */
+  height: 50px; /* the height of the button */
+  background-color: #f0f0f0; /* Initial background color (light gray) */
+  color: #272341; /* Initial text color (black) */
   border: none;
-  border-radius: 7px; /*  the button rounded with border radius */
+  border-radius: 7px; /* the button rounded with border radius */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
 
 /* Style the button on hover */
 #back-to-top:hover {
-  background-color: #01b3af; /* Change the background color to green on hover */
+  background-color: #6dd7d1; /* Change the background color to a lighter shade of green on hover */
   color: #fff; /* Change the text color to white on hover */
   transform: scale(1.1); /* a slight scale effect on hover */
 }

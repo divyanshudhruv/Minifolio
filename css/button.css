@@ -78,6 +78,7 @@
   font-size: 18.5px !important;
   border-radius: 8px !important;
 }
+
 /* Additional CSS for the Back to Top button */
 #back-to-top {
   position: fixed;
@@ -93,13 +94,13 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, color 0.1s; /* a smooth transition for background color, scale, and text color */
+  transition: background-color 0.3s, transform 0.3s, color 0.02s; /* a smooth transition for background color, scale, and text color */
   z-index: 999; /* Set a high z-index value to ensure it's above other elements */
 }
 
 /* Style the ion-icon inside the button */
 #back-to-top ion-icon {
-  font-size: 24px; /* the icon size */
+  font-size: 25px; /* the icon size */
   margin: 0; /* Remove any margin */
 }
 
@@ -107,6 +108,5 @@
 #back-to-top:hover {
   background-color: #6dd7d1; /* Change the background color to a lighter shade of green on hover */
   color: #fff; /* Change the text color to white on hover */
-  transform: scale(1.1); /* a slight scale effect on hover */
+  transform: scale(1.075); /* a slight scale effect on hover */
 }
-

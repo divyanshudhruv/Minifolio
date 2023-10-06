@@ -117,16 +117,13 @@ a:visited {
   color: #01b3af;
 }
 
-.home .container #role
-{
+.home .container #role {
   color: #272341;
 }
 
-.home .container .typed-cursor
-{
-  color: #272341  ;
+.home .container .typed-cursor {
+  color: #272341;
 }
-
 
 .home .container a.button {
   position: relative;
@@ -396,7 +393,7 @@ a:visited {
     width: 50%;
     text-align: center;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     max-height: 40px;
   }
 }
@@ -582,7 +579,7 @@ a:visited {
 .footer {
   display: flex;
   position: relative;
-  width: 600px;
+  width: 650px;
   background-color: none;
   align-items: center;
   justify-content: center;
@@ -598,11 +595,14 @@ a:visited {
   font-weight: 300;
   letter-spacing: 1px;
   border-top: 1.89px solid #ddd;
+  min-height: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .footer span .icon-heart {
   color: #f87272;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .footer span a {
@@ -637,7 +637,6 @@ a:visited {
   .aboutC .container .rightC .textMain {
     font-size: 17px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -663,8 +662,8 @@ a:visited {
   .aboutC .container .rightC .btnC {
     width: 100%;
   }
-  
-  .footer{
+
+  .footer {
     font-size: 12.5px;
   }
 }

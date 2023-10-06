@@ -6,12 +6,20 @@
     <title>Minifolio</title>
     <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <!-- <link rel="stylesheet" href="button.css" /> -->
   </head>
   <body>
+    <div class="overlayer"></div>
+    <div id="loading-bar-spinner" class="spinner">
+      <div class="spinner-icon"></div>
+    </div>
+    <div class="loadingP">Loading . . .</div>
     <div class="home">
       <div class="container">
         Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
@@ -124,5 +132,7 @@
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>
+    <script src="js/preloader.js"></script>
+    <!--555-->
   </body>
 </html>

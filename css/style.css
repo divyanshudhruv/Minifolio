@@ -20,6 +20,7 @@ body {
   flex-wrap: wrap;
   transition: 0.3s;
   outline: none;
+  overflow-x: hidden;
 }
 
 * {
@@ -105,7 +106,8 @@ a:visited {
   width: 95%;
   height: 225px;
   background-color: none;
-  color: #272341;
+  /* color: #272341; */
+  color: #355c7d;
   font-size: 56px;
   font-family: Montserrat;
   font-weight: 700;
@@ -118,11 +120,13 @@ a:visited {
 }
 
 .home .container #role {
-  color: #272341;
+  /* color: #272341; */
+  color: #355c7d;
 }
 
 .home .container .typed-cursor {
-  color: #272341;
+  /* color: #272341; */
+  color: #355c7d;
 }
 
 .home .container a.button {

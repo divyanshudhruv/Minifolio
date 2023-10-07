@@ -36,7 +36,7 @@
 
 <br>
 
-> **`v0.1` `24/09/2023`** - Published Minifolio
+> **`v0.1`  `24/09/2023`** - Published Minifolio
 
 <!--
 
@@ -83,6 +83,7 @@
 > **`7`** [Hacktoberfest](#hacktoberfest)
 
 > **`8`** [Author](#author)
+
 
 <br>
 
@@ -141,11 +142,9 @@ Follow the instruction to customize the portfolio
     ├── index.html
     ├── css
     │   ├── style.css
-    │   ├── preloader.css
     │   └── button.css
     └── js
         ├── script.js
-        ├── preloader.js
         ├── copyRight.js
         └── typingAnimation.js
 
@@ -175,7 +174,7 @@ Follow the instruction to customize the portfolio
 
 <br>
 
-> ## 🫤 About Me
+> ## 🫤 About Me 
 
 <br>
 
@@ -188,34 +187,33 @@ Follow the instruction to customize the portfolio
 <br>
 
 ```html
-<div class="aboutC">
-  <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
-  <div class="titleGap"></div>
-  <div class="titleSmall">This and that</div>
-  <div class="containerGap"></div>
-  <div class="container">
-    <div class="leftC">
-      <div class="text">Hi, I'm a developer</div>
-      <br />
-      <div class="textMain">
-        I design websites. That's the long and short of it. UI and UX, Sketch,
-        Design, and pretty decent HTML and CSS — with Javascript and that nice
-        dabble with Java.
+ <div class="aboutC">
+      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
+      <div class="titleGap"></div>
+      <div class="titleSmall">This and that</div>
+      <div class="containerGap"></div>
+      <div class="container">
+        <div class="leftC">
+          <div class="text">Hi, I'm a developer</div>
+          <br />
+          <div class="textMain">
+            I design websites. That's the long and short of it. UI and UX,
+            Sketch, Design, and pretty decent HTML and CSS — with Javascript and
+            that nice dabble with Java.
+          </div>
+        </div>
+        <div class="rightC">
+          <div class="text">TL;DR</div>
+          <br />
+          <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
+          <div class="btnC">
+            <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
+          </div>
+        </div>
       </div>
+      <div class="bottomC"></div>
     </div>
-    <div class="rightC">
-      <div class="text">TL;DR</div>
-      <br />
-      <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
-      <div class="btnC">
-        <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
-      </div>
-    </div>
-  </div>
-  <div class="bottomC"></div>
-</div>
 ```
-
 <br>
 
 > ## 🌗 Footer
@@ -227,9 +225,10 @@ Follow the instruction to customize the portfolio
 <br>
 
 ```html
-<div class="footer">...</div>
+<div class="footer">
+      ...
+</div>
 ```
-
 <br>
 
 ## 📦 Deployment <a id="deployment"> </a>
@@ -239,20 +238,21 @@ Follow the instruction to customize the portfolio
 ```rust
 Minifolio is deployed by Github Page
 ```
-
+ 
 <br>
 
 ## 🌱 Technology <a id="technology"> </a>
 
 <br>
 
-> **`1`** HTML
+ > **`1`** HTML
+ 
+ > **`2`** CSS
+ 
+ > **`3`** JavaScript
+ 
+ > **`4`** Github
 
-> **`2`** CSS
-
-> **`3`** JavaScript
-
-> **`4`** Github
 
 <br>
 
@@ -273,7 +273,7 @@ Hacktoberfest is a month-long celebration of open source projects, the maintaine
 ```
 
 ```rust
-You'll receive your digital reward once you’ve completed four accepted pull/merge requests.
+You'll receive your digital reward once you’ve completed four accepted pull/merge requests. 
 ```
 
 ```rust

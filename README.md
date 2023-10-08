@@ -141,11 +141,9 @@ Follow the instruction to customize the portfolio
     ├── index.html
     ├── css
     │   ├── style.css
-    │   ├── preloader.css
     │   └── button.css
     └── js
         ├── script.js
-        ├── preloader.js
         ├── copyRight.js
         └── typingAnimation.js
 

@@ -146,7 +146,7 @@ a:visited {
 
 .home .container #role
 {
-  color: #272341;
+  color: var(--foreground);
 }
 
 .home .container .typed-cursor {

@@ -6,13 +6,21 @@
     <title>Minifolio</title>
     <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script src="https://kit.fontawesome.com/3f019ee33f.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="button.css" /> -->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"/>
+
   </head>
+
   <body>
+    <!--Home Section-->
     <div class="home">
       <div class="container">
 
@@ -21,10 +29,10 @@
 
       </div>
     </div>
+
+    <!--Spaces-->
     <div class="px50"></div>
     <div class="px50" id="about"></div>
-
-
 
     <div class="aboutC">
       <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
@@ -52,6 +60,7 @@
       </div>
       <div class="bottomC"></div>
     </div>
+
 
     <!-- service section -->
     <section class="service section">
@@ -139,72 +148,38 @@
       </div>
     </section>
 
-<!-- Back to Top Button -->
-<button id="back-to-top" class="button"><ion-icon name="arrow-up-outline"></ion-icon></button>
-    <!-- <div class="projectC">
-      <div class="main">
-        <div class="textBig">
-          &ThickSpace;&ThickSpace;&MediumSpace;PROJECTS ⚡
-        </div>
 
-        <div class="textSmall">
-          I am currently working on some Projects. Check them out!
-        </div>
-        <div class="btnCont">
-          <button
-            class="btn btn-custom btn-lg"
-            style="
-              font-family: Poppins;
-              font-weight: 400;
-              padding: 19.2px 34.3px !important;
-              font-size: 18.5px;
-            "
-          >
-            Check It Out
-          </button>
-        </div>
-      </div>
-    </div>
-  -->
-    <!-- <div class="contactC">
-      <div class="main">
-        <div class="textBig">
-          &ThickSpace;&ThickSpace;&MediumSpace;CONTACT 👋🏻
-        </div>
 
-        <div class="textSmall">
-         Say Hi!
-        </div>
-        <div class="btnCont">
-          <button
-            class="btn btn-custom btn-lg"
-            style="
-              font-family: Poppins;
-              font-weight: 400;
-              padding: 19.2px 34.3px !important;
-              font-size: 18.5px;
-            "
-          >
-            Follow Me
-          </button>
-        </div>
-      </div>
-    </div> -->
-
+    <!--Footer-->
     <div class="footer">
-      <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
       <span
         >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
       </span>
-      <span
+      <span style="position: relative; top: -3.2px"
         >&nbsp;Template Developed With
-        <span class="icon-heart">❤️</span>
+        <span class="icon-heart"
+          ><ion-icon
+            name="heart"
+            style="position: relative; top: 5px"
+          ></ion-icon
+        ></span>
         By
       </span>
       <span>
         <a href="https://github.com/divyanshudhruv">&nbsp;Divyanshu Dhruv</a>
       </span>
     </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="button">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </button>
+
+    <!-- Theme switcher Button-->
+    <button id="theme-switcher" class="button" onclick="change('theme-icon')">
+      <i class="ri-sun-line" id="theme-icon"></i>
+    </button>
+
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>

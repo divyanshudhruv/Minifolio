@@ -14,9 +14,11 @@
   --buttonForeground2: #dfdfdf;
   --foreground: #272341;
   --primary: #01b3af;
+  --primaryCard: #ffffff;
   --primary2: #dfdfdf;
   --secondary: #96989b;
   --tertiary: #a9a9a9;
+  --text:#96989b;
   --muted-background: ;
   --muted-foreground: ;
 }
@@ -28,7 +30,9 @@
   --buttonBackground: #353057;
   --foreground: #ffffff;
   --primary: #01b3af;
+  --primaryCard: #01b3af;
   --primary2: #433e68;
+  --text:#272341;
   --secondary: #8a8a8a;
   --muted-background: ;
   --muted-foreground: ;
@@ -600,6 +604,137 @@ a:visited {
   background-color: none;
 } */
 
+
+/*================*/
+/*===Services===*/
+/*===============*/
+.service{
+  width: 100vw;
+  margin: 120px 0;
+}
+.services-section{
+  margin: auto;
+  background-color: var(--background);
+  max-width: 1150px;
+}
+
+.about-me-heading{
+  position: relative;
+  top: 35px;
+  margin-bottom: 40px;
+  font-size: 55px;
+  text-align: center;
+  color: var(--foreground);
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
+
+.about-me-para{
+  text-align: center;
+  font-size: 20px;
+  color: rgb(9,179,175);
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-family: sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.card-sec{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem 3em;
+  padding-bottom: 5rem;
+  gap: 3em;
+}
+
+.card{
+  margin-bottom: 2em;
+  border: none;
+  padding: 3em 10px;
+  border-radius: 4%;
+  transition: all 0.3s;
+  background-color: var(--primaryCard);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(9,179,175);
+
+}
+
+.card-logo{
+  color: rgb(39,35,65);
+  padding-bottom: 20px;
+  transition: al 0.3s;
+}
+
+.card-heading{
+  color: rgb(39,35,65);
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.card:hover{
+  background-color: rgb(9,179,175);
+}
+
+.card:hover .card-heading{
+  transform: scale(1.05);
+  
+}
+
+
+.card-para{
+  margin-top: 1em;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  transition: all 0.1s;
+}
+
+.card:hover .card-logo{
+  transform: scale(1.08);
+}
+
+.card:hover .card-para{
+  transform: scale(1.02);
+  color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width:850px){
+
+  .card{
+      width: 60%;
+      align-items: center;
+      margin: auto;
+  }
+  .card-sec{
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:650px){
+
+  .card{
+      width: 300px;
+      align-items: center;
+      margin: auto;
+  }
+  .card-sec{
+    width:auto;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+
 /*================*/
 /*===Footer===*/
 /*===============*/
@@ -695,3 +830,5 @@ a:visited {
     font-size: 12.5px;
   }
 }
+
+

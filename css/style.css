@@ -6,12 +6,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700");
 
+/* css variables for darkmode */
+:root {
+  --background: #ffffff;
+  --buttonForeground: #272341;
+  --buttonBackground: #f0f0f0;
+  --buttonForeground2: #dfdfdf;
+  --foreground: #272341;
+  --primary: #01b3af;
+  --primaryCard: #ffffff;
+  --primary2: #dfdfdf;
+  --secondary: #96989b;
+  --tertiary: #a9a9a9;
+  --text:#96989b;
+  --muted-background: ;
+  --muted-foreground: ;
+}
+
+.dark {
+  --background: #272341;
+  --buttonForeground: #fff;
+  --buttonForeground2: #433e68;
+  --buttonBackground: #353057;
+  --foreground: #ffffff;
+  --primary: #01b3af;
+  --primaryCard: #01b3af;
+  --primary2: #433e68;
+  --text:#272341;
+  --secondary: #8a8a8a;
+  --muted-background: ;
+  --muted-foreground: ;
+}
 /*================*/
 /*===HTML===*/
 /*===============*/
 
 body {
-  background-color: #fff;
+  background-color: var(--background);
   padding: 0;
   margin: 0;
   align-items: center;
@@ -105,7 +136,7 @@ a:visited {
   width: 95%;
   height: 225px;
   background-color: none;
-  color: #272341;
+  color: var(--foreground);
   font-size: 56px;
   font-family: Montserrat;
   font-weight: 700;
@@ -122,11 +153,9 @@ a:visited {
   color: #272341;
 }
 
-.home .container .typed-cursor
-{
-  color: #272341  ;
+.home .container .typed-cursor {
+  color: #272341;
 }
-
 
 .home .container a.button {
   position: relative;
@@ -200,7 +229,7 @@ a:visited {
   font-size: 55px;
   background-color: none;
   text-align: center;
-  color: #272341;
+  color: var(--foreground);
   letter-spacing: 0.5px;
 }
 
@@ -235,7 +264,7 @@ a:visited {
   font-size: 18px;
   background-color: none;
   text-align: center;
-  color: #96989b;
+  color: var(--secondary);
   flex-wrap: wrap;
   letter-spacing: 0.3px;
 }
@@ -299,7 +328,7 @@ a:visited {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 20px;
-  color: #777;
+  color: var(--tertiary);
   line-height: 1.9em;
   background-color: none;
 }
@@ -337,7 +366,7 @@ a:visited {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 20px;
-  color: #777;
+  color: var(--tertiary);
   line-height: 1.9em;
   background-color: none;
 }
@@ -396,7 +425,7 @@ a:visited {
     width: 50%;
     text-align: center;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     max-height: 40px;
   }
 }
@@ -585,17 +614,17 @@ a:visited {
 }
 .services-section{
   margin: auto;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--background);
   max-width: 1150px;
 }
 
 .about-me-heading{
   position: relative;
-  top: 20px;
+  top: 35px;
   margin-bottom: 40px;
   font-size: 55px;
   text-align: center;
-  color: rgb(39,35,65);
+  color: var(--foreground);
   font-weight: bold;
   font-family: Montserrat;
 }
@@ -616,7 +645,8 @@ a:visited {
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
-  padding: 3em;
+  padding: 2rem 3em;
+  padding-bottom: 10rem;
   gap: 3em;
 }
 
@@ -626,7 +656,7 @@ a:visited {
   padding: 3em 10px;
   border-radius: 4%;
   transition: all 0.3s;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--primaryCard);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -660,7 +690,7 @@ a:visited {
 
 .card-para{
   margin-top: 1em;
-  color: #777;
+  color: var(--text);
   font-size: 18px;
   line-height: 140%;
   text-align: center;
@@ -712,7 +742,7 @@ a:visited {
 .footer {
   display: flex;
   position: relative;
-  width: 600px;
+  width: 650px;
   background-color: none;
   align-items: center;
   justify-content: center;
@@ -724,15 +754,18 @@ a:visited {
   text-align: center;
   font-size: 15px;
   font-family: Poppins;
-  color: #96989b;
+  color: var(--secondary);
   font-weight: 300;
   letter-spacing: 1px;
   border-top: 1.89px solid #ddd;
+  min-height: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .footer span .icon-heart {
   color: #f87272;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .footer span a {
@@ -767,7 +800,6 @@ a:visited {
   .aboutC .container .rightC .textMain {
     font-size: 17px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -793,8 +825,10 @@ a:visited {
   .aboutC .container .rightC .btnC {
     width: 100%;
   }
-  
-  .footer{
+
+  .footer {
     font-size: 12.5px;
   }
 }
+
+

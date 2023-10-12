@@ -78,7 +78,6 @@
   font-size: 18.5px !important;
   border-radius: 8px !important;
 }
-
 /* Additional CSS for the Back to Top button */
 #back-to-top {
   position: fixed;
@@ -86,10 +85,8 @@
   right: 20px; /* the distance from the right as needed */
   width: 50px; /* the width of the button */
   height: 50px; /* the height of the button */
-  background-color: var(
-    --buttonBackground
-  ); /* Initial background color (light gray) */
-  color: var(--buttonForeground); /* Initial text color (black) */
+  background-color: #f0f0f0; /* Initial background color (light gray) */
+  color: #272341; /* Initial text color (black) */
   border: none;
   border-radius: 7px; /* the button rounded with border radius */
   display: flex;
@@ -108,43 +105,7 @@
 
 /* Style the button on hover */
 #back-to-top:hover {
-  background-color: var(
-    --primary2
-  ); /* Change the background color to a lighter shade of green on hover */
-  transform: scale(1.075); /* a slight scale effect on hover */
-}
-
-/* Additional CSS for the Back to Top button */
-#theme-switcher {
-  position: fixed;
-  top: 20px; /* the distance from the bottom as needed */
-  right: 20px; /* the distance from the right as needed */
-  width: 50px; /* the width of the button */
-  height: 50px; /* the height of the button */
-  background-color: var(
-    --buttonBackground
-  ); /* Initial background color (light gray) */
-  color: var(--buttonForeground); /* Initial text color (black) */
-  border: none;
-  border-radius: 7px; /* the button rounded with border radius */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, color 0.02s; /* a smooth transition for background color, scale, and text color */
-  z-index: 999; /* Set a high z-index value to ensure it's above other elements */
-}
-
-/* Style the ion-icon inside the button */
-#theme-switcher i {
-  font-size: 24px; /* the icon size */
-  margin: 0; /* Remove any margin */
-}
-
-/* Style the button on hover */
-#theme-switcher:hover {
-  background-color: var(
-    --buttonForeground2
-  ); /* Change the background color to a lighter shade of green on hover */
+  background-color: #6dd7d1; /* Change the background color to a lighter shade of green on hover */
+  color: #fff; /* Change the text color to white on hover */
   transform: scale(1.075); /* a slight scale effect on hover */
 }

@@ -6,39 +6,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700");
 
-/* css variables for darkmode */
-:root {
-  --background: #ffffff;
-  --buttonForeground: #272341;
-  --buttonBackground: #f0f0f0;
-  --buttonForeground2: #dfdfdf;
-  --foreground: #272341;
-  --primary: #01b3af;
-  --primary2: #dfdfdf;
-  --secondary: #96989b;
-  --tertiary: #a9a9a9;
-  --muted-background: ;
-  --muted-foreground: ;
-}
-
-.dark {
-  --background: #272341;
-  --buttonForeground: #fff;
-  --buttonForeground2: #433e68;
-  --buttonBackground: #353057;
-  --foreground: #ffffff;
-  --primary: #01b3af;
-  --primary2: #433e68;
-  --secondary: #8a8a8a;
-  --muted-background: ;
-  --muted-foreground: ;
-}
 /*================*/
 /*===HTML===*/
 /*===============*/
 
 body {
-  background-color: var(--background);
+  background-color: #fff;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -132,7 +105,7 @@ a:visited {
   width: 95%;
   height: 225px;
   background-color: none;
-  color: var(--foreground);
+  color: #272341;
   font-size: 56px;
   font-family: Montserrat;
   font-weight: 700;
@@ -144,8 +117,7 @@ a:visited {
   color: #01b3af;
 }
 
-.home .container #role
-{
+.home .container #role {
   color: #272341;
 }
 
@@ -225,7 +197,7 @@ a:visited {
   font-size: 55px;
   background-color: none;
   text-align: center;
-  color: var(--foreground);
+  color: #272341;
   letter-spacing: 0.5px;
 }
 
@@ -260,7 +232,7 @@ a:visited {
   font-size: 18px;
   background-color: none;
   text-align: center;
-  color: var(--secondary);
+  color: #96989b;
   flex-wrap: wrap;
   letter-spacing: 0.3px;
 }
@@ -324,7 +296,7 @@ a:visited {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 20px;
-  color: var(--tertiary);
+  color: #777;
   line-height: 1.9em;
   background-color: none;
 }
@@ -362,7 +334,7 @@ a:visited {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 20px;
-  color: var(--tertiary);
+  color: #777;
   line-height: 1.9em;
   background-color: none;
 }
@@ -619,7 +591,7 @@ a:visited {
   text-align: center;
   font-size: 15px;
   font-family: Poppins;
-  color: var(--secondary);
+  color: #96989b;
   font-weight: 300;
   letter-spacing: 1px;
   border-top: 1.89px solid #ddd;

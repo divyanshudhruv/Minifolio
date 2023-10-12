@@ -148,3 +148,49 @@
   ); /* Change the background color to a lighter shade of green on hover */
   transform: scale(1.075); /* a slight scale effect on hover */
 }
+
+body {
+    display: block;
+}
+
+#error_text span {
+    color: #272341;
+    background-color: none;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+#error_text {
+    font-size: 32px
+}
+
+button {
+    position: relative;
+    display: flex;
+    top: 30px;
+    padding: 5.5px 13.5px;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #01b3af;
+    color: #01b3af;
+    background-color: #fff;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #01b3af;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+

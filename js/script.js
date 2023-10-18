@@ -1,3 +1,11 @@
+// Dark-mode
+const darkmodeBtn = document.querySelector('button[data-mode]')
+const html = document.querySelector('html')
+
+darkmodeBtn.addEventListener('click', () => {
+    html.classList.toggle('dark')
+})
+
 // Get a reference to the button element
 const backToTopButton = document.getElementById("back-to-top");
 

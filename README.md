@@ -1,11 +1,11 @@
 <p align="center"><img src="Minifolio.png" width="120" height="120"></p>
 <h1 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minifolio ⚡</h1>
 <br>
-<p align="center"><code>A minimal portfolio template for developers</code></p>
+<p align="center"><code>A minimal portfolio template for developers </code><br><code>⚠️ We are not currently accepting more pull requests</code></p>
 <br>
 <br>
 
-<p align="center">  <img src="https://img.shields.io/badge/Version-0.1-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.2-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>

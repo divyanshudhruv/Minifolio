@@ -150,12 +150,12 @@ a:visited {
     color: var(--primary);
 }
 
-.home .container #role {
-    color: var(--foreground);
+.home .container .typed-cursor {
+  color: #272341;
 }
 
 .home .container .typed-cursor {
-    color: var(--foreground);
+  color: #272341;
 }
 
 .home .container a.button {
@@ -425,7 +425,7 @@ a:visited {
     width: 50%;
     text-align: center;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     max-height: 40px;
   }
 }
@@ -632,6 +632,32 @@ a:visited {
 .footer span .icon-heart {
     color: #f87272;
     font-size: 20px;
+  display: flex;
+  position: relative;
+  width: 650px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
+  flex-wrap: wrap;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #96989b;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-top: 1.89px solid #ddd;
+  min-height: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer span .icon-heart {
+  color: #f87272;
+  font-size: 24px;
 }
 
 .footer span a {
@@ -662,17 +688,12 @@ a:visited {
   .aboutC .container .leftC .textMain {
     font-size: 17px;
   }
-
-    .home .container a.button {
-        font-size: 17px;
-    }
-    .aboutC .container .leftC .textMain {
-        font-size: 17px;
-    }
-
     .aboutC .container .rightC .textMain {
         font-size: 17px;
     }
+  .aboutC .container .rightC .textMain {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -699,8 +720,8 @@ a:visited {
   .aboutC .container .rightC .btnC {
     width: 100%;
   }
-  
-  .footer{
+
+  .footer {
     font-size: 12.5px;
   }
 }

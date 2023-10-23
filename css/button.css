@@ -3,7 +3,7 @@
 /*===============*/
 
 :root {
-  --accent: #02aba8; /*289997*/
+  --accent: purple; /*289997*/
   --white: #ffffffff;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .btn.btn-custom:hover {
-  background-color: #009794;
+  background-color: rebeccapurple;
 }
 
 .btn.btn-custom .btn-outline {

@@ -94,7 +94,6 @@ a:visited {
 
 .home {
   display: flex;
-  width: 1150px;
   height: 100vh;
   background-color: none;
   align-items: center;
@@ -114,7 +113,7 @@ a:visited {
 }
 
 .home .container span {
-  color: #01b3af;
+  color: purple;
 }
 
 .home .container #role {
@@ -132,8 +131,8 @@ a:visited {
   padding: 5.5px 13.5px;
   width: fit-content;
   height: fit-content;
-  border: 2px solid #01b3af;
-  color: #01b3af;
+  border: 2px solid purple;
+  color: purple;
   font-size: 24px;
   font-family: Montserrat;
   font-weight: 700;
@@ -143,7 +142,7 @@ a:visited {
 
 .home .container a.button:hover {
   color: #fff;
-  background-color: #01b3af;
+  background-color: purple;
 }
 
 @media screen and (max-width: 915px) {
@@ -284,7 +283,7 @@ a:visited {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 25.5px;
-  color: #01b3af;
+  color: purple;
   background-color: none;
 }
 
@@ -323,7 +322,7 @@ a:visited {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 25.5px;
-  color: #01b3af;
+  color: purple;
   background-color: none;
 }
 .aboutC .container .rightC .textMain {

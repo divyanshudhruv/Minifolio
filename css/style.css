@@ -897,65 +897,6 @@ a:visited {
     width: 100%;
   }
 
-  .footer {
-    font-size: 12.5px;
-  }
-}
-/* Add this media query at the end of your CSS file to apply styles for mobile view */
-
-@media screen and (max-width: 768px) {
-  /* Common styles for smaller screens */
-  .home .container {
-    font-size: 24px;
-  }
-
-  .home .container a.button {
-    font-size: 18px;
-  }
-
-  .aboutC .container {
-    width: 80%;
-    margin: auto;
-  }
-
-  .aboutC .title {
-    font-size: 36px;
-    width: 100%;
-  }
-
-  .aboutC .titleSmall {
-    font-size: 16px;
-  }
-
-  .aboutC .container .leftC {
-    width: 100%;
-    padding: 0;
-  }
-
-  .aboutC .container .leftC .text {
-    font-size: 20px;
-  }
-
-  .aboutC .container .leftC .textMain {
-    font-size: 16px;
-  }
-
-  .aboutC .container .rightC {
-    width: 100%;
-  }
-
-  .aboutC .container .rightC .text {
-    font-size: 20px;
-  }
-
-  .aboutC .container .rightC .textMain {
-    font-size: 16px;
-  }
-
-  .aboutC .container .rightC .btnC {
-    width: 100%;
-  }
-
   /* Project Section */
   .projects-section h1 {
     font-size: 36px;
@@ -1006,10 +947,7 @@ a:visited {
     margin-top: 20px;
   }
 
-  /* Footer */
   .footer {
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 15px;
+    font-size: 12.5px;
   }
 }

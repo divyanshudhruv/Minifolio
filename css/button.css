@@ -81,7 +81,7 @@
 /* Additional CSS for the Back to Top button */
 #back-to-top {
   position: fixed;
-  bottom: 20px; /* the distance from the bottom as needed */
+  top: 600px; /* the distance from the bottom as needed */
   right: 20px; /* the distance from the right as needed */
   width: 50px; /* the width of the button */
   height: 50px; /* the height of the button */

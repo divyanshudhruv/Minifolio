@@ -571,7 +571,123 @@ a:visited {
   height: 200px;
   background-color: none;
 } */
+/* Center align the contact section */
+.contact-section {
+  text-align: center;
+}
+.contact-section h1 {
+  font-family: Montserrat; /* Use the same font as the "About" section */
+  font-weight: 700; /* Apply the desired font weight */
+  font-size: 55px; /* Adjust the font size as needed */
+  color: #272341; /* Set the desired text color */
+  margin-top: 20px; /* Add some top margin to align with other text */
+}
+/* Contact Section */
+.contact-left {
+  flex-basis: 35%;
+  padding: 25px 0;
+  
+}
+.contact-left .titleGap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background-color: none;
+}
+.contact-left .titleSmall {
+  display: flex;
+  top: 0;
+  position: relative;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 57.5px;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: none;
+  text-align: center;
+  color: #96989b;
+  flex-wrap: wrap;
+  letter-spacing: 0.3px;
+}
 
+.contact-right {
+  flex-basis: 60%;
+  margin-top: 10px;
+
+}
+.contact-left p {
+  margin-top: 30px;
+  font-size: 25px; /* Updated font size */
+  color: #01b3af;
+  display: flex;
+  align-items: center;
+/*  only if i move the cursor on the text then only it will be hovered or  selected */
+
+
+}
+
+.contact-left p i {
+  color: #01b3af;
+  margin-right: 10px;
+  font-size: 25px;
+}
+.contact-link {
+  color: #01b3af;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.contact-left p:hover {
+  color: #666; /* Faded text color on hover */
+  text-decoration: none;
+  text-decoration: underline;
+}
+.contact-section .sub-title {
+  font-size: 55px; /* Set the desired font size for the h1 element */
+  color: #272341; /* Set the desired color for the h1 element */
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #01b3af;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #272341;
+  transform: translateY(-5px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: #01b3af;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.btn.btn2:hover {
+  background: #272341;
+  color: #fff;
+  transform: translateY(-5px);
+}
 /*================*/
 /*===Footer===*/
 /*===============*/

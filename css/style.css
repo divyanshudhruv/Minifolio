@@ -94,7 +94,7 @@ a:visited {
 
 .home {
   display: flex;
-  width: 1150px;
+  width: auto;
   height: 100vh;
   background-color: none;
   align-items: center;
@@ -144,6 +144,10 @@ a:visited {
 .home .container a.button:hover {
   color: #fff;
   background-color: #01b3af;
+}
+
+.home .your-image{
+  height: 50%;
 }
 
 @media screen and (max-width: 915px) {

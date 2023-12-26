@@ -1,7 +1,9 @@
 <p align="center"><img src="Minifolio.png" width="120" height="120"></p>
 <h1 align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Minifolio ⚡</h1>
 <br>
-<p align="center"><code>A minimal portfolio template for developers </code><br><code>⚠️ We are not currently accepting more pull requests</code></p>
+<p align="center"><code>A minimal portfolio template for developers </code>
+    <br>
+    <code>⚠️ We are now accepting pull requests ! Let's code</code></p>
 <br>
 <br>
 
@@ -26,17 +28,24 @@
 
 <br>
 
+<!--
 ## 👀 Hacktoberfest
 
 > <code><a href="https://hacktoberfest.com">Hacktoberfest 2023</a></code>
 
 <br>
+-->
 
 ## ⚡ What's New ?
 
 <br>
 
 > **`v0.1`  `24/09/2023`** - Published Minifolio
+
+> **`v0.2`  `12/10/2023`** - Added new features
+ 
+> **`vRes`  `26/12/2023`** - Resumed the project
+
 
 <!--
 
@@ -165,11 +174,10 @@ Follow the instruction to customize the portfolio
 ```html
 <div class="home">
       <div class="container">
-        Hi, my name is <span>Your Name</span> <br />I'm the Unknown Developer
-        <br />
+        Hi, my name is <span>Your Name</span> <br />I'm <span id="role"></span>
         <a class="button" href="#about">Know more</a>
       </div>
-</div>
+    </div>
 ```
 
 <br>
@@ -282,6 +290,8 @@ The first 50,000 participants to have their first PR/MR accepted will have a tre
 
 <br>
 
+<!--
+
 ## 🤔 Participation
 
 <br>
@@ -297,6 +307,8 @@ The first 50,000 participants to have their first PR/MR accepted will have a tre
 > **`5`** Wait for the merge
 
 <br>
+
+-->
 
 ## ✒️ Author <a id="author"> </a>
 

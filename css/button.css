@@ -110,10 +110,6 @@
   transform: scale(1.075); /* a slight scale effect on hover */
 }
 
-body {
-    display: block;
-}
-
 #error_text span {
     color: #272341;
     background-color: none;

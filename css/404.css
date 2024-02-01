@@ -1,0 +1,44 @@
+
+button {
+    position: relative;
+    display: flex;
+    top: 30px;
+    padding: 5.5px 13.5px;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #01b3af;
+    color: #01b3af;
+    background-color: #fff;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #01b3af;
+}
+
+.containeri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+body{
+    display: block;
+}
+#error_text span {
+    color: #272341;
+    background-color: none;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+#error_text {
+    font-size: 32px
+}

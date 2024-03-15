@@ -43,6 +43,8 @@
 
 .btn.btn-custom:hover {
   background-color: #009794;
+  transition: 0.5s ease;
+  transform: scale(1.1);
 }
 
 .btn.btn-custom .btn-outline {

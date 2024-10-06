@@ -640,17 +640,25 @@ a:visited {
 
 .serviceText {
   text-align: center;
+  font-family: "Poppins" !important;
+  font-size: 15px;
+
 }
 
 .serviceText .text {
   font-weight: bold;
   font-size: 20px;
   color: #272341;
+  font-family: "Poppins" !important;
+  margin-bottom: 10px;
+
 }
 
 .serviceText .textMain {
   font-size: 16px;
   color: #555;
+  font-family: "Montserrat" !important;
+
 }
 
 

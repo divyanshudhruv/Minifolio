@@ -1,669 +1,174 @@
-/*================*/
-/*===Fonts===*/
-/*===============*/
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700");
-
-/*================*/
-/*===HTML===*/
-/*===============*/
-
-body {
-  background-color: #fff  ;
-  padding: 0  ;
-  margin: 0  ;
-  align-items: center  ;
-  justify-content: center  ;
-  display: flex  ;
-  flex-wrap: wrap  ;
-  transition: 0.3s  ;
-  outline: none  ;
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  transition: 0.3s;
-}
-html {
-  scroll-behavior: smooth;
-  outline: none;
+:root{
+    --background-color: #fff;
+    --text-color: #555;
+    --title-color: #000;
 }
 
-/*================*/
-/*===Links===*/
-/*===============*/
+.dark-theme{
+    --background-color: #000;
+    --text-color: #999;
+    --title-color: #fff;
 
-a {
-  text-decoration: none;
-  width: fit-content;
-  display: flex;
 }
 
-a:link {
-  color: currentColor;
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.8s, color 0.8s;
+
 }
 
-/* visited link */
-a:visited {
-  color: currentColor;
+# wrapper {
+    height : 100vh;
+    overflow-y : auto;
+    overflow-x : hidden;
 }
 
-.px50 {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 50px;
+.container {
+    width : 1200px;
+    margin : 0 auto;
 }
 
-/*================*/
-/*===Scroll Bar===*/
-/*===============*/
-
-::-webkit-scrollbar {
-  width: 10px;
+.navbar{
+    /* width: 100%;
+    min-height: 100vh; */
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #ddd;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #ccc;
+.logo img{
+    width: 80px;
 }
 
-/*================*/
-/*===Text Selection===*/
-/*===============*/
-
-::selection {
-  background: aliceblue;
+nav ul{
+    width: 100%;
+    text-align: right;
+    list-style: none;
+    margin-right: 50px;
 }
 
-/*================*/
-/*===Home Page===*/
-/*===============*/
-
-.home {
-  display: flex;
-  width: 1150px;
-  height: 100vh;
-  background-color: none;
-  align-items: center;
-  justify-content: center;
+nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
 }
 
-.home .container {
-  width: 95%;
-  height: 225px;
-  background-color: none;
-  color: #272341;
-  font-size: 56px;
-  font-family: Montserrat;
-  font-weight: 700;
-  align-items: center;
-  justify-content: center;
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
 }
 
-.home .container span {
-  color: #01b3af;
+nav ul li a:hover {
+    color: #4864ff;
+    cursor : pointer;
+    transition: all 0.3s;
+    font-weight : 550;
 }
 
-.home .container #role {
-  color: #272341;
+.hero-section{
+    margin-top: 10%;
+    max-width: 600px;
 }
 
-.home .container .typed-cursor {
-  color: #272341;
+.hero-section h1{
+    font-size: 80px;
+    font-family: serif;
+    color: var(--title-color);
+    font-weight: 600;
 }
 
-.home .container a.button {
-  position: relative;
-  display: flex;
-  top: 30px;
-  padding: 5.5px 13.5px;
-  width: fit-content;
-  height: fit-content;
-  border: 2px solid #01b3af;
-  color: #01b3af;
-  font-size: 24px;
-  font-family: Montserrat;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
+.hero-section h1 span{
+    font-family: serif;
+    font-weight: 800;
+    font-style: italic;
+}
+@keyframes move {
+    100%{
+        margin-left: 40px;
+        margin-top: 20px;
+        opacity: 0.3;
+    }
 }
 
-.home .container a.button:hover {
-  color: #fff;
-  background-color: #01b3af;
-}
+/* #home {
+    color: #093a51;
+	transition: all ease 0.5s;
+} */
 
-@media screen and (max-width: 915px) {
-  .home .container {
-    font-size: 41px;
+
+.btn-blue{
+    /* width: auto; */
+    font-size: 1em;
+    color: white;
+    padding: 0.8rem 2rem;
+    background-color: #4864ff ;
+    border: 3px solid transparent;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+#btn{
+    width : 28%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
-    line-height: 1.5em;
-    position: relative;
-  }
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none;
 
-  .home .container .button {
-    position: relative;
-    line-height: normal !important;
-    left: 0;
+}
+.btn-blue::before{
+    content: "";
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
     right: 0;
-    margin: auto;
-  }
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: all;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    transform-origin: left;
+    z-index: -1;
 }
 
-/*================*/
-/*===About===*/
-/*===============*/
-
-.aboutC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  background-color: none;
-  min-height: 600px;
-  align-items: start;
-  justify-content: start;
-  overflow: hidden;
-  flex-wrap: wrap;
-  flex-direction: column;
+.btn-blue:hover::before{
+    transform: scaleX(1);
+    cursor: pointer;
+}
+.btn-blue:hover{
+    color: black;
+    cursor: pointer;
+}
+.btn-blue:active{
+    transform: scale(0.95);
 }
 
-.aboutC .title {
-  display: flex;
-  position: relative;
-  top: 0;
-  width: 750px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 75px;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 55px;
-  background-color: none;
-  text-align: center;
-  color: #272341;
-  letter-spacing: 0.5px;
-}
 
-.aboutC .titleGap {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 25px;
-  background-color: none;
-}
 
-.aboutC .containerGap {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 50px;
-  background-color: none;
-}
-.aboutC .titleSmall {
-  display: flex;
-  top: 0;
-  position: relative;
-  width: 750px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 57.5px;
-  align-items: center;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-}
 
-.aboutC .bottomC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100px;
-  bottom: 0;
-  background-color: none;
-}
 
-.aboutC .container {
-  display: flex;
-  position: relative;
-  width: 750px;
-  height: fit-content;
-  min-height: 292.5px;
-  background-color: none;
-  align-items: start;
-  justify-content: space-between;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
 
-.aboutC .container .leftC {
-  display: flex;
-  position: relative;
-  width: 60%;
-  padding-right: 50px;
-  height: fit-content;
-  min-height: 292.5px;
-  background-color: none;
-  padding-top: 10px;
-  padding-bottom: 35px;
-  align-items: start;
-  justify-content: start;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
-.aboutC .container .leftC .text {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 25.5px;
-  color: #01b3af;
-  background-color: none;
-}
 
-.aboutC .container .leftC .textMain {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 20px;
-  color: #777;
-  line-height: 1.9em;
-  background-color: none;
-}
 
-.aboutC .container .rightC {
-  display: flex;
-  position: relative;
-  width: 32%;
-  height: fit-content;
-  min-height: 292.5px;
-  background-color: none;
-  padding-top: 10px;
-  align-items: start;
-  justify-content: start;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 
-.aboutC .container .rightC .text {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 25.5px;
-  color: #01b3af;
-  background-color: none;
-}
-.aboutC .container .rightC .textMain {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 20px;
-  color: #777;
-  line-height: 1.9em;
-  background-color: none;
-}
 
-.aboutC .container .rightC .btnC {
-  display: flex;
-  position: relative;
-  align-items: end;
-  justify-content: start;
-  width: 100%;
-  height: fit-content;
-  min-height: 90px;
-  background-color: none;
-}
 
-@media screen and (max-width: 915px) {
-  .aboutC .title {
-    font-size: 43px;
-    left: 5px;
-    width: 300px;
-  }
 
-  .aboutC .titleSmall {
-    font-size: 19.5px;
-    width: 200px;
-  }
-
-  .aboutC .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 65%;
-  }
-
-  .aboutC .container .leftC {
-    width: 100%;
-    padding-right: 0;
-    min-height: 225px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .aboutC .container .rightC {
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    min-height: 200px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .aboutC .container .rightC .textMain {
-    width: 50%;
-  }
-
-  .aboutC .container .rightC .btnC {
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    max-height: 40px;
-  }
-}
-
-/*================*/
-/*===Projects===*/
-/*===============*/
-/* 
-.projectC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.projectC .main {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.projectC .main .textBig {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 58px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #272341;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.projectC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
-}
-
-.projectC .main .btnCont {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
-
-/*================*/
-/*===Contact===*/
-/*===============*/
-/* 
-.contactC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.contactC .main {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.contactC .main .textBig {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 58px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #272341;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.contactC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
-}
-
-.contactC .main .btnCont {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
-
-/*================*/
-/*===Footer===*/
-/*===============*/
-
-.footer {
-  display: flex;
-  position: relative;
-  width: 650px;
-  background-color: none;
-  align-items: center;
-  justify-content: center;
-  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
-  flex-wrap: wrap;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  font-family: Poppins;
-  color: #96989b;
-  font-weight: 300;
-  letter-spacing: 1px;
-  border-top: 1.89px solid #ddd;
-  min-height: 60px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-.footer span .icon-heart {
-  color: #f87272;
-  font-size: 24px;
-}
-
-.footer span a {
-  display: inline !important;
-  font-weight: 300;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  font-weight: 300;
-  color: #666;
-}
-
-@media screen and (max-width: 915px) {
-  .footer {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 315px) {
-  .home .container {
-    font-size: 35px;
-  }
-
-  .home .container a.button {
-    font-size: 17px;
-  }
-  .aboutC .container .leftC .textMain {
-    font-size: 17px;
-  }
-
-  .aboutC .container .rightC .textMain {
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .btn.btn-about {
-    margin-top: 90px; /* Increased the top margin of the button */
-  }
-
-  .aboutC .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 65%;
-  }
-
-  .aboutC .container .rightC .textMain {
-    width: 100%;
-  }
-
-  .aboutC .container .rightC .text {
-    width: 100%;
-    margin-bottom: 18px;
-  }
-
-  .aboutC .container .rightC .btnC {
-    width: 100%;
-  }
-
-  .footer {
-    font-size: 12.5px;
-  }
-}

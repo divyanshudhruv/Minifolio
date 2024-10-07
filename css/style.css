@@ -435,6 +435,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  height: fit-content;
   gap: 20px; /* Space between project items */
 }
 
@@ -466,16 +467,19 @@ a:visited {
 .projectText .text {
   font-weight: 500;
   font-size: 24px;
+  font-family:"Poppins";
   color: #272341;
 }
 
 .projectText .textMain {
   font-size: 16px;
+  font-family: "Poppins";
   color: #666;
 }
 
 .projectItem .btn {
-  margin-left: 20px; /* Space between text and button */
+  margin-left: 20px; 
+  font-family: "Poppins";
 }
 
 

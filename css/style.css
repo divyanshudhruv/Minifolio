@@ -757,3 +757,56 @@ a:visited {
     font-size: 12.5px;
   }
 }
+
+/*CONTACT ME  */
+.contactC {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contactC .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contactC .textMain {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contactC .btnC a {
+  text-decoration: none;
+  background-color: #02aba8;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.contactC .btnC a:hover {
+  background-color: #009794;
+}
+
+.contactDetails p {
+  margin: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1rem;
+}
+
+.contactDetails ion-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+.btn-custom {
+  font-size: 16px; /* Reduce the font size */
+  padding: 10px 20px; /* Adjust the padding to make the button smaller */
+  border-radius: 5px; /* Optional: Adjust border radius */
+}
+

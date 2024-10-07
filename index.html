@@ -9,12 +9,11 @@
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- <link rel="stylesheet" href="button.css" /> -->
   </head>
   <body>
     <div class="home">
       <div class="container">
-        Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
+        Hi, my name is <span>Your Name</span> <br />I'm <span id="role"></span>
         <a class="button" href="#about">Know more</a>
       </div>
     </div>
@@ -47,113 +46,90 @@
       </div>
       <div class="bottomC"></div>
     </div>
+
     <!-- Back to Top Button -->
     <button id="back-to-top" class="button">
       <ion-icon name="chevron-up-outline"></ion-icon>
     </button>
 
-    <!-- <div class="projectC">
-      <div class="main">
-        <div class="textBig">
-          &ThickSpace;&ThickSpace;&MediumSpace;PROJECTS ⚡
-        </div>
-
-        <div class="textSmall">
-          I am currently working on some Projects. Check them out!
-        </div>
-        <div class="btnCont">
-          <button
-            class="btn btn-custom btn-lg"
-            style="
-              font-family: Poppins;
-              font-weight: 400;
-              padding: 19.2px 34.3px !important;
-              font-size: 18.5px;
-            "
-          >
-            Check It Out
-          </button>
-        </div>
-      </div>
-    </div>
-  -->
-    <!-- <div class="contactC">
-      <div class="main">
-        <div class="textBig">
-          &ThickSpace;&ThickSpace;&MediumSpace;CONTACT 👋🏻
-        </div>
-
-        <div class="textSmall">
-         Say Hi!
-        </div>
-        <div class="btnCont">
-          <button
-            class="btn btn-custom btn-lg"
-            style="
-              font-family: Poppins;
-              font-weight: 400;
-              padding: 19.2px 34.3px !important;
-              font-size: 18.5px;
-            "
-          >
-            Follow Me
-          </button>
-        </div>
-      </div>
-    </div> -->
-
-
-<!-- services section start -->
+    <!-- Services Section -->
     <div class="servicesC">
       <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;SERVICES 🛠️</div>
       <div class="titleGap"></div>
       <div class="titleSmall">What I Offer</div>
       <div class="container">
-          <div class="serviceItem">
-              <div class="serviceIcon">
-                  <ion-icon name="laptop-outline"></ion-icon>
-              </div>
-              <div class="serviceText">
-                  <div class="text">Web Development</div>
-                  <div class="textMain">Building responsive and high-quality websites.</div>
-              </div>
+        <div class="serviceItem">
+          <div class="serviceIcon">
+            <ion-icon name="laptop-outline"></ion-icon>
           </div>
-          <div class="serviceItem">
-              <div class="serviceIcon">
-                  <ion-icon name="brush-outline"></ion-icon>
-              </div>
-              <div class="serviceText">
-                  <div class="text">UI/UX Design</div>
-                  <div class="textMain">Designing user-friendly interfaces and experiences.</div>
-              </div>
+          <div class="serviceText">
+            <div class="text">Web Development</div>
+            <div class="textMain">Building responsive and high-quality websites.</div>
           </div>
-          <div class="serviceItem">
-              <div class="serviceIcon">
-                  <ion-icon name="stats-chart-outline"></ion-icon>
-              </div>
-              <div class="serviceText">
-                  <div class="text">SEO Expert</div>
-                  <div class="textMain">Optimizing websites for better search engine ranking.</div>
-              </div>
+        </div>
+        <div class="serviceItem">
+          <div class="serviceIcon">
+            <ion-icon name="brush-outline"></ion-icon>
           </div>
+          <div class="serviceText">
+            <div class="text">UI/UX Design</div>
+            <div class="textMain">Designing user-friendly interfaces and experiences.</div>
+          </div>
+        </div>
+        <div class="serviceItem">
+          <div class="serviceIcon">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+          </div>
+          <div class="serviceText">
+            <div class="text">SEO Expert</div>
+            <div class="textMain">Optimizing websites for better search engine ranking.</div>
+          </div>
+        </div>
       </div>
-  </div>
-<!-- services section end -->
+    </div>
+    <!-- Services Section End -->
+
+    <!-- Projects Section Start -->
+    <div class="projectsC">
+      <div class="title">PROJECTS ⚡</div>
+      <div class="titleGap"></div>
+      <div class="titleSmall">My Work</div>
+      <div class="container">
+        <div class="projectItem">
+          <div class="projectIcon">🚀</div> 
+          <div class="projectText">
+            <div class="text">Project One</div>
+            <div class="textMain">Description of Project One.</div>
+          </div>
+          <a class="btn btn-custom btn-lg" href="#">View Project</a>
+        </div>
+        <div class="projectItem">
+          <div class="projectIcon">🌟</div>
+          <div class="projectText">
+            <div class="text">Project Two</div>
+            <div class="textMain">Description of Project Two.</div>
+          </div>
+          <a class="btn btn-custom btn-lg" href="#">View Project</a>
+        </div>
+        <div class="projectItem">
+          <div class="projectIcon">✨</div>
+          <div class="projectText">
+            <div class="text">Project Three</div>
+            <div class="textMain">Description of Project Three.</div>
+          </div>
+          <a class="btn btn-custom btn-lg" href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Projects Section End -->
 
     <div class="footer">
-      <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
-      <span
-        >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
-      </span>
-      <span style="position: relative; top: -3.2px"
-        >&nbsp;Template Developed With
-        <span class="icon-heart"
-          ><ion-icon
-            name="heart"
-            style="position: relative; top: 5px"
-          ></ion-icon
-        ></span>
-        By
+      <span>Copyright ©<span id="copyright-year"></span> All Rights Reserved |</span>
+      <span style="position: relative; top: -3.2px">&nbsp;Template Developed With
+        <span class="icon-heart">
+          <ion-icon name="heart" style="position: relative; top: 5px"></ion-icon>
+        </span> By
       </span>
       <span>
         <a href="https://github.com/divyanshudhruv">&nbsp;Divyanshu Dhruv</a>

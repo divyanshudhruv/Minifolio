@@ -9,12 +9,125 @@
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- <link rel="stylesheet" href="button.css" /> -->
+    <style>
+      /* Dark mode toggle button styles */
+      #dark-mode-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensure it's on top of everything */
+      }
+
+      /* Change the background color when hovered */
+      #dark-mode-toggle:hover {
+        background-color: #e0e0e0;
+      }
+
+      /* Dark mode icon styles */
+      #dark-mode-toggle ion-icon {
+        font-size: 24px;
+        color: #333;
+      }
+
+      /* Dark mode toggle active state */
+      body.dark-mode #dark-mode-toggle {
+        background-color: #333;
+      }
+      body.dark-mode #dark-mode-toggle ion-icon {
+        color: #fff;
+      }
+
+      /* Mouse animation styling */
+      .mouse-scroll {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .mouse {
+        width: 35px;
+        height: 55px;
+        border: 2px solid #333;
+        border-radius: 25px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .scroll-wheel {
+        width: 4px;
+        height: 8px;
+        background-color: #333;
+        border-radius: 2px;
+        position: absolute;
+        top: 10px;
+        animation: scroll 1.5s infinite;
+      }
+
+      @keyframes scroll {
+        0% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+      }
+
+      .scroll-arrow {
+        margin-top: 10px;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid #333;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="home">
       <div class="container">
         Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
+        
+        <!-- Mouse Scroll Animation -->
+        <div class="mouse-scroll">
+          <div class="mouse">
+            <span class="scroll-wheel"></span>
+          </div>
+          <div>
+            <span class="scroll-arrow"></span>
+          </div>
+        </div>
+        
         <a class="button" href="#about">Know more</a>
       </div>
     </div>
@@ -47,101 +160,55 @@
       </div>
       <div class="bottomC"></div>
     </div>
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="button">
-      <ion-icon name="chevron-up-outline"></ion-icon>
+
+    <!-- Dark mode toggle button at the top-right corner -->
+    <button id="dark-mode-toggle" class="button">
+      <ion-icon name="moon-outline"></ion-icon>
     </button>
 
-    <!-- <div class="projectC">
-      <div class="main">
-        <div class="textBig">
-          &ThickSpace;&ThickSpace;&MediumSpace;PROJECTS ⚡
-        </div>
-
-        <div class="textSmall">
-          I am currently working on some Projects. Check them out!
-        </div>
-        <div class="btnCont">
-          <button
-            class="btn btn-custom btn-lg"
-            style="
-              font-family: Poppins;
-              font-weight: 400;
-              padding: 19.2px 34.3px !important;
-              font-size: 18.5px;
-            "
-          >
-            Check It Out
-          </button>
-        </div>
-      </div>
-    </div>
-  -->
-    <!-- <div class="contactC">
-      <div class="main">
-        <div class="textBig">
-          &ThickSpace;&ThickSpace;&MediumSpace;CONTACT 👋🏻
-        </div>
-
-        <div class="textSmall">
-         Say Hi!
-        </div>
-        <div class="btnCont">
-          <button
-            class="btn btn-custom btn-lg"
-            style="
-              font-family: Poppins;
-              font-weight: 400;
-              padding: 19.2px 34.3px !important;
-              font-size: 18.5px;
-            "
-          >
-            Follow Me
-          </button>
-        </div>
-      </div>
-    </div> -->
-
-
-<!-- services section start -->
+    <!-- Services section start -->
     <div class="servicesC">
       <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;SERVICES 🛠️</div>
       <div class="titleGap"></div>
       <div class="titleSmall">What I Offer</div>
       <div class="container">
-          <div class="serviceItem">
-              <div class="serviceIcon">
-                  <ion-icon name="laptop-outline"></ion-icon>
-              </div>
-              <div class="serviceText">
-                  <div class="text">Web Development</div>
-                  <div class="textMain">Building responsive and high-quality websites.</div>
-              </div>
+        <div class="serviceItem">
+          <div class="serviceIcon">
+            <ion-icon name="laptop-outline"></ion-icon>
           </div>
-          <div class="serviceItem">
-              <div class="serviceIcon">
-                  <ion-icon name="brush-outline"></ion-icon>
-              </div>
-              <div class="serviceText">
-                  <div class="text">UI/UX Design</div>
-                  <div class="textMain">Designing user-friendly interfaces and experiences.</div>
-              </div>
+          <div class="serviceText">
+            <div class="text">Web Development</div>
+            <div class="textMain">
+              Building responsive and high-quality websites.
+            </div>
           </div>
-          <div class="serviceItem">
-              <div class="serviceIcon">
-                  <ion-icon name="stats-chart-outline"></ion-icon>
-              </div>
-              <div class="serviceText">
-                  <div class="text">SEO Expert</div>
-                  <div class="textMain">Optimizing websites for better search engine ranking.</div>
-              </div>
+        </div>
+        <div class="serviceItem">
+          <div class="serviceIcon">
+            <ion-icon name="brush-outline"></ion-icon>
           </div>
+          <div class="serviceText">
+            <div class="text">UI/UX Design</div>
+            <div class="textMain">
+              Designing user-friendly interfaces and experiences.
+            </div>
+          </div>
+        </div>
+        <div class="serviceItem">
+          <div class="serviceIcon">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+          </div>
+          <div class="serviceText">
+            <div class="text">SEO Expert</div>
+            <div class="textMain">
+              Optimizing websites for better search engine ranking.
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-<!-- services section end -->
+    </div>
 
     <div class="footer">
-      <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
       <span
         >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
       </span>

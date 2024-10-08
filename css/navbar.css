@@ -9,9 +9,13 @@
     justify-content: space-between;
     align-items: last baseline;
     top: 0;
+    background-color: #ffffff70;
     width: 100%;
+ /* backdrop-filter: blur(3px);  */
+
     font-family: Montserrat;
     padding: 1em;
+    transition:.3s;
 
 }
 
@@ -28,13 +32,13 @@
 }
 
 .navbar-right a {
-    padding: 0.25em 0.5em;
+    padding: 0.4em 0.6em;
+    border-radius: 4.75px;
 
 }
 
 .navbar-right a:hover {
     background-color: #01b3af;
     color: white;
-    transition: color 200ms ease-in;
-    transition: background-color 200ms ease-in-out;
+  
 }

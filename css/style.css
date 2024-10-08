@@ -100,19 +100,46 @@ a:visited {
   align-items: center;
   justify-content: center;
 }
-
 .home .container {
-  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  
+}
+.home .container .text-sec {
+  width: 70%;
   height: 225px;
   background-color: none;
   color: #272341;
-  font-size: 56px;
+  font-size: 45px;
   font-family: Montserrat;
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  margin-right: 3rem;
+  margin-top: 3rem;
+
 }
 
+ .container .img-sec {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin-left: 2rem;
+  overflow: hidden;
+  border: 15px solid #4444;
+  box-shadow: 5px 7px 25px rgba(0, 0, 0, 5);
+ }
+
+ .img-sec img{
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+ }
+
+ .img-sec img:hover{
+  transform: scale(1.2);
+ }
 .home .container span {
   color: #01b3af;
 }
@@ -128,7 +155,7 @@ a:visited {
 .home .container a.button {
   position: relative;
   display: flex;
-  top: 30px;
+  top: 56px;
   padding: 5.5px 13.5px;
   width: fit-content;
   height: fit-content;
@@ -146,9 +173,11 @@ a:visited {
   background-color: #01b3af;
 }
 
+
+
 @media screen and (max-width: 915px) {
-  .home .container {
-    font-size: 41px;
+  .home .container .text-sec {
+    font-size: 35px;
     text-align: center;
     line-height: 1.5em;
     position: relative;

@@ -138,12 +138,16 @@ a:visited {
   font-family: Montserrat;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  background: linear-gradient(to right, #01b3af 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all .25s ease-out;
 }
 
 .home .container a.button:hover {
   color: #fff;
-  background-color: #01b3af;
+  background-position: left;
+
 }
 
 @media screen and (max-width: 915px) {

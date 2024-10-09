@@ -760,6 +760,10 @@ a:visited {
 
 
 /*  Education Section Styling */
+.white-emoji {
+  color: white; /* Set emoji color to white */
+  font-size: 24px; /* Adjust the size if necessary */
+}
 
 .section-title {
   font-size: 2.5rem;
@@ -907,4 +911,28 @@ a:visited {
    width: 15px;
    height: 15px;
   }
+}
+.text {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 25.5px;
+  color: #01b3af;
+  background-color: none;
+}
+
+.textMain {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  color: #777;
+  line-height: 1.9em;
+  background-color: none;
 }

@@ -48,3 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+const light=document.getElementById('theme')
+light.addEventListener('click',()=>{
+  const element=document.body
+  element.classList.toggle('dark')
+  if(light.innerHTML==='Dark'){
+    light.innerHTML="Light"
+  }
+ else if(light.innerHTML==='Light'){
+    light.innerHTML="Dark"
+  }
+})

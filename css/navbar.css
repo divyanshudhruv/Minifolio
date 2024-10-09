@@ -2,21 +2,21 @@
 
 
 .navbar {
-    color: white;
+    color: #1a1a1a;
     display: flex;
     position: fixed;
     z-index: 3;
     justify-content: space-between;
     align-items: last baseline;
     top: 0;
-    background-color: #01b3af;
+    background-color: #ffffff70;
     width: 100%;
-    box-shadow: 0 3px 4px 0 rgba(1, 179, 175, .2);
-    /* backdrop-filter: blur(3px);  */
+ /* backdrop-filter: blur(3px);  */
 
     font-family: Montserrat;
     padding: 1em;
-    transition: .3s;
+    transition:.3s;
+
 }
 
 .navbar-logo {
@@ -38,5 +38,41 @@
 }
 
 .navbar-right a:hover {
-    color: #1a1a1a;
+    background-color: #01b3af;
+    color: white;
+    
 }
+
+#navToggle{
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+#navToggle.active{
+    transform: rotate(45deg);
+}
+
+#navContent{
+    display: none;
+}
+
+#navContent.active{
+   display:block;
+   
+}
+
+body.dark .navbar{
+    background-color: black;
+  }
+
+  body.dark .navbar-right{
+    color: white;
+    transition:.3s;
+  }
+  body.dark .navbar-logo{
+    color: white;
+    transition:.3s;
+  }

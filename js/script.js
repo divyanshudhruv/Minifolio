@@ -20,3 +20,34 @@ window.addEventListener("scroll", () => {
         backToTopButton.style.display = "none";
     }
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('navToggle');
+    const navContent = document.getElementById('navContent');
+
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navContent.classList.toggle('active');
+
+        // Change the button text based on state
+        if (navToggle.classList.contains('active')) {
+            navToggle.textContent = '+';  // This becomes an X when rotated 45 degrees
+        } else {
+            navToggle.textContent = '☰';
+        }
+    });
+
+    // Close nav when clicking on a link
+    const navLinks = navContent.getElementsByTagName('a');
+    for (let link of navLinks) {
+        link.addEventListener('click', () => {
+            navContent.classList.remove('active');
+            navToggle.classList.remove('active');
+            navToggle.textContent = '☰';
+        });
+    }
+});

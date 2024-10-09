@@ -41,6 +41,7 @@ a {
   text-decoration: none;
   width: fit-content;
   display: flex;
+  cursor: pointer;
 }
 
 a:link {
@@ -87,6 +88,8 @@ a:visited {
 ::selection {
   background: aliceblue;
 }
+
+
 
 /*================*/
 /*===Home Page===*/

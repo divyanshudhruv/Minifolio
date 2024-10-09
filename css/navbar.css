@@ -11,7 +11,7 @@
     top: 0;
     background-color: #ffffff70;
     width: 100%;
- /* backdrop-filter: blur(3px);  */
+    backdrop-filter: blur(10px); 
 
     font-family: Montserrat;
     padding: 1em;
@@ -23,6 +23,7 @@
     font-weight: bold;
     font-size: 1.25em;
     cursor: pointer;
+    color: #110f1d;
 }
  
 .navbar-right ul {
@@ -34,7 +35,6 @@
 .navbar-right a {
     padding: 0.4em 0.6em;
     border-radius: 4.75px;
-
 }
 
 .navbar-right a:hover {

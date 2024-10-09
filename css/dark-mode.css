@@ -1,0 +1,38 @@
+.dark-mode {
+    background-color: #110f1d;
+    color: white;
+  }
+
+.dark-mode .navbar {
+    background-color: #110f1d70;
+}
+
+.dark-mode .navbar-logo {
+    color: #01b3af;
+}
+
+.dark-mode .navbar-right a {
+    padding: 0.4em 0.6em;
+    border-radius: 4.75px;
+    color: #fff;
+}
+  
+  .dark-mode .home .container #role {
+    color: aliceblue;
+  }
+  
+  .dark-mode .home .container .typed-cursor {
+    color: aliceblue;
+  }
+  
+  .dark-mode .title {
+    color: aliceblue;
+  }
+  
+  .dark-mode .container {
+    color: aliceblue;
+  }
+  
+  .dark-mode .event-content {
+    background-color: #4a4184;
+  }

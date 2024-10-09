@@ -70,7 +70,7 @@ a:visited {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f1;#01b3b0
 }
 
 /* Handle */
@@ -887,7 +887,7 @@ a:visited {
 /* Hover Effect */
 .event-content:hover {
   transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  box-shadow: 0px 8px 16px rgb(1, 179, 176, 0.2); /* Add shadow on hover */
 }
 
 /* Responsive Styles */

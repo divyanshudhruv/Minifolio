@@ -3,6 +3,36 @@
     color: white;
   }
 
+
+
+  
+/*================*/
+/*===Scroll Bar===*/
+/*===============*/
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #008785a1;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #008785c8;
+  }
+
+
+
+
+
+
+
+
+
+
 .dark-mode .navbar {
     background-color: #00040f70;
 }
@@ -17,11 +47,20 @@
     color: #fff;
 }
 
-.dark-mode .container .button {
-    background-color: #00040f;
+.dark-mode .home .container a.button {
+  background: linear-gradient(to right, #01b3af 50%, #00040f 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all .25s ease-out;
 }
-  
-  .dark-mode .home .container #role {
+
+.home .container a.button:hover {
+  color: #fff;
+  background-position: left;
+
+}
+
+.dark-mode .home .container #role {
     color: aliceblue;
   }
   
@@ -38,5 +77,5 @@
   }
   
   .dark-mode .event-content {
-    background-color: #4a4184;
-  }
+    box-shadow: 2px 3px 0px #01b3b096;
+}

@@ -40,5 +40,39 @@
 .navbar-right a:hover {
     background-color: #01b3af;
     color: white;
-  
+    
 }
+
+#navToggle{
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+#navToggle.active{
+    transform: rotate(45deg);
+}
+
+#navContent{
+    display: none;
+}
+
+#navContent.active{
+   display:block;
+   
+}
+
+body.dark .navbar{
+    background-color: black;
+  }
+
+  body.dark .navbar-right{
+    color: white;
+    transition:.3s;
+  }
+  body.dark .navbar-logo{
+    color: white;
+    transition:.3s;
+  }

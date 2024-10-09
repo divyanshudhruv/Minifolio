@@ -289,7 +289,6 @@ a:visited {
   font-weight: 300;
   font-size: 25.5px;
   color: #01b3af;
-  background-color: none;
 }
 
 .aboutC .container .leftC .textMain {
@@ -888,7 +887,7 @@ a:visited {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   .event-item {
     flex-direction: column;
     margin: 1.5rem;
@@ -942,4 +941,37 @@ a:visited {
   color: #777;
   line-height: 1.9em;
   background-color: none;
+}
+
+.dark{
+  background-color: black;
+  
+}
+
+#theme{
+  background: none;
+  padding: 5px;
+  border: none;
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+body.dark .container{
+   color: white;
+}
+
+body.dark .title{
+  color: white;
+}
+
+body.dark .container #role{
+  color: white;
+}
+
+body.dark .container .leftC .textMain{
+  background-color: rgb(185, 185, 185);
+}
+
+body.dark #navToggle{
+  color: white;
 }

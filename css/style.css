@@ -661,6 +661,51 @@ a:visited {
 
 }
 
+/*================*/
+/*===Blog===*/
+/*===============*/
+
+.BLOG-SECTION {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  
+}
+
+.BLOG {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  width: 500px;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+#heading {
+  color: #01b3af;
+  font-size: 3rem;
+}
+
+#content {
+  color: #272341;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#link {
+  padding: 20px 40px;
+  background-color: #02aba8;
+  border-radius: 10px;
+  color: #f8f8f8;
+  font-weight: 600 ;
+}
+
+#link:hover{
+  background-color: #009794;
+}
 
 /*================*/
 /*===Footer===*/
@@ -669,7 +714,7 @@ a:visited {
 .footer {
   display: flex;
   position: relative;
-  width: 650px;
+  width: 950px;
   background-color: none;
   align-items: center;
   justify-content: center;

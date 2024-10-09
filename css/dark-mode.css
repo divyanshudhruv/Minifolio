@@ -12,23 +12,18 @@
   
   /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    /* border: 1px solid #008785; */
+    background-color: #00040f;
   }
   
   /* Handle */
-::-webkit-scrollbar-thumb {
-    background: #008785a1;
+ ::-webkit-scrollbar-thumb {
+    background: #01b3afd4;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background: #008785c8;
+  .dark-mode  ::-webkit-scrollbar-thumb:hover {
+    background: #01b3afc8;
   }
-
-
-
-
-
-
 
 
 
@@ -77,5 +72,5 @@
   }
   
   .dark-mode .event-content {
-    box-shadow: 2px 3px 0px #01b3b096;
+    box-shadow: 2px 3px 0px #01b3b0d0;
 }

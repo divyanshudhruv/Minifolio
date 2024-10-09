@@ -101,6 +101,11 @@ a:visited {
   justify-content: center;
 }
 
+.home #profile-image{
+  width: 550px;
+  height: 550px;
+}
+
 .home .container {
   width: 95%;
   height: 225px;

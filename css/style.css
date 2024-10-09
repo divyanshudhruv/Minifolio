@@ -1,7 +1,6 @@
 /*================*/
 /*===Fonts===*/
 /*===============*/
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600&display=swap");
@@ -9,19 +8,34 @@
 /*================*/
 /*===HTML===*/
 /*===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+  outline: none;
+}
 
 body {
   background-color: #fff;
+  color: black;
   padding: 0;
   margin: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   flex-wrap: wrap;
   transition: background-color 0.3s, color 0.3s;
   outline: none;
 }
-/* Mouse animation styling */
+
+/*================*/
+/*===Mouse Animation===*/
+/*===============*/
 .mouse-scroll {
   position: absolute;
   bottom: 40px;
@@ -29,7 +43,6 @@ body {
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .mouse {
@@ -86,24 +99,9 @@ body {
   }
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  transition: 0.3s;
-}
-
-html {
-  scroll-behavior: smooth;
-  outline: none;
-}
-
-/* Default (light) theme styles */
-body {
-  background-color: white;
-  color: black;
-}
-
+/*================*/
+/*===Default (Light) Theme===*/
+/*===============*/
 .container {
   color: black;
 }
@@ -118,7 +116,9 @@ body {
   color: black;
 }
 
-/* Dark mode styles */
+/*================*/
+/*===Dark Mode Styles===*/
+/*===============*/
 .dark-mode body {
   background-color: #1a1a2e;
   color: white;
@@ -141,18 +141,13 @@ body {
 /*================*/
 /*===Links===*/
 /*===============*/
-
 a {
   text-decoration: none;
   width: fit-content;
   display: flex;
 }
 
-a:link {
-  color: currentColor;
-}
-
-a:visited {
+a:link, a:visited {
   color: currentColor;
 }
 
@@ -166,7 +161,6 @@ a:visited {
 /*================*/
 /*===Scroll Bar===*/
 /*===============*/
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -186,7 +180,6 @@ a:visited {
 /*================*/
 /*===Text Selection===*/
 /*===============*/
-
 ::selection {
   background: aliceblue;
 }
@@ -194,12 +187,10 @@ a:visited {
 /*================*/
 /*===Home Page===*/
 /*===============*/
-
 .home {
   display: flex;
   width: 1150px;
   height: 100vh;
-  background-color: none;
   align-items: center;
   justify-content: center;
 }
@@ -207,7 +198,6 @@ a:visited {
 .home .container {
   width: 95%;
   height: 225px;
-  background-color: none;
   color: #272341;
   font-size: 56px;
   font-family: Montserrat;
@@ -233,8 +223,6 @@ a:visited {
   display: flex;
   top: 30px;
   padding: 5.5px 13.5px;
-  width: fit-content;
-  height: fit-content;
   border: 2px solid #01b3af;
   color: #01b3af;
   font-size: 24px;
@@ -254,14 +242,10 @@ a:visited {
     font-size: 41px;
     text-align: center;
     line-height: 1.5em;
-    position: relative;
   }
 
-  .home .container .button {
-    position: relative;
+  .home .container a.button {
     line-height: normal !important;
-    left: 0;
-    right: 0;
     margin: auto;
   }
 }
@@ -269,13 +253,10 @@ a:visited {
 /*================*/
 /*===About===*/
 /*===============*/
-
 .aboutC {
   display: flex;
   position: relative;
   width: 100%;
-  height: fit-content;
-  background-color: none;
   min-height: 600px;
   align-items: start;
   justify-content: start;
@@ -287,10 +268,7 @@ a:visited {
 .aboutC .title {
   display: flex;
   position: relative;
-  top: 0;
   width: 750px;
-  left: 0;
-  right: 0;
   margin: auto;
   height: 75px;
   align-items: center;
@@ -298,7 +276,6 @@ a:visited {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 55px;
-  background-color: none;
   text-align: center;
   color: #272341;
   letter-spacing: 0.5px;
@@ -306,11 +283,8 @@ a:visited {
 
 .aboutC .titleSmall {
   display: flex;
-  top: 0;
   position: relative;
   width: 750px;
-  left: 0;
-  right: 0;
   margin: auto;
   height: 57.5px;
   align-items: center;
@@ -318,10 +292,8 @@ a:visited {
   font-family: Poppins;
   font-weight: 300;
   font-size: 18px;
-  background-color: none;
   text-align: center;
   color: #96989b;
-  flex-wrap: wrap;
   letter-spacing: 0.3px;
 }
 
@@ -329,13 +301,9 @@ a:visited {
   display: flex;
   position: relative;
   width: 750px;
-  height: fit-content;
   min-height: 292.5px;
-  background-color: none;
   align-items: start;
   justify-content: space-between;
-  left: 0;
-  right: 0;
   margin: auto;
 }
 
@@ -351,7 +319,6 @@ a:visited {
 @media screen and (max-width: 915px) {
   .aboutC .title {
     font-size: 43px;
-    left: 5px;
     width: 300px;
   }
 
@@ -373,7 +340,6 @@ a:visited {
 
   .aboutC .container .rightC {
     width: 100%;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
   }
@@ -382,17 +348,13 @@ a:visited {
 /*================*/
 /*===Footer===*/
 /*===============*/
-
 .footer {
   display: flex;
   position: relative;
   width: 650px;
-  background-color: none;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  left: 0;
-  right: 0;
   margin: auto;
   text-align: center;
   font-size: 15px;
@@ -402,8 +364,7 @@ a:visited {
   letter-spacing: 1px;
   border-top: 1.89px solid #ddd;
   min-height: 60px;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding: 5px 0 10px;
 }
 
 .footer span .icon-heart {
@@ -437,13 +398,8 @@ a:visited {
     font-size: 17px;
   }
 
-  .aboutC .container .leftC .textMain {
-    font-size: 17px;
-  }
-
+  .aboutC .container .leftC .textMain,
   .aboutC .container .rightC .textMain {
     font-size: 17px;
   }
 }
-
-

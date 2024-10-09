@@ -6,8 +6,8 @@
     <title>Minifolio</title>
     <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <style>
       /* Dark mode toggle button styles */
@@ -111,12 +111,204 @@
           transform: translateY(-5px);
         }
       }
+
+      /* Home section */
+      .home {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .home .container {
+        color: #272341;
+        font-size: 56px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .home .container span {
+        color: #01b3af;
+      }
+
+      .home .container a.button {
+        position: relative;
+        display: inline-block;
+        top: 30px;
+        padding: 5.5px 13.5px;
+        border: 2px solid #01b3af;
+        color: #01b3af;
+        font-size: 24px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .home .container a.button:hover {
+        color: #fff;
+        background-color: #01b3af;
+      }
+
+      /* About section */
+      .aboutC {
+        display: flex;
+        position: relative;
+        width: 100%;
+        min-height: 600px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .aboutC .title {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 55px;
+        color: #272341;
+        margin: 20px 0;
+      }
+
+      .aboutC .titleSmall {
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #96989b;
+        margin-bottom: 20px;
+      }
+
+      .aboutC .container {
+        display: flex;
+        width: 750px;
+        margin: auto;
+      }
+
+      .aboutC .container .leftC {
+        width: 60%;
+        padding-right: 50px;
+        text-align: left;
+      }
+
+      .aboutC .container .rightC {
+        width: 32%;
+      }
+
+      /* Services section */
+      .servicesC {
+        padding: 50px 0;
+      }
+
+      .servicesC .title {
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        font-size: 55px;
+        color: #272341;
+        text-align: center;
+      }
+
+      .servicesC .titleSmall {
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        color: #96989b;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .serviceItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .serviceIcon {
+        margin-right: 15px;
+        font-size: 24px;
+      }
+
+      .serviceText .text {
+        font-weight: bold;
+      }
+
+      /* Footer section */
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-family: Poppins, sans-serif;
+        color: #96989b;
+        padding: 10px 0;
+        border-top: 1.89px solid #ddd;
+      }
+
+      .footer span .icon-heart {
+        color: #f87272;
+        font-size: 24px;
+      }
+
+      .footer a {
+        color: #96989b;
+        transition: 0.3s;
+      }
+
+      .footer a:hover {
+        color: #666;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 915px) {
+        .home .container {
+          font-size: 41px;
+        }
+
+        .aboutC .title {
+          font-size: 43px;
+        }
+
+        .aboutC .titleSmall {
+          font-size: 19.5px;
+        }
+
+        .aboutC .container {
+          flex-direction: column;
+          width: 90%;
+        }
+
+        .aboutC .container .leftC,
+        .aboutC .container .rightC {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+
+      @media screen and (max-width: 315px) {
+        .home .container {
+          font-size: 35px;
+        }
+
+        .home .container a.button {
+          font-size: 17px;
+        }
+
+        .aboutC .container .leftC .textMain,
+        .aboutC .container .rightC .textMain {
+          font-size: 17px;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="home">
       <div class="container">
-        Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
+        Hi, my name is <span>Your Name</span> <br />
+        I'm <span id="role"></span>
         
         <!-- Mouse Scroll Animation -->
         <div class="mouse-scroll">
@@ -131,14 +323,12 @@
         <a class="button" href="#about">Know more</a>
       </div>
     </div>
-    <div class="px50"></div>
+    
     <div class="px50" id="about"></div>
 
     <div class="aboutC">
       <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
-      <div class="titleGap"></div>
       <div class="titleSmall">This and that</div>
-      <div class="containerGap"></div>
       <div class="container">
         <div class="leftC">
           <div class="text">Hi, I'm a developer</div>
@@ -158,7 +348,6 @@
           </div>
         </div>
       </div>
-      <div class="bottomC"></div>
     </div>
 
     <!-- Dark mode toggle button at the top-right corner -->
@@ -169,7 +358,6 @@
     <!-- Services section start -->
     <div class="servicesC">
       <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;SERVICES 🛠️</div>
-      <div class="titleGap"></div>
       <div class="titleSmall">What I Offer</div>
       <div class="container">
         <div class="serviceItem">
@@ -209,23 +397,17 @@
     </div>
 
     <div class="footer">
-      <span
-        >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
-      </span>
-      <span style="position: relative; top: -3.2px"
-        >&nbsp;Template Developed With
-        <span class="icon-heart"
-          ><ion-icon
-            name="heart"
-            style="position: relative; top: 5px"
-          ></ion-icon
-        ></span>
-        By
+      <span>Copyright ©<span id="copyright-year"></span> All Rights Reserved |</span>
+      <span style="position: relative; top: -3.2px">&nbsp;Template Developed With
+        <span class="icon-heart">
+          <ion-icon name="heart" style="position: relative; top: 5px"></ion-icon>
+        </span> By
       </span>
       <span>
         <a href="https://github.com/divyanshudhruv">&nbsp;Divyanshu Dhruv</a>
       </span>
     </div>
+
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>

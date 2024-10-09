@@ -11,15 +11,15 @@
 /*===============*/
 
 body {
-  background-color: #fff  ;
-  padding: 0  ;
-  margin: 0  ;
-  align-items: center  ;
-  justify-content: center  ;
-  display: flex  ;
-  flex-wrap: wrap  ;
-  transition: 0.3s  ;
-  outline: none  ;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.3s;
+  outline: none;
 }
 
 * {
@@ -28,6 +28,7 @@ body {
   margin: 0;
   transition: 0.3s;
 }
+
 html {
   scroll-behavior: smooth;
   outline: none;
@@ -76,6 +77,7 @@ a:visited {
 ::-webkit-scrollbar-thumb {
   background: #ddd;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ccc;
 }
@@ -178,6 +180,7 @@ a:visited {
   height: fit-content;
   background-color: none;
   min-height: 600px;
+  padding-top: 110px;
   align-items: start;
   justify-content: start;
   overflow: hidden;
@@ -220,6 +223,7 @@ a:visited {
   height: 50px;
   background-color: none;
 }
+
 .aboutC .titleSmall {
   display: flex;
   top: 0;
@@ -330,6 +334,7 @@ a:visited {
   color: #01b3af;
   background-color: none;
 }
+
 .aboutC .container .rightC .textMain {
   display: flex;
   position: relative;
@@ -727,6 +732,7 @@ a:visited {
   .home .container a.button {
     font-size: 17px;
   }
+
   .aboutC .container .leftC .textMain {
     font-size: 17px;
   }
@@ -738,7 +744,8 @@ a:visited {
 
 @media screen and (max-width: 480px) {
   .btn.btn-about {
-    margin-top: 90px; /* Increased the top margin of the button */
+    margin-top: 90px;
+    /* Increased the top margin of the button */
   }
 
   .aboutC .container {

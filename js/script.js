@@ -22,9 +22,6 @@ window.addEventListener("scroll", () => {
 });
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('navToggle');
     const navContent = document.getElementById('navContent');
@@ -32,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navToggle.addEventListener('click', () => {
         navToggle.classList.toggle('active');
         navContent.classList.toggle('active');
-
+      
         // Change the button text based on state
         if (navToggle.classList.contains('active')) {
             navToggle.textContent = '+';  // This becomes an X when rotated 45 degrees

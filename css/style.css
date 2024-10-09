@@ -664,6 +664,151 @@ a:visited {
   font-family: "Montserrat" !important;
 
 }
+/* Contact Section */
+.contactC {
+  background: linear-gradient(135deg, #f0f0f5, #ffffff);
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.contactC .title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contactC .titleSmall {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contactC .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contactC .leftC {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.contactC .leftC .text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contactC .leftC .textMain {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #777;
+}
+
+.contactC .rightC {
+  flex: 1;
+  padding: 20px;
+}
+
+.contactC .form-group {
+  margin-bottom: 15px;
+}
+
+.contactC label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactC input[type="text"],
+.contactC input[type="email"],
+.contactC textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.contactC input[type="text"]:focus,
+.contactC input[type="email"]:focus,
+.contactC textarea:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+.contactC textarea {
+  resize: vertical;
+}
+
+.contactC .button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contactC .button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.contactC .button:focus {
+  outline: none;
+}
+
+.contactC .button:active {
+  transform: scale(0.98);
+  transition: transform 0.1s;
+}
+
+.contactC .rightC form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Form Animation */
+.contactC input[type="text"],
+.contactC input[type="email"],
+.contactC textarea {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactC input[type="text"]:hover,
+.contactC input[type="email"]:hover,
+.contactC textarea:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactC input[type="text"]:focus,
+.contactC input[type="email"]:focus,
+.contactC textarea:focus {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
+}
 
 
 /*================*/

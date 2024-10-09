@@ -21,6 +21,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -276,7 +277,64 @@
       </div>
     </div>
     <!-- services section end -->
+     <!-- Contact Section -->
+    <div id="contact" class="contactC" >
+      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;CONTACT 👋</div>
+      <div class="titleGap"></div>
+      <div class="titleSmall">Get in Touch</div>
+      <div class="containerGap"></div>
 
+      <div class="container">
+        <div class="leftC">
+          <div class="text">Let's Connect!</div>
+          <br />
+          <div class="textMain">
+            I'm available for freelance work, collaborations, or any general
+            inquiries. Feel free to send me a message below.
+          </div>
+        </div>
+
+        <div class="rightC">
+          <form action="submit-form.php" method="POST">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+
+            <button class="button" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Contact section end-->
     <div class="footer">
       <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
       <span

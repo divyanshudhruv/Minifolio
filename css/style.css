@@ -850,6 +850,9 @@ a:visited {
 .event-time {
   color: #6b7280;
   margin-bottom: 10px;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 17px;
 }
 
 /* Animation Keyframes for Pop-Up Effect */

@@ -1,0 +1,945 @@
+/*================*/
+/*===Fonts===*/
+/*===============*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700");
+
+/*================*/
+/*===HTML===*/
+/*===============*/
+
+body {
+  background-color: #fff  ;
+  padding: 0  ;
+  margin: 0  ;
+  align-items: center  ;
+  justify-content: center  ;
+  display: flex  ;
+  flex-wrap: wrap  ;
+  transition: 0.3s  ;
+  outline: none  ;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+}
+html {
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+/*================*/
+/*===Links===*/
+/*===============*/
+
+a {
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+}
+
+a:link {
+  color: currentColor;
+}
+
+/* visited link */
+a:visited {
+  color: currentColor;
+}
+
+.px50 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+
+/*================*/
+/*===Scroll Bar===*/
+/*===============*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+/*================*/
+/*===Text Selection===*/
+/*===============*/
+
+::selection {
+  background: aliceblue;
+}
+
+/*================*/
+/*===Home Page===*/
+/*===============*/
+
+.home {
+  display: flex;
+  width: 1150px;
+  height: 100vh;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .container {
+  width: 95%;
+  height: 225px;
+  background-color: none;
+  color: #272341;
+  font-size: 56px;
+  font-family: Montserrat;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .container span {
+  color: #01b3af;
+}
+
+.home .container #role {
+  color: #272341;
+}
+
+.home .container .typed-cursor {
+  color: #272341;
+}
+
+.home .container a.button {
+  position: relative;
+  display: flex;
+  top: 30px;
+  padding: 5.5px 13.5px;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid #01b3af;
+  color: #01b3af;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(to right, #01b3af 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all .25s ease-out;
+}
+
+.home .container a.button:hover {
+  color: #fff;
+  background-position: left;
+
+}
+
+@media screen and (max-width: 915px) {
+  .home .container {
+    font-size: 41px;
+    text-align: center;
+    line-height: 1.5em;
+    position: relative;
+  }
+
+  .home .container .button {
+    position: relative;
+    line-height: normal !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+/*================*/
+/*===About===*/
+/*===============*/
+
+.aboutC {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: none;
+  min-height: 600px;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.aboutC .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+}
+
+.aboutC .titleGap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 25px;
+  background-color: none;
+}
+
+.aboutC .containerGap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: none;
+}
+.aboutC .titleSmall {
+  display: flex;
+  top: 0;
+  position: relative;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 57.5px;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: none;
+  text-align: center;
+  color: #96989b;
+  flex-wrap: wrap;
+  letter-spacing: 0.3px;
+}
+
+.aboutC .bottomC {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background-color: none;
+}
+
+.aboutC .container {
+  display: flex;
+  position: relative;
+  width: 750px;
+  height: fit-content;
+  min-height: 292.5px;
+  background-color: none;
+  align-items: start;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.aboutC .container .leftC {
+  display: flex;
+  position: relative;
+  width: 60%;
+  padding-right: 50px;
+  height: fit-content;
+  min-height: 292.5px;
+  background-color: none;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.aboutC .container .leftC .text {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 25.5px;
+  color: #01b3af;
+  background-color: none;
+}
+
+.aboutC .container .leftC .textMain {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  color: #777;
+  line-height: 1.9em;
+  background-color: none;
+}
+
+.aboutC .container .rightC {
+  display: flex;
+  position: relative;
+  width: 32%;
+  height: fit-content;
+  min-height: 292.5px;
+  background-color: none;
+  padding-top: 10px;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.aboutC .container .rightC .text {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 25.5px;
+  color: #01b3af;
+  background-color: none;
+}
+.aboutC .container .rightC .textMain {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  color: #777;
+  line-height: 1.9em;
+  background-color: none;
+}
+
+.aboutC .container .rightC .btnC {
+  display: flex;
+  position: relative;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+  height: fit-content;
+  min-height: 90px;
+  background-color: none;
+}
+
+@media screen and (max-width: 915px) {
+  .aboutC .title {
+    font-size: 43px;
+    left: 5px;
+    width: 300px;
+  }
+
+  .aboutC .titleSmall {
+    font-size: 19.5px;
+    width: 200px;
+  }
+
+  .aboutC .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  .aboutC .container .leftC {
+    width: 100%;
+    padding-right: 0;
+    min-height: 225px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutC .container .rightC {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutC .container .rightC .textMain {
+    width: 50%;
+  }
+
+  .aboutC .container .rightC .btnC {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 40px;
+  }
+}
+
+/*================*/
+/*===Projects===*/
+/*===============*/
+/*
+.projectC {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: none;
+}
+
+.projectC .main {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  background-color: none;
+}
+
+.projectC .main .textBig {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 90px;
+  width: 100%;
+  height: 230px;
+  align-items: start;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 58px;
+  background-color: none;
+  text-align: center;
+  line-height: 1.2em;
+  color: #272341;
+  letter-spacing: 0.5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.projectC .main .textSmall {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+  width: 70%;
+  height: 230px;
+  align-items: start;
+  justify-content: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: none;
+  text-align: center;
+  line-height: 1.2em;
+  color: #96989b;
+  flex-wrap: wrap;
+  letter-spacing: 0.3px;
+  flex-direction: row;
+}
+
+.projectC .main .btnCont {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: none;
+} */
+
+/*================*/
+/*===Contact===*/
+/*===============*/
+/*
+.contactC {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: none;
+}
+
+.contactC .main {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  background-color: none;
+}
+
+.contactC .main .textBig {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 90px;
+  width: 100%;
+  height: 230px;
+  align-items: start;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 58px;
+  background-color: none;
+  text-align: center;
+  line-height: 1.2em;
+  color: #272341;
+  letter-spacing: 0.5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contactC .main .textSmall {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 200px;
+  width: 70%;
+  height: 230px;
+  align-items: start;
+  justify-content: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: none;
+  text-align: center;
+  line-height: 1.2em;
+  color: #96989b;
+  flex-wrap: wrap;
+  letter-spacing: 0.3px;
+  flex-direction: row;
+}
+
+.contactC .main .btnCont {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: none;
+} */
+
+/*================*/
+/*===Services Section===*/
+/*===============*/
+
+.servicesC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.servicesC .title {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 55px;
+  color: #272341;
+}
+
+.servicesC .titleGap {
+  height: 20px;
+}
+
+.servicesC .titleSmall {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #96989b;
+}
+
+.servicesC .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 20px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px);
+}
+
+.serviceIcon {
+  font-size: 40px;
+  color: #01b3af;
+  margin-bottom: 10px;
+}
+
+.serviceText {
+  text-align: center;
+  font-family: "Poppins" !important;
+  font-size: 15px;
+
+}
+
+.serviceText .text {
+  font-weight: bold;
+  font-size: 20px;
+  color: #272341;
+  font-family: "Poppins" !important;
+  margin-bottom: 10px;
+
+}
+
+.serviceText .textMain {
+  font-size: 16px;
+  color: #555;
+  font-family: "Montserrat" !important;
+
+}
+
+
+/*================*/
+/*===Footer===*/
+/*===============*/
+
+.footer {
+  display: flex;
+  position: relative;
+  width: 650px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
+  flex-wrap: wrap;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #96989b;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-top: 1.89px solid #ddd;
+  min-height: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer span .icon-heart {
+  color: #f87272;
+  font-size: 24px;
+}
+
+.footer span a {
+  display: inline !important;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  font-weight: 300;
+  color: #666;
+}
+
+@media screen and (max-width: 915px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .home .container {
+    font-size: 35px;
+  }
+
+  .home .container a.button {
+    font-size: 17px;
+  }
+  .aboutC .container .leftC .textMain {
+    font-size: 17px;
+  }
+
+  .aboutC .container .rightC .textMain {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn.btn-about {
+    margin-top: 90px; /* Increased the top margin of the button */
+  }
+
+  .aboutC .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  .aboutC .container .rightC .textMain {
+    width: 100%;
+  }
+
+  .aboutC .container .rightC .text {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .aboutC .container .rightC .btnC {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 12.5px;
+  }
+}
+
+
+/*  Education Section Styling */
+.white-emoji {
+  color: white; /* Set emoji color to white */
+  font-size: 24px; /* Adjust the size if necessary */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.timeline-container {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #d1d5db;
+  transform: translateX(-50%);
+}
+
+.event-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  opacity: 0; 
+  transform: scale(0.8); 
+  animation: popUp 0.5s forwards; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Reverse layout for alternating items */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Empty Space to Align the Event Icons */
+.empty-space {
+  width: 40%;
+}
+
+/* Event Icon */
+.event-icon {
+  background-color: #01b3af;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+/* Event Content */
+.event-content {
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Event Title and Time */
+.event-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-time {
+  color: #6b7280;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 17px;
+}
+
+/* Animation Keyframes for Pop-Up Effect */
+@keyframes popUp {
+  to {
+    opacity: 1;
+    transform: scale(1); /* Final scale after animation */
+  }
+}
+
+/* Animation Delay for Staggered Effects */
+.event-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.event-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.event-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.event-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Hover Effect */
+.event-content:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 750px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: none;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .event-icon {
+    margin: 0 auto;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+  #span-title{
+   width: 15px;
+   height: 15px;
+  }
+}
+.text {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 25.5px;
+  color: #01b3af;
+  background-color: none;
+}
+
+.textMain {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  color: #777;
+  line-height: 1.9em;
+  background-color: none;
+}

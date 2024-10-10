@@ -187,7 +187,6 @@ a:visited {
 
 .aboutC .title {
   display: flex;
-  position: relative;
   top: 0;
   width: 750px;
   left: 0;
@@ -397,7 +396,7 @@ a:visited {
     width: 50%;
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-height: 40px;
   }
 }

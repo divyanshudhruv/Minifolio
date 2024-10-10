@@ -20,6 +20,11 @@
   justify-content: center;
 }
 
+.btn:hover{
+  background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
 .btn.btn-sm {
   padding: 7.5px 22.5px !important;
   font-size: 15px;

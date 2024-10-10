@@ -643,13 +643,16 @@ a:visited {
 }
 
 .serviceText {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-family: "Poppins" !important;
   font-size: 15px;
-
 }
 
 .serviceText .text {
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   font-size: 20px;
   color: #272341;
@@ -659,6 +662,8 @@ a:visited {
 }
 
 .serviceText .textMain {
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   color: #555;
   font-family: "Montserrat" !important;

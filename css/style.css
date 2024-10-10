@@ -28,6 +28,7 @@ body {
   margin: 0;
   transition: 0.3s;
 }
+
 html {
   scroll-behavior: smooth;
   outline: none;
@@ -76,6 +77,7 @@ a:visited {
 ::-webkit-scrollbar-thumb {
   background: #ddd;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ccc;
 }
@@ -177,6 +179,7 @@ a:visited {
   height: fit-content;
   background-color: none;
   min-height: 600px;
+  padding-top: 110px;
   align-items: start;
   justify-content: start;
   overflow: hidden;
@@ -219,6 +222,7 @@ a:visited {
   height: 50px;
   background-color: none;
 }
+
 .aboutC .titleSmall {
   display: flex;
   top: 0;
@@ -329,6 +333,7 @@ a:visited {
   color: #01b3af;
   background-color: none;
 }
+
 .aboutC .container .rightC .textMain {
   display: flex;
   position: relative;
@@ -669,7 +674,7 @@ a:visited {
   display: flex;
   position: relative;
   width: 650px;
-  background-color: none;
+  background: #02aba8;
   align-items: center;
   justify-content: center;
   /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
@@ -680,29 +685,32 @@ a:visited {
   text-align: center;
   font-size: 15px;
   font-family: Poppins;
-  color: #96989b;
-  font-weight: 300;
+  color: black;
+  font-weight: bolder;
   letter-spacing: 1px;
   border-top: 1.89px solid #ddd;
   min-height: 60px;
   padding-top: 5px;
   padding-bottom: 10px;
+  width: 100vw;
 }
 
+
+
+
 .footer span .icon-heart {
-  color: #f87272;
+  color: #df5959;
   font-size: 24px;
 }
 
 .footer span a {
   display: inline !important;
-  font-weight: 300;
+  font-weight: bolder;
   transition: 0.3s;
 }
 
 .footer a:hover {
-  font-weight: 300;
-  color: #666;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 915px) {
@@ -719,6 +727,7 @@ a:visited {
   .home .container a.button {
     font-size: 17px;
   }
+
   .aboutC .container .leftC .textMain {
     font-size: 17px;
   }
@@ -730,7 +739,8 @@ a:visited {
 
 @media screen and (max-width: 480px) {
   .btn.btn-about {
-    margin-top: 90px; /* Increased the top margin of the button */
+    margin-top: 90px;
+    /* Increased the top margin of the button */
   }
 
   .aboutC .container {

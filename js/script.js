@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 // Get a reference to the button element
 const backToTopButton = document.getElementById("back-to-top");
 
@@ -22,8 +20,6 @@ window.addEventListener("scroll", () => {
         backToTopButton.style.display = "none";
     }
 });
-
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -53,24 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-gsap.to(".img1",{
-  x:200,
-  duration:0.5,
-  delay:1,
-  opacity: 100,
-});
-gsap.to(".img2",{
-  x:-200,
-  duration:1,
-  delay:0.5,
-  rotate:-15,
-});
-
-gsap.to(".img3",{
-  x:250,
-  duration:1,
-  delay:0.5,
-  rotation: 15,
-});
-
+const light=document.getElementById('theme')
+light.addEventListener('click',()=>{
+  const element=document.body
+  element.classList.toggle('dark')
+  if(light.innerHTML==='Dark'){
+    light.innerHTML="Light"
+  }
+ else if(light.innerHTML==='Light'){
+    light.innerHTML="Dark"
+  }
+})

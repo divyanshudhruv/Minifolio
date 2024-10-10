@@ -177,13 +177,12 @@ a:visited {
   background: linear-gradient(to right, #01b3af 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: right;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .home .container a.button:hover {
   color: #fff;
   background-position: left;
-
 }
 
 
@@ -687,7 +686,6 @@ a:visited {
   text-align: center;
   font-family: "Poppins" !important;
   font-size: 15px;
-
 }
 
 .serviceText .text {
@@ -696,14 +694,12 @@ a:visited {
   color: #272341;
   font-family: "Poppins" !important;
   margin-bottom: 10px;
-
 }
 
 .serviceText .textMain {
   font-size: 16px;
   color: #555;
   font-family: "Montserrat" !important;
-
 }
 /* Contact Section */
 .contactC {
@@ -851,7 +847,6 @@ a:visited {
   box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
 }
 
-
 /*================*/
 /*===Footer===*/
 /*===============*/
@@ -953,7 +948,6 @@ a:visited {
   }
 }
 
-
 /*  Education Section Styling */
 .white-emoji {
   color: white; /* Set emoji color to white */
@@ -966,7 +960,6 @@ a:visited {
   text-align: center;
   margin-bottom: 40px;
 }
-
 
 .timeline-container {
   position: relative;
@@ -990,10 +983,12 @@ a:visited {
   align-items: center;
   margin-bottom: 40px;
   position: relative;
-  opacity: 0; 
-  transform: scale(0.8); 
-  animation: popUp 0.5s forwards; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popUp 0.5s forwards;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Reverse layout for alternating items */
@@ -1084,7 +1079,7 @@ a:visited {
     flex-direction: column;
     margin: 1.5rem;
   }
-  
+
   .reverse {
     flex-direction: column;
   }
@@ -1105,9 +1100,9 @@ a:visited {
   .timeline-line {
     display: none;
   }
-  #span-title{
-   width: 15px;
-   height: 15px;
+  #span-title {
+    width: 15px;
+    height: 15px;
   }
 }
 .text {
@@ -1134,6 +1129,49 @@ a:visited {
   line-height: 1.9em;
   background-color: none;
 }
+/* Custom Cursor Styles */
+.custom-cursor {
+  width: 40px;
+  height: 40px;
+  background-color: darkred;
+  border-radius: 50%;
+  position: fixed;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 0.1s linear,
+    background-color 0.2s ease-out;
+  z-index: 1000;
+}
+
+/* Cursor hover effects */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.img1{
+  position: absolute;
+  height: 25vh;
+  rotate: 10deg;
+  left: -20vh;
+  bottom:5vh;
+}
+.img2{
+  position: absolute;
+  height: 25vh;
+  rotate: -15deg;
+  right:-24vh;
+  bottom: 5vh;
+}
+.img3{
+  position: absolute;
+  height: 25vh;
+  rotate: 15deg;
+  left: -22vh;
+  top:5vh;
 
 
 

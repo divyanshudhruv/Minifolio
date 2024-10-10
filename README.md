@@ -318,3 +318,13 @@ The first 50,000 participants to have their first PR/MR accepted will have a tre
 <br>
 
 > **<code><a href="https://github.com/divyanshudhruv">@ Divyanshu Dhruv</a></code>**
+
+<br>
+
+## 🎁 Contributors <a id="contributors"> </a>
+
+<br>
+
+```go 
+@Divii2205 | @jenyyy4 | @Riddhi050803 | @vcavanna | @Kapileswar-Moharana | @Sujal-2820 | @Sujal-12345 | @Vishal-1004 | @guranshdeol | @mathanraj0601 | @oyepriyansh
+```

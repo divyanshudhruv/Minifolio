@@ -1098,3 +1098,131 @@ a:visited {
   line-height: 1.9em;
   background-color: none;
 }
+
+
+
+
+
+/* Basic styling */
+.contact-section {
+  padding: 20px 0;
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+  color: white;
+  text-align: center;
+  border-radius: 90px;
+height: 550px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  position: relative;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-in-out 0.5s;
+  animation-fill-mode: both;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form input styles */
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #f37272;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+  transition: all 0.4s ease;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #b34747;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Input hover and focus effects */
+input:hover, textarea:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}

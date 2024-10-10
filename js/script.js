@@ -24,6 +24,8 @@ window.addEventListener("scroll", () => {
 });
 
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.getElementById('navToggle');
     const navContent = document.getElementById('navContent');
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
 
 gsap.to(".img1",{
   x:200,

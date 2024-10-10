@@ -770,16 +770,25 @@ a:visited {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  display: flex;
+  height: 75px;
+  width: 750px;
+  font-size: 3.8rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 40px;
+  justify-content: center;
+  margin: 0px 125px;
+  font-family: "Montserrat", sans-serif;
+  color: #272341;
+
 }
 
 
 .timeline-container {
   position: relative;
   margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .timeline-line {
@@ -832,6 +841,11 @@ a:visited {
   width: 20px;
   height: 20px;
   color: white;
+}
+.event-schedule {
+  width: 100%;
+  max-width: 1000px; /* Match the width of other sections */
+  margin: 0 auto;
 }
 
 /* Event Content */
@@ -919,27 +933,56 @@ a:visited {
    height: 15px;
   }
 }
-.text {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
+/* ... (previous CSS remains unchanged) ... */
+
+.experienceC .experience-item-content h3 {
   font-size: 25.5px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
   color: #01b3af;
-  background-color: none;
 }
 
-.textMain {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
+.experienceC .experience-item-content .time {
+  color: #777;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.experienceC .experience-item-content p {
+  color: #777;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  color: #777;
   line-height: 1.9em;
-  background-color: none;
 }
+
+.experienceC .experience-item-content .experience-bar {
+  width: 100%;
+  height: 30px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.experienceC .experience-item-content .experience-bar-inner {
+  height: 100%;
+  background-color: #01b3af;
+  border-radius: 15px;
+  text-align: right;
+  padding-right: 15px;
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  transition: width 0.4s ease;
+}
+
+
+/* ... (rest of the CSS remains unchanged) ... */

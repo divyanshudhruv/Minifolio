@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
   <body>
-    <div class="home">
+    <div id="home" class="home">
+      <nav class="navbar">
+        <div class="navbar-logo">MINIFOLIO</div>
+        <div class="navbar-right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="container">
         Hi, my name is <span>Your Name</span> <br />I'm <span id="role"></span>
         <a class="button" href="#about">Know more</a>
@@ -89,40 +100,7 @@
     </div>
     <!-- Services Section End -->
 
-    <!-- Projects Section Start -->
-    <div class="projectsC">
-      <div class="title">PROJECTS ⚡</div>
-      <div class="titleGap"></div>
-      <div class="titleSmall">My Work</div>
-      <div class="container">
-        <div class="projectItem">
-          <div class="projectIcon">🚀</div> 
-          <div class="projectText">
-            <div class="text">Project One</div>
-            <div class="textMain">Description of Project One.</div>
-          </div>
-          <a class="btn btn-custom btn-lg" href="#">View Project</a>
-        </div>
-        <div class="projectItem">
-          <div class="projectIcon">🌟</div>
-          <div class="projectText">
-            <div class="text">Project Two</div>
-            <div class="textMain">Description of Project Two.</div>
-          </div>
-          <a class="btn btn-custom btn-lg" href="#">View Project</a>
-        </div>
-        <div class="projectItem">
-          <div class="projectIcon">✨</div>
-          <div class="projectText">
-            <div class="text">Project Three</div>
-            <div class="textMain">Description of Project Three.</div>
-          </div>
-          <a class="btn btn-custom btn-lg" href="#">View Project</a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Projects Section End -->
+
 
     <div class="footer">
       <span>Copyright ©<span id="copyright-year"></span> All Rights Reserved |</span>

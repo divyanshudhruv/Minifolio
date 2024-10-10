@@ -960,3 +960,25 @@ button:hover ~ .custom-cursor {
   background-color: rgba(0, 0, 0, 0.1);
   transform: translate(-50%, -50%) scale(1.2);
 }
+
+.img1{
+  position: absolute;
+  height: 25vh;
+  rotate: 10deg;
+  left: 5vh;
+  bottom:5vh;
+}
+.img2{
+  position: absolute;
+  height: 25vh;
+  rotate: -15deg;
+  right:5vh;
+  bottom: 5vh;
+}
+.img3{
+  position: absolute;
+  height: 25vh;
+  rotate: 15deg;
+  left: 5vh;
+  top:5vh;
+}

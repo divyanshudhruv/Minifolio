@@ -102,6 +102,13 @@ a:visited {
   align-items: center;
   justify-content: center;
 }
+
+.home #profile-image{
+  width: 550px;
+  height: 550px;
+}
+
+
 .home .container {
   display: flex;
   justify-content: space-around;

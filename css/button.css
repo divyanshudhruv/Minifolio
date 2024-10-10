@@ -1,10 +1,24 @@
-/*================*/
-/*===Pre Build Codes From easyUI===*/
-/*===============*/
-
 :root {
-  --accent: #02aba8; /*289997*/
-  --white: #ffffffff;
+  --accent: #02aba8;
+  --white: #ffffff;
+  --background-light: #ffffff;
+  --background-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --btn-background-light: #f0f0f0;
+  --btn-background-dark: #1f1f1f;
+  --hover-light: #6dd7d1;
+  --hover-dark: #009794;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+body.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
 }
 
 .btn {
@@ -78,6 +92,7 @@
   font-size: 18.5px !important;
   border-radius: 8px !important;
 }
+
 /* Additional CSS for the Back to Top button */
 #back-to-top {
   position: fixed;
@@ -85,16 +100,31 @@
   right: 20px; /* the distance from the right as needed */
   width: 50px; /* the width of the button */
   height: 50px; /* the height of the button */
-  background-color: #f0f0f0; /* Initial background color (light gray) */
-  color: #272341; /* Initial text color (black) */
+  background-color: var(--btn-background-light); /* Initial background color */
+  color: var(--text-light); /* Initial text color */
   border: none;
   border-radius: 7px; /* the button rounded with border radius */
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, color 0.02s; /* a smooth transition for background color, scale, and text color */
-  z-index: 999; /* Set a high z-index value to ensure it's above other elements */
+  transition: background-color 0.3s, transform 0.3s, color 0.02s; /* a smooth transition */
+  z-index: 999; /* Set a high z-index value */
+}
+
+body.dark-theme #back-to-top {
+  background-color: var(--btn-background-dark);
+  color: var(--text-dark);
+}
+
+#back-to-top:hover {
+  background-color: var(--hover-light); /* Lighter shade of green on hover */
+  color: var(--white); /* Change text color to white on hover */
+  transform: scale(1.075); /* Scale effect on hover */
+}
+
+body.dark-theme #back-to-top:hover {
+  background-color: var(--hover-dark); /* Change the hover color in dark theme */
 }
 
 /* Style the ion-icon inside the button */
@@ -102,13 +132,4 @@
   font-size: 25px; /* the icon size */
   margin: 0; /* Remove any margin */
 }
-
-/* Style the button on hover */
-#back-to-top:hover {
-  background-color: #6dd7d1; /* Change the background color to a lighter shade of green on hover */
-  color: #fff; /* Change the text color to white on hover */
-  transform: scale(1.075); /* a slight scale effect on hover */
-}
-
-
 

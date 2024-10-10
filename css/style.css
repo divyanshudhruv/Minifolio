@@ -402,179 +402,6 @@ a:visited {
   }
 }
 
-/*================*/
-/*===Projects===*/
-/*===============*/
-/*
-.projectC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.projectC .main {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.projectC .main .textBig {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 58px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #272341;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.projectC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
-}
-
-.projectC .main .btnCont {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
-
-/*================*/
-/*===Contact===*/
-/*===============*/
-/*
-.contactC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.contactC .main {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.contactC .main .textBig {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 58px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #272341;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.contactC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
-}
-
-.contactC .main .btnCont {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
 
 /*================*/
 /*===Services Section===*/
@@ -942,4 +769,228 @@ a:visited {
   color: #777;
   line-height: 1.9em;
   background-color: none;
+}
+
+
+
+/*================*/
+/*===Dark Theme===*/
+/*===============*/
+
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  transition: 0.3s;
+}
+
+a:link.dark-theme, a:visited {
+  color: #01b3af;
+}
+
+.navbar.dark-theme {
+  background-color: #33333370;
+  color: #e0e0e0;
+}
+
+.navbar-logo.dark-theme {
+  color: #ffffff;
+}
+
+.navbar-right.dark-theme a {
+  color: #e0e0e0;
+}
+
+.navbar-right.dark-theme a:hover {
+  background-color: #01b3af;
+  color: white;
+}
+
+::-webkit-scrollbar-thumb.dark-theme {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb.dark-theme:hover {
+  background: #666;
+}
+
+::selection.dark-theme {
+  background: #333333;
+  color: #ffffff;
+}
+
+.home.dark-theme .container {
+  color: #e0e0e0;
+}
+
+.home.dark-theme .container span {
+  color: #01b3af;
+}
+
+.home.dark-theme .container #role {
+  color: #e0e0e0;
+}
+
+.home.dark-theme .container a.button {
+  border: 2px solid #01b3af;
+  color: #01b3af;
+  background: linear-gradient(to right, #01b3af 50%, #333333 50%);
+}
+
+.home.dark-theme .container a.button:hover {
+  background-position: left;
+}
+
+.aboutC.dark-theme .title {
+  color: #e0e0e0;
+}
+
+.aboutC.dark-theme .titleSmall {
+  color: #a0a0a0;
+}
+
+.aboutC.dark-theme .container .leftC .text {
+  color: #01b3af;
+}
+
+.aboutC.dark-theme .container .leftC .textMain {
+  color: #b3b3b3;
+}
+
+.aboutC.dark-theme .container .rightC .textMain {
+  color: #b3b3b3;
+}
+
+.servicesC.dark-theme .title {
+  color: #e0e0e0;
+}
+
+.servicesC.dark-theme .titleSmall {
+  color: #a0a0a0;
+}
+
+.serviceItem.dark-theme {
+  background-color: #2a2a2a;
+}
+
+.serviceItem.dark-theme:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.serviceText.dark-theme .text {
+  color: #e0e0e0;
+}
+
+.serviceText.dark-theme .textMain {
+  color: #b3b3b3;
+}
+
+.footer.dark-theme {
+  color: #a0a0a0;
+  border-top: 1.89px solid #555;
+}
+
+.footer.dark-theme a:hover {
+  color: #cccccc;
+}
+
+.timeline-line.dark-theme {
+  background-color: #444444;
+}
+
+.event-content.dark-theme {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.event-time.dark-theme {
+  color: #a0a0a0;
+}
+
+.event-content.dark-theme:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.event-icon.dark-theme {
+  background-color: #01b3af;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-line.dark-theme {
+    display: none;
+  }
+}
+
+
+.text.dark-theme {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 25.5px;
+  color: #01b3af; /* Keep the primary accent color */
+  background-color: none;
+}
+
+.textMain.dark-theme {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  color: #ccc; /* Lighter text for better contrast */
+  line-height: 1.9em;
+  background-color: none;
+}
+
+
+/* Toggle Button Style */
+/* Toggle button container */
+.theme-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-color); /* Adjust based on your theme */
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark and light mode icon */
+.theme-toggle ion-icon {
+  font-size: 1.5em;
+}
+
+/* Theme Colors */
+:root {
+  --bg-color-light: #ffffff;
+  --bg-color-dark: #121212;
+  --text-color-light: #333333;
+  --text-color-dark: #f5f5f5;
+}
+
+body.light-theme {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+}
+
+body.dark-theme {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Hover effect for toggle button */
+.theme-toggle:hover {
+  color: var(--hover-color); /* Define a hover color based on theme */
 }

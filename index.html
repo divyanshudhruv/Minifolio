@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minifolio</title>
@@ -9,98 +10,67 @@
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- <link rel="stylesheet" href="button.css" /> -->
-  </head>
-  <body>
-    <div class="custom-cursor"></div>
-    <div id="home" class="home">
-      <!-- <img class="img1" src="./images/img1.png" alt="">
-      <img class="img2" src="./images/img2.png" alt="">
-      <img class="img3" src="./images/img3.png" alt=""> v0.3.1-->
-      <nav class="navbar">
-        <div class="navbar-logo">MINIFOLIO</div>
-        <div class="navbar-right">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#blogs">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- <img id="profile-image"
-        src="images/woman.png"
-        alt="Profile Picture"
-        class="profile-image"
-      /> v0.3.1-->
-      <div class="container">
-        Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
-        <a class="button" href="#about">Know more</a>
-        <!-- <div class="img-sec">
-          <img src="portfolioimg.jpg" alt="profile-img" srcset="" />
-        </div> v0.3.1-->
-      </div>
-    </div>
-    <!-- <div class="px50"></div>
-    <div class="px50" ></div> -->
+</head>
 
-    <div id="about" class="aboutC">
-      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
-      <div class="titleGap"></div>
-      <div class="titleSmall">This and that</div>
-      <div class="containerGap"></div>
-      <div class="container">
-        <div class="leftC">
-          <div class="text">Hi, I'm a developer</div>
-          <br />
-          <div class="textMain">
-            I design websites. That's the long and short of it. UI and UX,
-            Sketch, Design, and pretty decent HTML and CSS — with Javascript and
-            that nice dabble with Java.
-          </div>
+<body>
+    <div id="home" class="home">
+
+        <nav class="navbar">
+            <div class="navbar-logo">MINIFOLIO</div>
+            <button id="navToggle">☰</button>
+            <div class="navbar-right" id="navContent">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <button id="theme">Dark</button>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            Hi, my name is <span>Your Name</span> <br />I'm <span id="role" class="unknown"> </span>
+            <a class="button" id="knowmore" href="#about">Know more</a>
         </div>
-        <div class="rightC">
-          <div class="text">TL;DR</div>
-          <br />
-          <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
-          <div class="btnC">
-            <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
-          </div>
+    </div>
+    <div class="px50"></div>
+    <div class="px50" id="about"></div>
+
+    <div class="aboutC">
+        <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
+        <div class="titleGap"></div>
+        <div class="titleSmall">This and that</div>
+        <div class="containerGap"></div>
+        <div class="container">
+            <div class="leftC">
+                <div class="text">Hi, I'm a developer</div>
+                <br />
+                <div class="textMain">
+                    I design websites. That's the long and short of it. UI and UX,
+                    Sketch, Design, and pretty decent HTML and CSS — with Javascript and
+                    that nice dabble with Java.
+                </div>
+            </div>
+            <div class="rightC">
+                <div class="text">TL;DR</div>
+                <br />
+                <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
+                <div class="btnC">
+                    <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="bottomC"></div>
+        <div class="bottomC"></div>
     </div>
     <!-- Back to Top Button -->
     <button id="back-to-top" class="button">
-      <ion-icon name="chevron-up-outline"></ion-icon>
+        <ion-icon name="chevron-up-outline"></ion-icon>
     </button>
-    <a href=""
-      ><img
-        src="./logo/Facebook logo transparent.png"
-        alt=""
-        id="facebookicon"
-        class="icon"
-    /></a>
-    <a href=""
-      ><img
-        src="./logo/Twitter New Logo 2023.png"
-        alt=""
-        id="twittericon"
-        class="icon"
-    /></a>
-    <a href=""
-      ><img
-        src="./logo/Linkedin logo icon.png"
-        alt=""
-        id="linkedinicon"
-        class="icon"
-    /></a>
-    <a href=""
-      ><img src="./logo/ link.png" alt="" id="linkicon" class="icon"
-    /></a>
+
     <!-- <div class="projectC">
       <div class="main">
         <div class="textBig">
@@ -153,318 +123,159 @@
 
     <!-- Education section -->
     <section id="education" class="event-schedule">
-      <div class="aboutC">
-        <div class="title">
-          &ThickSpace;&ThickSpace;&MediumSpace;EDUCATION &nbsp;<span
-            id="span-title"
-          >
-            🏛️</span
-          >
+        <div class="aboutC">
+            <div class="title">
+                &ThickSpace;&ThickSpace;&MediumSpace;EDUCATION<span id="span-title">
+                    🏛️</span>
+            </div>
+            <div class="titleSmall" id="small-text">My Qualifications</div>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- First Event: School -->
+                <div class="event-item">
+                    <div class="empty-space"></div>
+                    <div class="event-icon">
+                        <!-- School Building SVG -->
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 122.88 96.44" width="24" height="24" fill="white">
+                            <title>open-book</title>
+                            <path
+                                d="M12,73.51q.2-34.74.39-69.38A3.21,3.21,0,0,1,15,1h0C23.4-.75,36.64-.31,45.63,3.14a35.46,35.46,0,0,1,16,11.65,37.34,37.34,0,0,1,16-11.15C86.12.4,99-.38,108.23,1A3.2,3.2,0,0,1,111,4.14h0V73.8A3.21,3.21,0,0,1,107.77,77a3.49,3.49,0,0,1-.74-.09A53.45,53.45,0,0,0,83.58,79.1a71,71,0,0,0-15.77,8.26,69.09,69.09,0,0,1,21.24-3.1,125.42,125.42,0,0,1,27.41,3.48V14.84h3.21a3.21,3.21,0,0,1,3.21,3.21V91.94a3.21,3.21,0,0,1-3.21,3.21,3.18,3.18,0,0,1-1-.17A121.77,121.77,0,0,0,89,90.65a61.89,61.89,0,0,0-25.76,5.26,3.39,3.39,0,0,1-3.64,0,61.86,61.86,0,0,0-25.76-5.26A121.77,121.77,0,0,0,4.24,95a3.18,3.18,0,0,1-1,.17A3.21,3.21,0,0,1,0,91.94V18.05a3.21,3.21,0,0,1,3.21-3.21H6.42v72.9a125.42,125.42,0,0,1,27.41-3.48,68.84,68.84,0,0,1,22.71,3.57A48.7,48.7,0,0,0,41,79.39c-7-2.3-17.68-3.07-25.49-2.4A3.21,3.21,0,0,1,12,74.06a5,5,0,0,1,0-.55ZM73.64,64.4a2.3,2.3,0,1,1-2.5-3.85,51.46,51.46,0,0,1,11.8-5.4,53.73,53.73,0,0,1,13-2.67,2.29,2.29,0,1,1,.25,4.58,49.42,49.42,0,0,0-11.79,2.46A46.73,46.73,0,0,0,73.64,64.4Zm.2-17.76a2.29,2.29,0,0,1-2.46-3.87,52.71,52.71,0,0,1,11.74-5.3A54.12,54.12,0,0,1,95.9,34.85a2.3,2.3,0,0,1,.25,4.59,49.3,49.3,0,0,0-11.63,2.4,48,48,0,0,0-10.68,4.8Zm.06-17.7a2.3,2.3,0,1,1-2.46-3.89,52.54,52.54,0,0,1,11.72-5.27,53.71,53.71,0,0,1,12.74-2.6,2.29,2.29,0,1,1,.25,4.58,49.35,49.35,0,0,0-11.59,2.39A47.91,47.91,0,0,0,73.9,28.94ZM51.74,60.55a2.3,2.3,0,1,1-2.5,3.85,46.73,46.73,0,0,0-10.72-4.88,49.42,49.42,0,0,0-11.79-2.46A2.29,2.29,0,1,1,27,52.48a53.73,53.73,0,0,1,13,2.67,51.46,51.46,0,0,1,11.8,5.4ZM51.5,42.77A2.29,2.29,0,0,1,49,46.64a48,48,0,0,0-10.68-4.8,49.3,49.3,0,0,0-11.63-2.4A2.3,2.3,0,0,1,27,34.85a54.12,54.12,0,0,1,12.78,2.62,52.71,52.71,0,0,1,11.74,5.3Zm-.06-17.72A2.3,2.3,0,1,1,49,28.94a47.91,47.91,0,0,0-10.66-4.79,49.35,49.35,0,0,0-11.59-2.39A2.29,2.29,0,1,1,27,17.18a53.71,53.71,0,0,1,12.74,2.6,52.54,52.54,0,0,1,11.72,5.27ZM104.56,7c-7.42-.7-18.06.12-24.73,2.65A30,30,0,0,0,64.7,21.46V81.72a76.76,76.76,0,0,1,16.72-8.66,62.85,62.85,0,0,1,23.14-2.87V7ZM58.28,81.1V21.37c-3.36-5.93-8.79-9.89-14.93-12.24-7-2.67-17.75-3.27-24.56-2.3l-.36,63.56c7.43-.27,17.69.68,24.52,2.91a54.94,54.94,0,0,1,15.33,7.8Z" />
+                        </svg>
+                    </div>
+                    <div class="event-content">
+                        <p class="text">Your School Title Here</p>
+                        <p class="event-time"><strong>Years:</strong> 20XX- 20XX</p>
+                        <p class="textMain">
+                            Completed my 12th standard with a focus on Science and
+                            Mathematics, achieving a score of XX%.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Second Event: College -->
+                <div class="event-item reverse">
+                    <div class="empty-space"></div>
+                    <div class="event-icon">
+                        <!-- Graduation Cap SVG -->
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 73.27"
+                            style="enable-background: new 0 0 122.88 73.27" xml:space="preserve" width="24" height="24"
+                            fill="white">
+                            <g>
+                                <path class="st0"
+                                    d="M104.27,58.88l-0.54-19.99l-32.85,9.49c-2.96,0.65-5.88,0.96-8.74,0.97c-3.07,0.01-6.09-0.32-9.06-0.97 L21.7,38.79v20.27c0.9,10.53,31.11,13.75,40.38,14.19c7.43,0.36,36.78-3.52,40.64-9.57C103.55,62.36,104.07,60.76,104.27,58.88 L104.27,58.88z M117.58,24.5v24.43h0.77c0.53,0,0.96,0.43,0.96,0.96v6.57c0,0.52-0.43,0.96-0.96,0.96h-0.77v2.3 c0.98,0.18,1.73,1.05,1.73,2.08v0c0,1.16-0.96,2.12-2.12,2.12h-3.79c-1.16,0-2.12-0.95-2.12-2.12v0c0-1.03,0.75-1.9,1.73-2.08v-2.3 h-0.77c-0.52,0-0.96-0.43-0.96-0.96v-6.57c0-0.53,0.43-0.96,0.96-0.96h0.77v-23L73.03,38.35c-7.24,1.72-14.48,1.84-21.72,0 L7.18,25.18l-3.99-1.19c-4.97-2.03-3.73-6.8,0.9-7.9L54,1.19c5.15-1.47,10.29-1.7,15.44,0l49.01,14.72 c5.33,1.3,6.38,6.23,0.18,8.26L117.58,24.5L117.58,24.5z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="text">University Name</h3>
+                        <p class="event-time"><strong>Years:</strong> 20XX - Present</p>
+                        <p class="textMain">
+                            Pursuing a Bachelor's degree in ABC, focusing on web development
+                            and software engineering.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Third Event: Master's Program -->
+                <div class="event-item">
+                    <div class="empty-space"></div>
+                    <div class="event-icon">
+                        <!-- Book SVG -->
+                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 112.83 122.88" width="24" height="24" fill="white">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill-rule: evenodd;
+                                    }
+                                </style>
+                            </defs>
+                            <title>notebook</title>
+                            <path class="cls-1"
+                                d="M103.3,34.19l8.23,3.52a2.15,2.15,0,0,1,1.13,2.82l-2,4.56L98.53,39.88l2-4.56a2.15,2.15,0,0,1,2.82-1.13ZM8.88,7.88h8.19V2.73a2.74,2.74,0,0,1,5.47,0V7.88h12V2.73a2.73,2.73,0,1,1,5.46,0V7.88H52V2.73a2.73,2.73,0,0,1,5.46,0V7.88h12V2.73a2.73,2.73,0,0,1,5.46,0V7.88h9.27a8.91,8.91,0,0,1,8.88,8.88V28.54a12.27,12.27,0,0,0-1.76,2.9l-2,4.56A10,10,0,0,0,89,37.16a11.24,11.24,0,0,0-.58,1.15l-.6,1.4V16.76a3.6,3.6,0,0,0-3.58-3.58H75v5.15a2.73,2.73,0,0,1-5.46,0V13.18h-12v5.15a2.73,2.73,0,0,1-5.46,0V13.18H40v5.15a2.73,2.73,0,1,1-5.46,0V13.18h-12v5.15a2.74,2.74,0,0,1-5.47,0V13.18H8.88A3.58,3.58,0,0,0,5.3,16.76v92a3.6,3.6,0,0,0,3.58,3.59H59.16l.56,5.29H8.88A8.89,8.89,0,0,1,0,108.77v-92A8.91,8.91,0,0,1,8.88,7.88ZM20.34,94.35a2.65,2.65,0,0,1,0-5.3H66.72l-2.27,5.3Zm0-17.48a2.65,2.65,0,0,1,0-5.3H72.78a2.52,2.52,0,0,1,1.27.35l-2.12,5Zm0-17.48a2.65,2.65,0,0,1,0-5.3H72.78a2.65,2.65,0,0,1,0,5.3Zm0-17.48a2.65,2.65,0,0,1,0-5.3H72.78a2.65,2.65,0,0,1,0,5.3ZM81,114.6l-6.19,5c-4.85,3.92-4.36,5.06-5-.88l-1-9.34h0L97.54,42.18l12.18,5.22L81,114.6Zm-10.09-4.31,8,3.42L74.82,117c-3.19,2.58-2.87,3.32-3.28-.57l-.66-6.14Z" />
+                        </svg>
+                    </div>
+                    <div class="event-content">
+                        <h3 class="text">Your Master's Program Title Here</h3>
+                        <p class="event-time"><strong>Years:</strong> Year - Present</p>
+                        <p class="textMain">
+                            Details about your master's program and focus areas will go
+                            here.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="titleSmall" id="small-text">My Qualifications</div>
-        <div class="timeline-container">
-          <div class="timeline-line"></div>
-
-          <!-- First Event: School -->
-          <div class="event-item">
-            <div class="empty-space"></div>
-            <div class="event-icon">
-              <!-- School Building SVG -->
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 122.88 96.44"
-                width="24"
-                height="24"
-                fill="white"
-              >
-                <title>open-book</title>
-                <path
-                  d="M12,73.51q.2-34.74.39-69.38A3.21,3.21,0,0,1,15,1h0C23.4-.75,36.64-.31,45.63,3.14a35.46,35.46,0,0,1,16,11.65,37.34,37.34,0,0,1,16-11.15C86.12.4,99-.38,108.23,1A3.2,3.2,0,0,1,111,4.14h0V73.8A3.21,3.21,0,0,1,107.77,77a3.49,3.49,0,0,1-.74-.09A53.45,53.45,0,0,0,83.58,79.1a71,71,0,0,0-15.77,8.26,69.09,69.09,0,0,1,21.24-3.1,125.42,125.42,0,0,1,27.41,3.48V14.84h3.21a3.21,3.21,0,0,1,3.21,3.21V91.94a3.21,3.21,0,0,1-3.21,3.21,3.18,3.18,0,0,1-1-.17A121.77,121.77,0,0,0,89,90.65a61.89,61.89,0,0,0-25.76,5.26,3.39,3.39,0,0,1-3.64,0,61.86,61.86,0,0,0-25.76-5.26A121.77,121.77,0,0,0,4.24,95a3.18,3.18,0,0,1-1,.17A3.21,3.21,0,0,1,0,91.94V18.05a3.21,3.21,0,0,1,3.21-3.21H6.42v72.9a125.42,125.42,0,0,1,27.41-3.48,68.84,68.84,0,0,1,22.71,3.57A48.7,48.7,0,0,0,41,79.39c-7-2.3-17.68-3.07-25.49-2.4A3.21,3.21,0,0,1,12,74.06a5,5,0,0,1,0-.55ZM73.64,64.4a2.3,2.3,0,1,1-2.5-3.85,51.46,51.46,0,0,1,11.8-5.4,53.73,53.73,0,0,1,13-2.67,2.29,2.29,0,1,1,.25,4.58,49.42,49.42,0,0,0-11.79,2.46A46.73,46.73,0,0,0,73.64,64.4Zm.2-17.76a2.29,2.29,0,0,1-2.46-3.87,52.71,52.71,0,0,1,11.74-5.3A54.12,54.12,0,0,1,95.9,34.85a2.3,2.3,0,0,1,.25,4.59,49.3,49.3,0,0,0-11.63,2.4,48,48,0,0,0-10.68,4.8Zm.06-17.7a2.3,2.3,0,1,1-2.46-3.89,52.54,52.54,0,0,1,11.72-5.27,53.71,53.71,0,0,1,12.74-2.6,2.29,2.29,0,1,1,.25,4.58,49.35,49.35,0,0,0-11.59,2.39A47.91,47.91,0,0,0,73.9,28.94ZM51.74,60.55a2.3,2.3,0,1,1-2.5,3.85,46.73,46.73,0,0,0-10.72-4.88,49.42,49.42,0,0,0-11.79-2.46A2.29,2.29,0,1,1,27,52.48a53.73,53.73,0,0,1,13,2.67,51.46,51.46,0,0,1,11.8,5.4ZM51.5,42.77A2.29,2.29,0,0,1,49,46.64a48,48,0,0,0-10.68-4.8,49.3,49.3,0,0,0-11.63-2.4A2.3,2.3,0,0,1,27,34.85a54.12,54.12,0,0,1,12.78,2.62,52.71,52.71,0,0,1,11.74,5.3Zm-.06-17.72A2.3,2.3,0,1,1,49,28.94a47.91,47.91,0,0,0-10.66-4.79,49.35,49.35,0,0,0-11.59-2.39A2.29,2.29,0,1,1,27,17.18a53.71,53.71,0,0,1,12.74,2.6,52.54,52.54,0,0,1,11.72,5.27ZM104.56,7c-7.42-.7-18.06.12-24.73,2.65A30,30,0,0,0,64.7,21.46V81.72a76.76,76.76,0,0,1,16.72-8.66,62.85,62.85,0,0,1,23.14-2.87V7ZM58.28,81.1V21.37c-3.36-5.93-8.79-9.89-14.93-12.24-7-2.67-17.75-3.27-24.56-2.3l-.36,63.56c7.43-.27,17.69.68,24.52,2.91a54.94,54.94,0,0,1,15.33,7.8Z"
-                />
-              </svg>
-            </div>
-            <div class="event-content">
-              <p class="text">Your School Title Here</p>
-              <p class="event-time"><strong>Years:</strong> 20XX- 20XX</p>
-              <p class="textMain">
-                Completed my 12th standard with a focus on Science and
-                Mathematics, achieving a score of XX%.
-              </p>
-            </div>
-          </div>
-
-          <!-- Second Event: College -->
-          <div class="event-item reverse">
-            <div class="empty-space"></div>
-            <div class="event-icon">
-              <!-- Graduation Cap SVG -->
-              <?xml version="1.0" encoding="utf-8"?>
-              <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 122.88 73.27"
-                style="enable-background: new 0 0 122.88 73.27"
-                xml:space="preserve"
-                width="24"
-                height="24"
-                fill="white"
-              >
-                <g>
-                  <path
-                    class="st0"
-                    d="M104.27,58.88l-0.54-19.99l-32.85,9.49c-2.96,0.65-5.88,0.96-8.74,0.97c-3.07,0.01-6.09-0.32-9.06-0.97 L21.7,38.79v20.27c0.9,10.53,31.11,13.75,40.38,14.19c7.43,0.36,36.78-3.52,40.64-9.57C103.55,62.36,104.07,60.76,104.27,58.88 L104.27,58.88z M117.58,24.5v24.43h0.77c0.53,0,0.96,0.43,0.96,0.96v6.57c0,0.52-0.43,0.96-0.96,0.96h-0.77v2.3 c0.98,0.18,1.73,1.05,1.73,2.08v0c0,1.16-0.96,2.12-2.12,2.12h-3.79c-1.16,0-2.12-0.95-2.12-2.12v0c0-1.03,0.75-1.9,1.73-2.08v-2.3 h-0.77c-0.52,0-0.96-0.43-0.96-0.96v-6.57c0-0.53,0.43-0.96,0.96-0.96h0.77v-23L73.03,38.35c-7.24,1.72-14.48,1.84-21.72,0 L7.18,25.18l-3.99-1.19c-4.97-2.03-3.73-6.8,0.9-7.9L54,1.19c5.15-1.47,10.29-1.7,15.44,0l49.01,14.72 c5.33,1.3,6.38,6.23,0.18,8.26L117.58,24.5L117.58,24.5z"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div class="event-content">
-              <h3 class="text">University Name</h3>
-              <p class="event-time"><strong>Years:</strong> 20XX - Present</p>
-              <p class="textMain">
-                Pursuing a Bachelor's degree in ABC, focusing on web development
-                and software engineering.
-              </p>
-            </div>
-          </div>
-
-          <!-- Third Event: Master's Program -->
-          <div class="event-item">
-            <div class="empty-space"></div>
-            <div class="event-icon">
-              <!-- Book SVG -->
-              <svg
-                id="Layer_1"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 112.83 122.88"
-                width="24"
-                height="24"
-                fill="white"
-              >
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill-rule: evenodd;
-                    }
-                  </style>
-                </defs>
-                <title>notebook</title>
-                <path
-                  class="cls-1"
-                  d="M103.3,34.19l8.23,3.52a2.15,2.15,0,0,1,1.13,2.82l-2,4.56L98.53,39.88l2-4.56a2.15,2.15,0,0,1,2.82-1.13ZM8.88,7.88h8.19V2.73a2.74,2.74,0,0,1,5.47,0V7.88h12V2.73a2.73,2.73,0,1,1,5.46,0V7.88H52V2.73a2.73,2.73,0,0,1,5.46,0V7.88h12V2.73a2.73,2.73,0,0,1,5.46,0V7.88h9.27a8.91,8.91,0,0,1,8.88,8.88V28.54a12.27,12.27,0,0,0-1.76,2.9l-2,4.56A10,10,0,0,0,89,37.16a11.24,11.24,0,0,0-.58,1.15l-.6,1.4V16.76a3.6,3.6,0,0,0-3.58-3.58H75v5.15a2.73,2.73,0,0,1-5.46,0V13.18h-12v5.15a2.73,2.73,0,0,1-5.46,0V13.18H40v5.15a2.73,2.73,0,1,1-5.46,0V13.18h-12v5.15a2.74,2.74,0,0,1-5.47,0V13.18H8.88A3.58,3.58,0,0,0,5.3,16.76v92a3.6,3.6,0,0,0,3.58,3.59H59.16l.56,5.29H8.88A8.89,8.89,0,0,1,0,108.77v-92A8.91,8.91,0,0,1,8.88,7.88ZM20.34,94.35a2.65,2.65,0,0,1,0-5.3H66.72l-2.27,5.3Zm0-17.48a2.65,2.65,0,0,1,0-5.3H72.78a2.52,2.52,0,0,1,1.27.35l-2.12,5Zm0-17.48a2.65,2.65,0,0,1,0-5.3H72.78a2.65,2.65,0,0,1,0,5.3Zm0-17.48a2.65,2.65,0,0,1,0-5.3H72.78a2.65,2.65,0,0,1,0,5.3ZM81,114.6l-6.19,5c-4.85,3.92-4.36,5.06-5-.88l-1-9.34h0L97.54,42.18l12.18,5.22L81,114.6Zm-10.09-4.31,8,3.42L74.82,117c-3.19,2.58-2.87,3.32-3.28-.57l-.66-6.14Z"
-                />
-              </svg>
-            </div>
-            <div class="event-content">
-              <h3 class="text">Your Master's Program Title Here</h3>
-              <p class="event-time"><strong>Years:</strong> Year - Present</p>
-              <p class="textMain">
-                Details about your master's program and focus areas will go
-                here.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- services section start -->
     <div id="services" class="servicesC">
-      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;SERVICES 🛠️</div>
-      <div class="titleGap"></div>
-      <div class="titleSmall">What I Offer</div>
-      <div class="container">
-        <div class="serviceItem">
-          <div class="serviceIcon">
-            <ion-icon name="laptop-outline"></ion-icon>
-          </div>
-          <div class="serviceText">
-            <div class="text">Web Dev</div>
-            <div class="textMain">
-              Building responsive and high-quality websites.
-            </div>
-          </div>
-        </div>
-        <div class="serviceItem">
-          <div class="serviceIcon">
-            <ion-icon name="brush-outline"></ion-icon>
-          </div>
-          <div class="serviceText">
-            <div class="text">UI/UX Design</div>
-            <div class="textMain">
-              Designing user-friendly interfaces and experiences.
-            </div>
-          </div>
-        </div>
-        <div class="serviceItem">
-          <div class="serviceIcon">
-            <ion-icon name="stats-chart-outline"></ion-icon>
-          </div>
-          <div class="serviceText">
-            <div class="text">SEO Expert</div>
-            <div class="textMain">
-              Optimizing websites for better search engine ranking.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- contactme section start -->
-
-      <section id="contact" class="contact-section">
+        <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;SERVICES 🛠️</div>
+        <div class="titleGap"></div>
+        <div class="titleSmall">What I Offer</div>
         <div class="container">
-          <h2>Contact Me</h2>
-          <p>
-            I'd love to hear from you! Fill out the form below and I'll get back
-            to you soon.
-          </p>
-          <form action="your_form_endpoint" method="post" class="contact-form">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                required
-              />
+            <div class="serviceItem">
+                <div class="serviceIcon">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+                <div class="serviceText">
+                    <div class="text">Web Development</div>
+                    <div class="textMain">
+                        Building responsive and high-quality websites.
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
+            <div class="serviceItem">
+                <div class="serviceIcon">
+                    <ion-icon name="brush-outline"></ion-icon>
+                </div>
+                <div class="serviceText">
+                    <div class="text">UI/UX Design</div>
+                    <div class="textMain">
+                        Designing user-friendly interfaces and experiences.
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Your Message"
-                required
-              ></textarea>
+            <div class="serviceItem">
+                <div class="serviceIcon">
+                    <ion-icon name="stats-chart-outline"></ion-icon>
+                </div>
+                <div class="serviceText">
+                    <div class="text">SEO Expert</div>
+                    <div class="textMain">
+                        Optimizing websites for better search engine ranking.
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-          </form>
         </div>
-      </section>
-      <!-- contactme section end -->
     </div>
-
     <!-- services section end -->
-    <!-- Contact Section -->
-    <div id="contact" class="contactC">
-      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;CONTACT 👋</div>
-      <div class="titleGap"></div>
-      <div class="titleSmall">Get in Touch</div>
-      <div class="containerGap"></div>
 
-      <!-- Blog Section -->
-      <div class="BLOG-SECTION" id="blogs">
-        <div class="BLOG">
-          <h1 id="heading">I write, <br />sometimes</h1>
-          <p id="content">
-            About design, <br />frontend dev, <br />learning and life.
-          </p>
-          <a href="./blogsection.html" id="link">READ MY ARTICLES</a>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="leftC">
-          <div class="text">Let's Connect!</div>
-          <br />
-          <div class="textMain">
-            I'm available for freelance work, collaborations, or any general
-            inquiries. Feel free to send me a message below.
-          </div>
-        </div>
-
-        <div class="rightC">
-          <form action="submit-form.php" method="POST">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Enter your name"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Enter your email"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                placeholder="Enter your message"
-              ></textarea>
-            </div>
-
-            <button class="button" type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!--Contact section end-->
     <div class="footer">
-      <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
-      <span
-        >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
-      </span>
-      <span style="position: relative; top: -3.2px"
-        >&nbsp;Template Developed With
-        <span class="icon-heart"
-          ><ion-icon
-            name="heart"
-            style="position: relative; top: 5px"
-          ></ion-icon
-        ></span>
-        By
-      </span>
-      <span class="footer_name">
-        <a href="https://github.com/divyanshudhruv">&nbsp;Divyanshu Dhruv</a>
-      </span>
+        <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
+        <span>Copyright ©<span id="copyright-year"></span> All Rights Reserved |
+        </span>
+        <span style="position: relative; top: -3.2px">&nbsp;Template Developed With
+            <span class="icon-heart"><ion-icon name="heart" style="position: relative; top: 5px"></ion-icon></span>
+            By
+        </span>
+        <span>
+            <a href="https://github.com/divyanshudhruv">&nbsp;Divyanshu Dhruv</a>
+        </span>
+        <div class="social-media">
+            <a class="insta" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="insta" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a class="insta" href="https://x.com/i/flow/login"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
     </div>
-
-    <!-- gsap and scroll trigger cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./js/cursor.js"></script>
+    
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>
-  </body>
+</body>
+
 </html>

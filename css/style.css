@@ -37,6 +37,37 @@ html {
 /*===Links===*/
 /*===============*/
 
+.icon{
+  height:4vh;
+}
+.icon:hover{
+  height:5vh;
+}
+
+#facebookicon{
+  position: absolute;
+  left:7vh;
+  top:40vh;
+}
+
+#linkedinicon{
+  position: absolute;
+  left:7vh;
+  top:49vh;
+}
+
+#linkicon{
+  position: absolute;
+  left:7vh;
+  top:63vh;
+
+}
+#twittericon{
+  position: absolute;
+  left:7vh;
+  top:56vh;
+}
+
 a {
   text-decoration: none;
   width: fit-content;

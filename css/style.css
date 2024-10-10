@@ -138,12 +138,16 @@ a:visited {
   font-family: Montserrat;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.3s;
+  background: linear-gradient(to right, #01b3af 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all .25s ease-out;
 }
 
 .home .container a.button:hover {
   color: #fff;
-  background-color: #01b3af;
+  background-position: left;
+
 }
 
 @media screen and (max-width: 915px) {
@@ -814,4 +818,186 @@ a:visited {
 
 .nav-content a:hover {
   color: #01b3af;
+}
+=======
+
+/*  Education Section Styling */
+.white-emoji {
+  color: white; /* Set emoji color to white */
+  font-size: 24px; /* Adjust the size if necessary */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.timeline-container {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #d1d5db;
+  transform: translateX(-50%);
+}
+
+.event-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  opacity: 0; 
+  transform: scale(0.8); 
+  animation: popUp 0.5s forwards; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Reverse layout for alternating items */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Empty Space to Align the Event Icons */
+.empty-space {
+  width: 40%;
+}
+
+/* Event Icon */
+.event-icon {
+  background-color: #01b3af;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+/* Event Content */
+.event-content {
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Event Title and Time */
+.event-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-time {
+  color: #6b7280;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 17px;
+}
+
+/* Animation Keyframes for Pop-Up Effect */
+@keyframes popUp {
+  to {
+    opacity: 1;
+    transform: scale(1); /* Final scale after animation */
+  }
+}
+
+/* Animation Delay for Staggered Effects */
+.event-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.event-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.event-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.event-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Hover Effect */
+.event-content:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+  }
+  
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: none;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .event-icon {
+    margin: 0 auto;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+  #span-title{
+   width: 15px;
+   height: 15px;
+  }
+}
+.text {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 25.5px;
+  color: #01b3af;
+  background-color: none;
+}
+
+.textMain {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  color: #777;
+  line-height: 1.9em;
+  background-color: none;
 }

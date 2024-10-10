@@ -949,7 +949,7 @@ a:visited {
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition:
-    all 0.1s linear,
+    transform 0.1s linear,
     background-color 0.2s ease-out;
   z-index: 1000;
 }
@@ -965,20 +965,20 @@ button:hover ~ .custom-cursor {
   position: absolute;
   height: 25vh;
   rotate: 10deg;
-  left: 5vh;
+  left: -20vh;
   bottom:5vh;
 }
 .img2{
   position: absolute;
   height: 25vh;
   rotate: -15deg;
-  right:5vh;
+  right:-24vh;
   bottom: 5vh;
 }
 .img3{
   position: absolute;
   height: 25vh;
   rotate: 15deg;
-  left: 5vh;
+  left: -22vh;
   top:5vh;
 }

@@ -170,7 +170,7 @@ Follow the instruction to customize the portfolio
         ├── link.png
         ├── facebook.png
         ├── linkedin.png
-        └── twitter.ico
+        └── twitter.png
 ```
 
 <br>

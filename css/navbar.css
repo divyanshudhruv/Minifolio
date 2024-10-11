@@ -1,22 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+    --navbar-light-bg: #ffffff70;
+    --navbar-dark-bg: #1a1a1a70;
+    --navbar-text-light: #1a1a1a;
+    --navbar-text-dark: #f5f5f5;
+    --hover-light-bg: #01b3af;
+    --hover-dark-bg: #009794;
+    --hover-text-light: white;
+    --hover-text-dark: #f5f5f5;
+}
 
 .navbar {
-    color: #1a1a1a;
+    color: var(--navbar-text-light);
     display: flex;
     position: fixed;
     z-index: 3;
     justify-content: space-between;
     align-items: last baseline;
     top: 0;
-    background-color: #ffffff70;
+    background-color: var(--navbar-light-bg);
     width: 100%;
- /* backdrop-filter: blur(3px);  */
+    /* backdrop-filter: blur(3px); */
 
     font-family: Montserrat;
     padding: 1em;
-    transition:.3s;
+    transition: .3s;
+}
 
+body.dark-theme .navbar {
+    background-color: var(--navbar-dark-bg);
+    color: var(--navbar-text-dark);
 }
 
 .navbar-logo {
@@ -24,7 +38,11 @@
     font-size: 1.25em;
     cursor: pointer;
 }
- 
+
+body.dark-theme .navbar-logo {
+    color: var(--navbar-text-dark);
+}
+
 .navbar-right ul {
     display: flex;
     gap: 1em;
@@ -34,11 +52,21 @@
 .navbar-right a {
     padding: 0.4em 0.6em;
     border-radius: 4.75px;
+    color: var(--navbar-text-light);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+body.dark-theme .navbar-right a {
+    color: var(--navbar-text-dark);
 }
 
 .navbar-right a:hover {
-    background-color: #01b3af;
-    color: white;
-  
+    background-color: var(--hover-light-bg);
+    color: var(--hover-text-light);
+}
+
+body.dark-theme .navbar-right a:hover {
+    background-color: var(--hover-dark-bg);
+    color: var(--hover-text-dark);
 }

@@ -22,8 +22,14 @@
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#services">Services</a></li>
+            <li>
+              <button id="theme-toggle" class="theme-toggle">
+                <ion-icon name="moon-outline"></ion-icon>
+              </button>
+            </li>
           </ul>
         </div>
+        
       </nav>
       <div class="container">
         Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
@@ -300,5 +306,31 @@
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>
+    <script>
+      const themeToggleButton = document.getElementById('theme-toggle');
+      const body = document.body;
+    
+      // Check local storage for the saved theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        body.classList.add(savedTheme);
+        updateIcon(savedTheme);
+      }
+    
+      // Toggle theme on button click
+      themeToggleButton.addEventListener('click', () => {
+        const isDarkTheme = body.classList.toggle('dark-theme');
+        const theme = isDarkTheme ? 'dark-theme' : '';
+        localStorage.setItem('theme', theme);
+        updateIcon(theme);
+      });
+    
+      // Update icon based on theme
+      function updateIcon(theme) {
+        const icon = themeToggleButton.querySelector('ion-icon');
+        icon.setAttribute('name', theme === 'dark-theme' ? 'sunny-outline' : 'moon-outline');
+      }
+    </script>
+    
   </body>
 </html>

@@ -11,7 +11,7 @@
 /*===============*/
 
 body {
-  background-color: #fff  ;
+  background-color: #d1cccc  ;
   padding: 0  ;
   margin: 0  ;
   align-items: center  ;
@@ -85,7 +85,7 @@ a:visited {
 /*===============*/
 
 ::selection {
-  background: aliceblue;
+  background: rgb(247, 249, 252);
 }
 
 /*================*/
@@ -100,18 +100,60 @@ a:visited {
   align-items: center;
   justify-content: center;
 }
-
+.container .home{
+position: right;
+}
 .home .container {
-  width: 95%;
+  width: 90%;
   height: 225px;
   background-color: none;
-  color: #272341;
-  font-size: 56px;
+  color: #140f2f;
+  font-size: 45px;
   font-family: Montserrat;
   font-weight: 700;
   align-items: center;
   justify-content: center;
 }
+.home img{
+  margin:40px;
+  
+}
+/*================*/
+/*===social icon===*/
+/*===============*/
+.fa {
+ width:40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background: #257eeb;
+  color: white;
+  bottom: 90px;
+  display:flex;
+}
+.fa-linkedin {
+  background:#2e78e0;
+  color: white;
+ 
+  display:flex;
+}
+.fa-instagram {
+  background: #1f76bc;
+  color: white;
+  bottom: 20px; 
+  display:flex;
+}
+
+
 
 .home .container span {
   color: #01b3af;
@@ -132,13 +174,13 @@ a:visited {
   padding: 5.5px 13.5px;
   width: fit-content;
   height: fit-content;
-  border: 2px solid #01b3af;
-  color: #01b3af;
+  border: 2px solid #120539;
+  color: #14063c;
   font-size: 24px;
   font-family: Montserrat;
   font-weight: 700;
   cursor: pointer;
-  background: linear-gradient(to right, #01b3af 50%, #fff 50%);
+  background: linear-gradient(to right, #1d034d 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: right;
   transition: all .25s ease-out;
@@ -676,7 +718,7 @@ a:visited {
   width: 650px;
   background-color: none;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
   /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
   flex-wrap: wrap;
   left: 0;
@@ -943,3 +985,77 @@ a:visited {
   line-height: 1.9em;
   background-color: none;
 }
+
+.rev-container  .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.review-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #979393;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#stars {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f00;
+  margin-right: 10px;
+}
+
+.stars {
+  color: #ffdf00;
+      margin-right:10px;
+  }
+  .container-review {
+      background-color: rgb(188, 226, 249);
+      padding: 80px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(199, 202, 215, 0.912);
+      text-align: center;
+      justify-content: space-between;
+  }
+  
+  h1 {
+      font-size: 20px;
+      margin: 20px 5px 5px 5px;
+  }
+  #review{
+      background-color: rgb(174, 175, 177);
+      color: #220756;
+  }
+  #submit{
+      color:#f9fb6f;
+      background-color: #1d2abd;
+  }
+  

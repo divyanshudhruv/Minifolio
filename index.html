@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+    
     <!-- <link rel="stylesheet" href="button.css" /> -->
   </head>
   <body>
@@ -21,14 +24,23 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#review">Testimonial</a></li>
           </ul>
         </div>
       </nav>
+      
       <div class="container">
         Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
         <a class="button" href="#about">Know more</a>
       </div>
+        <div class="social link">
+             <a href="https://github.com" class="fa  fa-github"></a>    
+             <a href="https://instagram.com" class="fa fa-instagram"></a>
+              <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+        </div>
+     <img src="logo/portofolio.jpg"   style="padding:100px; border-radius:50%;" alt="image">
     </div>
+    
     <div class="px50"></div>
     <div class="px50" id="about"></div>
 
@@ -277,25 +289,118 @@
     </div>
     <!-- services section end -->
 
-    <div class="footer">
-      <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
-      <span
-        >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
-      </span>
-      <span style="position: relative; top: -3.2px"
-        >&nbsp;Template Developed With
-        <span class="icon-heart"
-          ><ion-icon
-            name="heart"
-            style="position: relative; top: 5px"
-          ></ion-icon
-        ></span>
-        By
-      </span>
-      <span>
-        <a href="https://github.com/divyanshudhruv">&nbsp;Divyanshu Dhruv</a>
-      </span>
-    </div>
+   
+    <!-------testimonial---->
+    
+    <div class="rev-container">
+      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;Testimonial</div>
+      <div class="review-container">
+      <h1> Review from our client</h1>
+      <div class="rating-container">
+          <span class="rating">4.5/5</span>
+          <span class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        
+          </span>
+          <span class="reviews">10 reviews</span>
+      </div>
+      <div class="reviews-container">
+          <!-- Review 1 -->
+          <div class="review-box">
+              <img src="" alt="John Doe" class="profile-pic">
+              <div class="review-content">
+                  <span class="name">John Doe</span>
+                  <span class="comment">"Excellent model! Improved our speech recognition accuracy significantly."</span>
+                  <div class="stars" id="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                
+                </div>
+              </div>
+          </div>
+          <!-- Review 2 -->
+          <div class="review-box">
+              <img src="profile2.jpg" alt="Jane Smith" class="profile-pic">
+              <div class="review-content">
+                  <span class="name">Jane Smith</span>
+                  <span class="comment">"Easy to integrate and deploy. Highly recommend!"</span>
+                  <div class="stars" id="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                
+                </div>
+              </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="review-box">
+              <img src="profile3.jpg" alt="Bob Johnson" class="profile-pic">
+              <div class="review-content">
+                  <span class="name">Bob Johnson</span>
+                  <span class="comment">"Great model! Helped us improve our customer service."</span>
+                  
+                    <div class="stars" id="stars">
+                      <span class="star" data-value="1">★</span>
+                      <span class="star" data-value="2">★</span>
+                      <span class="star" data-value="3">★</span>
+                      <span class="star" data-value="4">★</span>
+                      <span class="star" data-value="5">★</span>
+                  
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!----review add-->
+      <div class="container-review">
+          <h1>Testimonial here</h1>
+          <div class="rating">
+              <span id="rating">0</span>/5
+          </div>
+          <div class="stars" id="stars">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+          </div>
+          <p>Share your review:</p>
+          <textarea id="review"
+                  placeholder="Write your review here">
+          </textarea>
+          <button id="submit">Submit</button>
+          <div class="reviews" id="reviews">
+          </div>
+      </div>
+<br>
+      <div class="footer">
+        <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
+        <span
+          >Copyright ©<span id="copyright-year"></span> All Rights Reserved |
+        </span>
+        <span style="position: relative; top: -3.2px"
+          >&nbsp;Template Developed With
+          <span class="icon-heart"
+            ><ion-icon
+              name="heart"
+              style="position: relative; top: 5px"
+            ></ion-icon
+          ></span>
+          By
+        </span>
+        <span>
+          <a href="https://github.com/divyanshudhruv">&nbsp;Divyanshu Dhruv</a>
+        </span>
+      </div>
+      <script src="script.js"></script> 
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>

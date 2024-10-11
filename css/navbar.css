@@ -1,44 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-
 .navbar {
-    color: #1a1a1a;
-    display: flex;
-    position: fixed;
-    z-index: 3;
-    justify-content: space-between;
-    align-items: last baseline;
-    top: 0;
-    background-color: #ffffff70;
-    width: 100%;
- /* backdrop-filter: blur(3px);  */
+  color: #1a1a1a;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  justify-content: space-between;
+  align-items: last baseline;
+  top: 0;
+  background-color: #ffffff70;
+  width: 100%;
+  /* backdrop-filter: blur(3px);  */
 
-    font-family: Montserrat;
-    padding: 1em;
-    transition:.3s;
-
+  font-family: Montserrat;
+  padding: 1em;
+  transition: 0.3s;
 }
 
 .navbar-logo {
-    font-weight: bold;
-    font-size: 1.25em;
-    cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
 }
- 
+
 .navbar-right ul {
-    display: flex;
-    gap: 1em;
-    list-style: none;
+  display: flex;
+  gap: 1em;
+  list-style: none;
 }
 
 .navbar-right a {
-    padding: 0.4em 0.6em;
-    border-radius: 4.75px;
-
+  padding: 0.4em 0.6em;
+  border-radius: 4.75px;
 }
 
 .navbar-right a:hover {
-    background-color: #01b3af;
-    color: white;
-  
+  background-color: #01b3af;
+  color: white;
 }

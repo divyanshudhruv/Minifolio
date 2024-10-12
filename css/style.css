@@ -141,6 +141,17 @@ a:visited {
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 120px;
+}
+
+.home .container .icons-container {
+  display: none;
+  position: absolute;
+  width: 50px;
+  left: 10vw;
+  height: 25px;
 }
 
 .home .container span {
@@ -174,12 +185,54 @@ a:visited {
   transition: all 0.25s ease-out;
 }
 
+.home .container a.buttonIcon {
+  position: relative;
+  display: flex;
+  top: -187.5px;
+  left: -100px;
+  width: 50px;
+  height: 225px;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .container a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(to right, #f6f6f6 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.25s ease-out;
+  color: #3a3947;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.home .container a.buttonIcon .boxes:hover {
+  background-position: left;
+}
+
 .home .container a.button:hover {
   color: #fff;
   background-position: left;
 }
 
 @media screen and (max-width: 915px) {
+  .home .container a.buttonIcon {
+    display: none;
+  }
+  .home .container {
+    padding-left: 0 !important;
+  }
+
   .home .container {
     font-size: 41px;
     text-align: center;
@@ -384,6 +437,17 @@ a:visited {
   background-color: none;
 }
 
+.aboutC .container .rightC .btnResume {
+  display: flex;
+  position: relative;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+  height: 90px;
+  min-height: 90px;
+  background-color: none;
+}
+
 @media screen and (max-width: 915px) {
   .aboutC .title {
     font-size: 43px;
@@ -433,211 +497,8 @@ a:visited {
 }
 
 /*================*/
-/*===Services Section===*/
+/*===Education Section===*/
 /*===============*/
-
-.servicesC {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 60px;
-  padding: 50px 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.servicesC .title {
-  display: flex;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 75px;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 55px;
-  background-color: none;
-  text-align: center;
-  color: #272341;
-  letter-spacing: 0.5px;
-  width: fit-content;
-}
-
-.servicesC .titleGap {
-  height: 20px;
-}
-
-.servicesC .titleSmall {
-  text-align: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  color: #96989b;
-}
-
-.servicesC .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-
-.serviceItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  margin: 20px;
-  background: #f8f8f8;
-  padding: 20px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-  /* border: 1.4px solid #f0f0f0; */
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.serviceItem:hover {
-  transform: translateY(-3px);
-  background-color: #f2f2f2 !important;
-}
-
-.serviceIcon {
-  font-size: 40px;
-  color: #01b3af;
-  margin-bottom: 10px;
-}
-
-.serviceText {
-  text-align: center;
-  font-family: "Poppins" !important;
-  font-size: 15px;
-  flex-wrap: wrap;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.serviceText .text {
-  font-weight: bold;
-  display: flex;
-  font-size: 20px;
-  color: #272341;
-  font-family: "Poppins" !important;
-  margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-.serviceText .textMain {
-  display: flex;
-  font-size: 16px;
-  color: #777;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat" !important;
-}
-
-/*================*/
-/*===Footer===*/
-/*===============*/
-
-.footer {
-  display: flex;
-  position: relative;
-  width: 650px;
-  background-color: none;
-  align-items: center;
-  justify-content: center;
-  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
-  flex-wrap: wrap;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  font-family: Poppins;
-  color: #96989b;
-  font-weight: 300;
-  letter-spacing: 1px;
-  border-top: 1.89px solid #ddd;
-  min-height: 60px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-.footer span .icon-heart {
-  color: #f87272;
-  font-size: 24px;
-}
-
-.footer span a {
-  display: inline !important;
-  font-weight: 300;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  font-weight: 300;
-  color: #666;
-}
-
-@media screen and (max-width: 915px) {
-  .footer {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 315px) {
-  .home .container {
-    font-size: 35px;
-  }
-
-  .home .container a.button {
-    font-size: 17px;
-  }
-  .aboutC .container .leftC .textMain {
-    font-size: 17px;
-  }
-
-  .aboutC .container .rightC .textMain {
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .btn.btn-about {
-    margin-top: 90px; /* Increased the top margin of the button */
-  }
-
-  .aboutC .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 65%;
-  }
-
-  .aboutC .container .rightC .textMain {
-    width: 100%;
-  }
-
-  .aboutC .container .rightC .text {
-    width: 100%;
-    margin-bottom: 18px;
-  }
-
-  .aboutC .container .rightC .btnC {
-    width: 100%;
-  }
-
-  .footer {
-    font-size: 12.5px;
-  }
-}
 
 /*  Education Section Styling */
 .white-emoji {
@@ -750,31 +611,6 @@ a:visited {
   background-color: #f2f2f2 !important;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .event-item {
-    flex-direction: column;
-    margin: 1.5rem;
-    width: 80vw;
-  }
-
-  .reverse {
-    flex-direction: column;
-  }
-
-  .empty-space {
-    display: flex;
-  }
-
-  .event-content {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .timeline-line {
-    display: flex;
-  }
-}
 .event-content .text {
   display: flex;
   position: relative;
@@ -806,4 +642,408 @@ a:visited {
   font-size: 16.3px;
   color: #777;
   background-color: none;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+    width: 80vw;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: flex;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .timeline-line {
+    display: flex;
+  }
+}
+
+.eduC .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.eduC .titleSmall {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #96989b;
+}
+
+.eduC .titleGap {
+  height: 20px;
+  display: flex;
+}
+
+.eduC .containerGap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: none;
+}
+@media screen and (max-width: 576px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+    width: fit-content;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: flex;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .timeline-line {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .eduC .title {
+    font-size: 43px;
+    left: 0;
+    margin: auto;
+    left: -10px !important;
+    width: 100%;
+  }
+
+  .eduC .titleSmall {
+    font-size: 19.5px;
+    width: 100%;
+  }
+}
+/*================*/
+/*===Services Section===*/
+/*===============*/
+
+.servicesC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.servicesC .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.servicesC .titleGap {
+  height: 20px;
+}
+
+.servicesC .titleSmall {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #96989b;
+}
+
+.servicesC .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 20px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  /* border: 1.4px solid #f0f0f0; */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.serviceItem:hover {
+  transform: translateY(-3px);
+  background-color: #f2f2f2 !important;
+}
+
+.serviceIcon {
+  font-size: 40px;
+  color: #01b3af;
+  margin-bottom: 10px;
+}
+
+.serviceText {
+  text-align: center;
+  font-family: "Poppins" !important;
+  font-size: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceText .text {
+  font-weight: bold;
+  display: flex;
+  font-size: 20px;
+  color: #3a3947;
+  font-family: "Poppins" !important;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceText .textMain {
+  display: flex;
+  font-size: 16px;
+  color: #777;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat" !important;
+}
+
+@media screen and (max-width: 915px) {
+  .servicesC .title {
+    font-size: 43px;
+    left: 0;
+    margin: auto;
+    left: -10px !important;
+    width: 100%;
+  }
+
+  .servicesC .titleSmall {
+    font-size: 19.5px;
+    width: 100%;
+  }
+}
+
+/*================*/
+/*===Footer===*/
+/*===============*/
+
+.footer {
+  display: flex;
+  position: relative;
+  width: 650px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
+  flex-wrap: wrap;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  font-family: Poppins;
+  color: #96989b;
+  font-weight: 300;
+  letter-spacing: 1px;
+  border-top: 1.89px solid #ddd;
+  min-height: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.footer span .icon-heart {
+  color: #f87272;
+  font-size: 24px;
+}
+
+.footer span a {
+  display: inline !important;
+  font-weight: 300;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  font-weight: 300;
+  color: #666;
+}
+
+.footer a.buttonIcon {
+  position: absolute;
+  top: 60px;
+  display: none;
+  width: 225px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-color: none;
+  color: #96989b;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.1s !important;
+  transition-delay: 0s !important;
+}
+
+.footer a.buttonIcon .boxes:hover {
+  color: #666;
+}
+
+@media screen and (max-width: 915px) {
+  .footer {
+    width: 90%;
+  }
+  .footer a.buttonIcon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer a.buttonIcon {
+    top: 75px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .home .container {
+    font-size: 35px;
+  }
+
+  .home .container a.button {
+    font-size: 17px;
+  }
+  .aboutC .container .leftC .textMain {
+    font-size: 17px;
+  }
+
+  .aboutC .container .rightC .textMain {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn.btn-about {
+    margin-top: 90px; /* Increased the top margin of the button */
+  }
+
+  .aboutC .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  .aboutC .container .rightC .textMain {
+    width: 100%;
+  }
+
+  .aboutC .container .rightC .text {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .aboutC .container .rightC .btnC {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 12.5px;
+  }
+}
+
+/* Additional CSS for the Back to Top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px; /* the distance from the bottom as needed */
+  right: 20px; /* the distance from the right as needed */
+  width: 50px; /* the width of the button */
+  height: 50px; /* the height of the button */
+  background-color: #dddddd50; /* Initial background color (light gray) */
+  color: #3a3947; /* Initial text color (black) */
+  border: none;
+  font-size: 22px;
+  border-radius: 7px; /* the button rounded with border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.02s, scale 0.3s; /* a smooth transition for background color, scale, and text color */
+  z-index: 999; /* Set a high z-index value to ensure it's above other elements */
+}
+
+/* Style the ion-icon inside the button */
+#back-to-top ion-icon {
+  font-size: 25px; /* the icon size */
+  margin: 0; /* Remove any margin */
+}
+
+/* Style the button on hover */
+#back-to-top:hover {
+  background-color: #efefef; /* Change the background color to a lighter shade of green on hover */
+}
+
+#back-to-top:active {
+  scale: 0.95;
 }

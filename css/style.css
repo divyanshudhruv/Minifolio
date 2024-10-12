@@ -42,6 +42,7 @@ a {
   text-decoration: none;
   width: fit-content;
   display: flex;
+  cursor: pointer;
 }
 
 a:link {
@@ -89,6 +90,8 @@ a:visited {
 ::selection {
   background: aliceblue;
 }
+
+
 
 /*================*/
 /*===Home Page===*/
@@ -1115,7 +1118,7 @@ a:visited {
 /* Hover Effect */
 .event-content:hover {
   transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  box-shadow: 0px 8px 16px rgb(1, 179, 176, 0.2); /* Add shadow on hover */
 }
 
 /* Responsive Styles */

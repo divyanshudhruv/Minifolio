@@ -13,7 +13,6 @@
     width: 100%;
     box-shadow: 0 3px 4px 0 rgba(1, 179, 175, .2);
     /* backdrop-filter: blur(3px);  */
-
     font-family: Montserrat;
     padding: 1em;
     transition: .3s;
@@ -23,6 +22,7 @@
     font-weight: bold;
     font-size: 1.25em;
     cursor: pointer;
+    color: #110f1d;
 }
  
 .navbar-right ul {
@@ -34,9 +34,9 @@
 .navbar-right a {
     padding: 0.4em 0.6em;
     border-radius: 4.75px;
-
 }
 
 .navbar-right a:hover {
+    background-color: #01b3af;
     color: #1a1a1a;
 }

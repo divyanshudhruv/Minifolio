@@ -6,7 +6,18 @@
     <title>Minifolio</title>
     <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -85,7 +96,19 @@
           <br />
           <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
           <div class="btnC">
-            <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
+            <a class="btn btn-custom btn-lg btn-about a" href="#"> Click Me </a>
+            &nbsp;
+            <a
+              class="btn btn-custom-nopadding btn-about btn-resume b"
+              href="#"
+              style="height: 60px; width: 0px !important"
+              href="#"
+              target="_blank"
+            >
+              <!--replace # in hreg tag to the url of your resume-->
+
+              <i class="ri-file-download-line" style="font-size: 24px"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -97,14 +120,16 @@
 
     <!-- Education section -->
     <section class="event-schedule">
-      <div class="aboutC">
+      <div class="eduC">
         <div class="title">
           &ThickSpace;&ThickSpace;&MediumSpace;EDUCATION 🏛️
         </div>
         <div class="titleGap"></div>
+        <div class="titleGap"></div>
+
         <div class="titleSmall" id="small-text">My Qualifications</div>
         <div class="containerGap"></div>
-        
+
         <div class="timeline-container">
           <div class="timeline-line"></div>
           <!-- First Event: School -->

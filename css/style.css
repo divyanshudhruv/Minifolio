@@ -141,6 +141,17 @@ a:visited {
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 120px;
+}
+
+.home .container .icons-container {
+  display: none;
+  position: absolute;
+  width: 50px;
+  left: 10vw;
+  height: 25px;
 }
 
 .home .container span {
@@ -174,12 +185,54 @@ a:visited {
   transition: all 0.25s ease-out;
 }
 
+.home .container a.buttonIcon {
+  position: relative;
+  display: flex;
+  top: -187.5px;
+  left: -100px;
+  width: 50px;
+  height: 225px;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .container a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(to right, #f6f6f6 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.25s ease-out;
+  color: #3a3947;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.home .container a.buttonIcon .boxes:hover {
+  background-position: left;
+}
+
 .home .container a.button:hover {
   color: #fff;
   background-position: left;
 }
 
 @media screen and (max-width: 915px) {
+  .home .container a.buttonIcon {
+    display: none;
+  }
+  .home .container {
+    padding-left: 0 !important;
+  }
+
   .home .container {
     font-size: 41px;
     text-align: center;
@@ -860,6 +913,7 @@ a:visited {
   display: inline !important;
   font-weight: 300;
   transition: 0.3s;
+  text-decoration: underline;
 }
 
 .footer a:hover {
@@ -867,9 +921,49 @@ a:visited {
   color: #666;
 }
 
+.footer a.buttonIcon {
+  position: absolute;
+  top: 60px;
+  display: none;
+  width: 225px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-color: none;
+  color: #96989b;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.1s !important;
+  transition-delay: 0s !important;
+}
+
+.footer a.buttonIcon .boxes:hover {
+  color: #666;
+}
+
 @media screen and (max-width: 915px) {
   .footer {
-    width: 100%;
+    width: 90%;
+  }
+  .footer a.buttonIcon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer a.buttonIcon {
+    top: 75px;
   }
 }
 
@@ -917,4 +1011,39 @@ a:visited {
   .footer {
     font-size: 12.5px;
   }
+}
+
+/* Additional CSS for the Back to Top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px; /* the distance from the bottom as needed */
+  right: 20px; /* the distance from the right as needed */
+  width: 50px; /* the width of the button */
+  height: 50px; /* the height of the button */
+  background-color: #dddddd50; /* Initial background color (light gray) */
+  color: #3a3947; /* Initial text color (black) */
+  border: none;
+  font-size: 22px;
+  border-radius: 7px; /* the button rounded with border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.02s, scale 0.3s; /* a smooth transition for background color, scale, and text color */
+  z-index: 999; /* Set a high z-index value to ensure it's above other elements */
+}
+
+/* Style the ion-icon inside the button */
+#back-to-top ion-icon {
+  font-size: 25px; /* the icon size */
+  margin: 0; /* Remove any margin */
+}
+
+/* Style the button on hover */
+#back-to-top:hover {
+  background-color: #efefef; /* Change the background color to a lighter shade of green on hover */
+}
+
+#back-to-top:active {
+  scale: 0.95;
 }

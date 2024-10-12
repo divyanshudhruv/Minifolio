@@ -2,21 +2,20 @@
 
 
 .navbar {
-    color: #1a1a1a;
+    color: white;
     display: flex;
     position: fixed;
     z-index: 3;
     justify-content: space-between;
     align-items: last baseline;
     top: 0;
-    background-color: #ffffff70;
+    background-color: #01b3af;
     width: 100%;
-    -webkit-backdrop-filter: blur(10px); 
-    backdrop-filter: blur(10px); 
+    box-shadow: 0 3px 4px 0 rgba(1, 179, 175, .2);
+    /* backdrop-filter: blur(3px);  */
     font-family: Montserrat;
     padding: 1em;
-    transition:.3s;
-
+    transition: .3s;
 }
 
 .navbar-logo {
@@ -39,6 +38,5 @@
 
 .navbar-right a:hover {
     background-color: #01b3af;
-    color: white;
-  
+    color: #1a1a1a;
 }

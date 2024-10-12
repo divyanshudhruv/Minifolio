@@ -3,31 +3,6 @@
     color: white;
   }
 
-
-
-  
-/*================*/
-/*===Scroll Bar===*/
-/*===============*/
-  
-  /* Track */
-::-webkit-scrollbar-track {
-    /* border: 1px solid #008785; */
-    background-color: #00040f;
-  }
-  
-  /* Handle */
- ::-webkit-scrollbar-thumb {
-    background: #01b3afd4;
-  }
-
-  .dark-mode  ::-webkit-scrollbar-thumb:hover {
-    background: #01b3afc8;
-  }
-
-
-
-
 .dark-mode .navbar {
     background-color: #00040f70;
 }
@@ -52,7 +27,6 @@
 .home .container a.button:hover {
   color: #fff;
   background-position: left;
-
 }
 
 .dark-mode .home .container #role {

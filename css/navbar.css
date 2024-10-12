@@ -11,8 +11,8 @@
     top: 0;
     background-color: #ffffff70;
     width: 100%;
+    -webkit-backdrop-filter: blur(10px); 
     backdrop-filter: blur(10px); 
-
     font-family: Montserrat;
     padding: 1em;
     transition:.3s;

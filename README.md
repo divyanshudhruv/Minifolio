@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<p align="center">  <img src="https://img.shields.io/badge/Version-0.3-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.3.1-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>
@@ -40,15 +40,13 @@
 
 <br>
 
-> **`v0.1`  `24/09/2023`** - Published Minifolio
+> **`v0.1` `24/09/2023`** - Published Minifolio
 
-> **`v0.2`  `12/10/2023`** - Added new features
- 
-> **`vRes`  `26/12/2023`** - Resumed the project
+> **`v0.2` `12/10/2023`** - Added new features
 
-> **`v0.3`  `08/10/2024`** - Added new enhancements
+> **`vRes` `26/12/2023`** - Resumed the project
 
-
+> **`v0.3` `08/10/2024`** - Added new enhancements
 
 <!--
 
@@ -95,7 +93,6 @@
 > **`7`** [Hacktoberfest](#hacktoberfest)
 
 > **`8`** [Author](#author)
-
 
 <br>
 
@@ -154,12 +151,26 @@ Follow the instruction to customize the portfolio
     ├── index.html
     ├── css
     │   ├── style.css
+    │   ├── 404.css
+    │   ├── navbar.css
     │   └── button.css
-    └── js
-        ├── script.js
-        ├── copyRight.js
-        └── typingAnimation.js
-
+    │
+    ├── js
+    │   ├── script.js
+    │   ├── 404.js
+    │   ├── copyRight.js
+    │   └── typingAnimation.js
+    │
+    ├── logo
+    │   ├── minifolio.ico
+    │   ├── minifolio.png
+    │   └── minifolio.svg
+    │
+    └── images
+        ├── link.png
+        ├── facebook.png
+        ├── linkedin.png
+        └── twitter.png
 ```
 
 <br>
@@ -185,7 +196,7 @@ Follow the instruction to customize the portfolio
 
 <br>
 
-> ## 🫤 About Me 
+> ## 🫤 About Me
 
 <br>
 
@@ -198,33 +209,169 @@ Follow the instruction to customize the portfolio
 <br>
 
 ```html
- <div class="aboutC">
-      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
-      <div class="titleGap"></div>
-      <div class="titleSmall">This and that</div>
-      <div class="containerGap"></div>
-      <div class="container">
-        <div class="leftC">
-          <div class="text">Hi, I'm a developer</div>
-          <br />
-          <div class="textMain">
-            I design websites. That's the long and short of it. UI and UX,
-            Sketch, Design, and pretty decent HTML and CSS — with Javascript and
-            that nice dabble with Java.
-          </div>
-        </div>
-        <div class="rightC">
-          <div class="text">TL;DR</div>
-          <br />
-          <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
-          <div class="btnC">
-            <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
-          </div>
+<div class="aboutC">
+  <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;ABOUT 🫥</div>
+  <div class="titleGap"></div>
+  <div class="titleSmall">This and that</div>
+  <div class="containerGap"></div>
+  <div class="container">
+    <div class="leftC">
+      <div class="text">Hi, I'm a developer</div>
+      <br />
+      <div class="textMain">
+        I design websites. That's the long and short of it. UI and UX, Sketch,
+        Design, and pretty decent HTML and CSS — with Javascript and that nice
+        dabble with Java.
+      </div>
+    </div>
+    <div class="rightC">
+      <div class="text">TL;DR</div>
+      <br />
+      <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
+      <div class="btnC">
+        <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
+      </div>
+    </div>
+  </div>
+  <div class="bottomC"></div>
+</div>
+```
+
+<br>
+
+> ## 🏛️ Education
+
+<br>
+
+> **`<text>`** Replace it with Custom Title
+
+> **`<event-time>`** Replace it with the Time duration
+
+> **`<textMain>`** Replace it with a short Description
+
+<br>
+
+```html
+<div class="timeline-container">
+  <div class="timeline-line"></div>
+
+  <div class="event-item">
+    <div class="empty-space"></div>
+    <div class="event-icon">
+      <svg>
+        <title>...</title>
+        <path d="..." />
+      </svg>
+    </div>
+
+    <div class="event-content">
+      <p class="text">Your School Title Here</p>
+      <p class="event-time">Year: 20XX- 20XX</p>
+      <p class="textMain">
+        Completed my 12th standard with a focus on Science and Mathematics,
+        achieving a score of XX%.
+      </p>
+    </div>
+  </div>
+
+  <div class="event-item reverse">
+    <div class="empty-space"></div>
+    <div class="event-icon">
+      <svg>
+        <title>...</title>
+        <path d="..." />
+      </svg>
+    </div>
+
+    <div class="event-content">
+      <p class="text">University Name</p>
+      <p class="event-time">Year: 20XX- 20XX</p>
+      <p class="textMain">
+        Pursuing a Bachelor's degree in ABC, focusing on web development and software engineering.
+      </p>
+    </div>
+  </div>
+    
+  <div class="event-item">
+    <div class="empty-space"></div>
+    <div class="event-icon">
+      <svg>
+        <title>...</title>
+        <path d="..." />
+      </svg>
+    </div>
+
+    <div class="event-content">
+      <p class="text">Your Master's Program Title Here</p>
+      <p class="event-time">Year: 20XX- 20XX</p>
+      <p class="textMain">
+        Details about your master's program and focus areas will go here.
+      </p>
+    </div>
+  </div>
+</div>
+```
+
+<br>
+
+> ## 🛠️ Services 
+
+<br>
+
+> **`<text>`** Replace it with Custom Title
+
+> **`<textMain>`** Replace it with a short Description
+
+<br>
+
+```html
+<div class="servicesC" id="services">
+  <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;SERVICES 🛠️</div>
+  <div class="titleGap"></div>
+  <div class="titleGap"></div>
+
+  <div class="titleSmall">What I Offer</div>
+  <div class="containerGap"></div>
+  <div class="titleGap"></div>
+
+  <div class="container">
+    <div class="serviceItem">
+      <div class="serviceIcon">
+        <ion-icon name="laptop-outline"></ion-icon>
+      </div>
+      <div class="serviceText">
+        <div class="text">Web Dev</div>
+        <div class="textMain">
+          Building responsive and high-quality websites.
         </div>
       </div>
-      <div class="bottomC"></div>
     </div>
+    <div class="serviceItem">
+      <div class="serviceIcon">
+        <ion-icon name="brush-outline"></ion-icon>
+      </div>
+      <div class="serviceText">
+        <div class="text">UI/UX Design</div>
+        <div class="textMain">
+          Designing user-friendly interfaces and experiences.
+        </div>
+      </div>
+    </div>
+    <div class="serviceItem">
+      <div class="serviceIcon">
+        <ion-icon name="stats-chart-outline"></ion-icon>
+      </div>
+      <div class="serviceText">
+        <div class="text">SEO Expert</div>
+        <div class="textMain">
+          Optimizing websites for better search engine ranking.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 ```
+
 <br>
 
 > ## 🌗 Footer
@@ -236,10 +383,9 @@ Follow the instruction to customize the portfolio
 <br>
 
 ```html
-<div class="footer">
-      ...
-</div>
+<div class="footer">...</div>
 ```
+
 <br>
 
 ## 📦 Deployment <a id="deployment"> </a>
@@ -249,21 +395,20 @@ Follow the instruction to customize the portfolio
 ```rust
 Minifolio is deployed by Github Page
 ```
- 
+
 <br>
 
 ## 🌱 Technology <a id="technology"> </a>
 
 <br>
 
- > **`1`** HTML
- 
- > **`2`** CSS
- 
- > **`3`** JavaScript
- 
- > **`4`** Github
+> **`1`** HTML
 
+> **`2`** CSS
+
+> **`3`** JavaScript
+
+> **`4`** Github
 
 <br>
 
@@ -284,7 +429,7 @@ Hacktoberfest is a month-long celebration of open source projects, the maintaine
 ```
 
 ```rust
-You'll receive your digital reward once you’ve completed four accepted pull/merge requests. 
+You'll receive your digital reward once you’ve completed four accepted pull/merge requests.
 ```
 
 ```rust
@@ -318,3 +463,12 @@ The first 50,000 participants to have their first PR/MR accepted will have a tre
 <br>
 
 > **<code><a href="https://github.com/divyanshudhruv">@ Divyanshu Dhruv</a></code>**
+
+<br>
+
+## ⌚ Contributors <a id="contributors"> </a>
+
+<br>
+
+
+> **<code><a href="https://github.com/divyanshudhruv/Minifolio/graphs/contributors">@ Contributors</a></code>**

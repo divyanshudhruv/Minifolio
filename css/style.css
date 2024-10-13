@@ -38,6 +38,36 @@ html {
 /*===Links===*/
 /*===============*/
 
+.icon {
+  height: 4vh;
+}
+.icon:hover {
+  height: 5vh;
+}
+
+#facebookicon {
+  position: absolute;
+  left: 7vh;
+  top: 40vh;
+}
+
+#linkedinicon {
+  position: absolute;
+  left: 7vh;
+  top: 49vh;
+}
+
+#linkicon {
+  position: absolute;
+  left: 7vh;
+  top: 63vh;
+}
+#twittericon {
+  position: absolute;
+  left: 7vh;
+  top: 56vh;
+}
+
 a {
   text-decoration: none;
   width: fit-content;
@@ -356,6 +386,7 @@ a:visited {
   justify-content: start;
   flex-wrap: wrap;
   flex-direction: column;
+  transition: 0.3s !important;
 }
 
 .aboutC .container .rightC .text {
@@ -443,180 +474,6 @@ a:visited {
 }
 
 /*================*/
-/*===Projects===*/
-/*===============*/
-/*
-.projectC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.projectC .main {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.projectC .main .textBig {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 58px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #272341;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.projectC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
-}
-
-.projectC .main .btnCont {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
-
-/*================*/
-/*===Contact===*/
-/*===============*/
-/*
-.contactC {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.contactC .main {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.contactC .main .textBig {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 58px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #272341;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.contactC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
-}
-
-.contactC .main .btnCont {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
-
-/*================*/
 /*===Services Section===*/
 /*===============*/
 
@@ -633,11 +490,23 @@ a:visited {
 }
 
 .servicesC .title {
-  text-align: center;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 55px;
+  background-color: none;
+  text-align: center;
   color: #272341;
+  letter-spacing: 0.5px;
+  width: fit-content;
 }
 
 .servicesC .titleGap {
@@ -668,12 +537,15 @@ a:visited {
   background: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  /* border: 1.4px solid #f0f0f0; */
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .serviceItem:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+  background-color: #f2f2f2 !important;
 }
 
 .serviceIcon {
@@ -686,20 +558,33 @@ a:visited {
   text-align: center;
   font-family: "Poppins" !important;
   font-size: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .serviceText .text {
   font-weight: bold;
+  display: flex;
   font-size: 20px;
   color: #272341;
   font-family: "Poppins" !important;
   margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .serviceText .textMain {
+  display: flex;
   font-size: 16px;
-  color: #555;
+  color: #777;
+  justify-content: center;
+  align-items: center;
   font-family: "Montserrat" !important;
+}
+
 }
 /* Contact Section */
 .contactC {
@@ -878,7 +763,6 @@ a:visited {
 
 #link:hover{
   background-color: #009794;
-=======
 .contactC input[type="text"]:hover,
 .contactC input[type="email"]:hover,
 .contactC textarea:hover {
@@ -1008,7 +892,6 @@ a:visited {
 
 .timeline-container {
   position: relative;
-  margin-top: 2rem;
 }
 
 .timeline-line {
@@ -1029,6 +912,12 @@ a:visited {
   margin-bottom: 40px;
   position: relative;
   opacity: 0;
+  width: 800px;
+  padding-inline: 10px;
+  transform: scale(0.8);
+  animation: popUp 0.5s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   transform: scale(0.8);
   animation: popUp 0.5s forwards;
   transition:
@@ -1043,7 +932,7 @@ a:visited {
 
 /* Empty Space to Align the Event Icons */
 .empty-space {
-  width: 40%;
+  width: calc(43.75% + 10px);
 }
 
 /* Event Icon */
@@ -1068,26 +957,27 @@ a:visited {
 /* Event Content */
 .event-content {
   width: 40%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8 !important;
+  padding: 27.5px;
+  border-radius: 7px;
+  width: 350px;
+  height: fit-content;
   position: relative;
+  cursor: pointer;
 }
 
 /* Event Title and Time */
 .event-title {
-  font-size: 1.5rem;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.event-time {
-  color: #6b7280;
-  margin-bottom: 10px;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 17px;
+.event-schedule .title {
+  color: #272341;
+  letter-spacing: 0.5px;
+  font-size: 55px;
+  width: fit-content;
 }
 
 /* Animation Keyframes for Pop-Up Effect */
@@ -1098,24 +988,10 @@ a:visited {
   }
 }
 
-/* Animation Delay for Staggered Effects */
-.event-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.event-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.event-item:nth-child(3) {
-  animation-delay: 0.3s;
-}
-.event-item:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
 /* Hover Effect */
 .event-content:hover {
-  transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  scale: 1.01;
+  background-color: #f2f2f2 !important;
 }
 
 /* Responsive Styles */
@@ -1123,6 +999,7 @@ a:visited {
   .event-item {
     flex-direction: column;
     margin: 1.5rem;
+    width: 80vw;
   }
 
   .reverse {
@@ -1130,7 +1007,7 @@ a:visited {
   }
 
   .empty-space {
-    display: none;
+    display: flex;
   }
 
   .event-content {
@@ -1138,11 +1015,8 @@ a:visited {
     margin-top: 20px;
   }
 
-  .event-icon {
-    margin: 0 auto;
-  }
-
   .timeline-line {
+    display: flex;
     display: none;
   }
   #span-title {
@@ -1150,28 +1024,36 @@ a:visited {
     height: 15px;
   }
 }
-.text {
+.event-content .text {
   display: flex;
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 25.5px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
   color: #01b3af;
   background-color: none;
 }
 
-.textMain {
+.event-content .event-time {
+  color: #6b7280;
+  margin-top: 5px;
   display: flex;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 13px;
+}
+.event-content .textMain {
+  display: flex;
+  margin-top: 10px;
   position: relative;
   width: 100%;
   height: fit-content;
   font-family: "Poppins";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16.3px;
   color: #777;
-  line-height: 1.9em;
   background-color: none;
 }
 /* Custom Cursor Styles */

@@ -28,6 +28,7 @@ body {
   margin: 0;
   transition: 0.3s;
 }
+
 html {
   scroll-behavior: smooth;
   outline: none;
@@ -106,6 +107,7 @@ a:visited {
 ::-webkit-scrollbar-thumb {
   background: #ddd;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #ccc;
 }
@@ -131,18 +133,52 @@ a:visited {
   justify-content: center;
 }
 
+.home #profile-image{
+  width: 550px;
+  height: 550px;
+}
+
+
 .home .container {
-  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  
+}
+.home .container .text-sec {
+  width: 70%;
   height: 225px;
   background-color: none;
   color: #272341;
-  font-size: 56px;
+  font-size: 45px;
   font-family: Montserrat;
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  margin-right: 3rem;
+  margin-top: 3rem;
+
 }
 
+ .container .img-sec {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin-left: 2rem;
+  overflow: hidden;
+  border: 15px solid #4444;
+  box-shadow: 5px 7px 25px rgba(0, 0, 0, 5);
+ }
+
+ .img-sec img{
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+ }
+
+ .img-sec img:hover{
+  transform: scale(1.2);
+ }
 .home .container span {
   color: #01b3af;
 }
@@ -158,7 +194,7 @@ a:visited {
 .home .container a.button {
   position: relative;
   display: flex;
-  top: 30px;
+  top: 56px;
   padding: 5.5px 13.5px;
   width: fit-content;
   height: fit-content;
@@ -179,9 +215,11 @@ a:visited {
   background-position: left;
 }
 
+
+
 @media screen and (max-width: 915px) {
-  .home .container {
-    font-size: 41px;
+  .home .container .text-sec {
+    font-size: 35px;
     text-align: center;
     line-height: 1.5em;
     position: relative;
@@ -207,6 +245,7 @@ a:visited {
   height: fit-content;
   background-color: none;
   min-height: 600px;
+  padding-top: 110px;
   align-items: start;
   justify-content: start;
   overflow: hidden;
@@ -249,6 +288,7 @@ a:visited {
   height: 50px;
   background-color: none;
 }
+
 .aboutC .titleSmall {
   display: flex;
   top: 0;
@@ -360,6 +400,7 @@ a:visited {
   color: #01b3af;
   background-color: none;
 }
+
 .aboutC .container .rightC .textMain {
   display: flex;
   position: relative;
@@ -521,6 +562,7 @@ a:visited {
   align-items: center;
   display: flex;
   flex-direction: column;
+
 }
 
 .serviceText .text {
@@ -543,6 +585,197 @@ a:visited {
   font-family: "Montserrat" !important;
 }
 
+}
+/* Contact Section */
+.contactC {
+  background: linear-gradient(135deg, #f0f0f5, #ffffff);
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.contactC .title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contactC .titleSmall {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contactC .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contactC .leftC {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.contactC .leftC .text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contactC .leftC .textMain {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #777;
+}
+
+.contactC .rightC {
+  flex: 1;
+  padding: 20px;
+}
+
+.contactC .form-group {
+  margin-bottom: 15px;
+}
+
+.contactC label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contactC input[type="text"],
+.contactC input[type="email"],
+.contactC textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.contactC input[type="text"]:focus,
+.contactC input[type="email"]:focus,
+.contactC textarea:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+.contactC textarea {
+  resize: vertical;
+}
+
+.contactC .button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contactC .button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.contactC .button:focus {
+  outline: none;
+}
+
+.contactC .button:active {
+  transform: scale(0.98);
+  transition: transform 0.1s;
+}
+
+.contactC .rightC form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Form Animation */
+.contactC input[type="text"],
+.contactC input[type="email"],
+.contactC textarea {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/*================*/
+/*===Blog===*/
+/*===============*/
+
+.BLOG-SECTION {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  
+}
+
+.BLOG {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  width: 500px;
+  gap: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+#heading {
+  color: #01b3af;
+  font-size: 3rem;
+}
+
+#content {
+  color: #272341;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#link {
+  padding: 20px 40px;
+  background-color: #02aba8;
+  border-radius: 10px;
+  color: #f8f8f8;
+  font-weight: 600 ;
+}
+
+#link:hover{
+  background-color: #009794;
+.contactC input[type="text"]:hover,
+.contactC input[type="email"]:hover,
+.contactC textarea:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactC input[type="text"]:focus,
+.contactC input[type="email"]:focus,
+.contactC textarea:focus {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
+}
+
 /*================*/
 /*===Footer===*/
 /*===============*/
@@ -550,8 +783,8 @@ a:visited {
 .footer {
   display: flex;
   position: relative;
-  width: 650px;
-  background-color: none;
+  width: 950px;
+  background: #02aba8;
   align-items: center;
   justify-content: center;
   /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
@@ -562,29 +795,32 @@ a:visited {
   text-align: center;
   font-size: 15px;
   font-family: Poppins;
-  color: #96989b;
-  font-weight: 300;
+  color: black;
+  font-weight: bolder;
   letter-spacing: 1px;
   border-top: 1.89px solid #ddd;
   min-height: 60px;
   padding-top: 5px;
   padding-bottom: 10px;
+  width: 100vw;
 }
 
+
+
+
 .footer span .icon-heart {
-  color: #f87272;
+  color: #df5959;
   font-size: 24px;
 }
 
 .footer span a {
   display: inline !important;
-  font-weight: 300;
+  font-weight: bolder;
   transition: 0.3s;
 }
 
 .footer a:hover {
-  font-weight: 300;
-  color: #666;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 915px) {
@@ -601,6 +837,7 @@ a:visited {
   .home .container a.button {
     font-size: 17px;
   }
+
   .aboutC .container .leftC .textMain {
     font-size: 17px;
   }
@@ -612,7 +849,8 @@ a:visited {
 
 @media screen and (max-width: 480px) {
   .btn.btn-about {
-    margin-top: 90px; /* Increased the top margin of the button */
+    margin-top: 90px;
+    /* Increased the top margin of the button */
   }
 
   .aboutC .container {
@@ -679,6 +917,12 @@ a:visited {
   transform: scale(0.8);
   animation: popUp 0.5s forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  transform: scale(0.8);
+  animation: popUp 0.5s forwards;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Reverse layout for alternating items */
@@ -773,6 +1017,11 @@ a:visited {
 
   .timeline-line {
     display: flex;
+    display: none;
+  }
+  #span-title {
+    width: 15px;
+    height: 15px;
   }
 }
 .event-content .text {
@@ -806,4 +1055,175 @@ a:visited {
   font-size: 16.3px;
   color: #777;
   background-color: none;
+}
+/* Custom Cursor Styles */
+.custom-cursor {
+  width: 40px;
+  height: 40px;
+  background-color: darkred;
+  border-radius: 50%;
+  position: fixed;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 0.1s linear,
+    background-color 0.2s ease-out;
+  z-index: 1000;
+}
+
+/* Cursor hover effects */
+a:hover ~ .custom-cursor,
+button:hover ~ .custom-cursor {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.img1{
+  position: absolute;
+  height: 25vh;
+  rotate: 10deg;
+  left: -20vh;
+  bottom:5vh;
+}
+.img2{
+  position: absolute;
+  height: 25vh;
+  rotate: -15deg;
+  right:-24vh;
+  bottom: 5vh;
+}
+.img3{
+  position: absolute;
+  height: 25vh;
+  rotate: 15deg;
+  left: -22vh;
+  top:5vh;
+
+
+
+
+
+/* Basic styling */
+.contact-section {
+  padding: 20px 0;
+  background: linear-gradient(135deg, #f3ec78, #af4261);
+  color: white;
+  text-align: center;
+  border-radius: 90px;
+height: 550px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  position: relative;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-in-out 0.5s;
+  animation-fill-mode: both;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form input styles */
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #f37272;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+  transition: all 0.4s ease;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #b34747;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Input hover and focus effects */
+input:hover, textarea:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }

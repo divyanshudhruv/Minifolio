@@ -474,6 +474,120 @@ a:visited {
 }
 
 /*================*/
+/*===Experience===*/
+/*===============*/
+
+.experienceC .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+}
+
+.experienceC .titleSmall {
+  display: flex;
+  top: 0;
+  position: relative;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 57.5px;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  background-color: none;
+  text-align: center;
+  color: #96989b;
+  flex-wrap: wrap;
+  letter-spacing: 0.3px;
+}
+
+.experienceC {
+  padding: 40px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.experienceItem {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.experienceCompany {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experienceDuration {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experienceDescription {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.progressBars {
+  margin-top: 15px;
+}
+
+.progressBar {
+  margin-bottom: 15px;
+}
+
+.progressLabel {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.progressOuter {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progressInner {
+  height: 10px;
+  border-radius: 8px;
+}
+
+
+/*================*/
+/*===Projects===*/
+/*===============*/
+
+/* .projectC {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: none;
+}
+=======
 /*===Services Section===*/
 /*===============*/
 
@@ -483,6 +597,18 @@ a:visited {
   align-items: center;
   justify-content: center;
   width: 100%;
+
+  height: 200px;
+  background-color: none;
+}  */
+
+/*================*/
+/*===Contact===*/
+/*===============*/
+/*
+.contactC {
+  display: flex;
+=======
   margin-top: 60px;
   padding: 50px 0;
   overflow: hidden;

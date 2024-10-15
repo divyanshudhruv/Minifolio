@@ -879,139 +879,133 @@ a:visited {
 /*================*/
 /*===Footer===*/
 /*===============*/
-
+/* Main Footer Styling */
+/* Main Footer Styling */
 .footer {
   display: flex;
-  position: relative;
-  width: 650px;
-  background-color: none;
+  justify-content: space-between; /* Ensures spacing between left, center, and right sections */
   align-items: center;
-  justify-content: center;
-  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
-  flex-wrap: wrap;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  font-family: Poppins;
-  color: #96989b;
+  width: 100%;
+  padding: 20px 20px; /* Increased padding for more height */
+  background-color: #02aba8; /* Background color for the footer */
+  font-size: 20px; /* Increased font size for the footer */
+  font-family: Poppins, sans-serif;
+  color: #000000; /* Set default text color to black */
   font-weight: 300;
-  letter-spacing: 1px;
   border-top: 1.89px solid #ddd;
-  min-height: 60px;
-  padding-top: 5px;
-  padding-bottom: 10px;
 }
 
-.footer span .icon-heart {
-  color: #f87272;
-  font-size: 24px;
-}
-
-.footer span a {
-  display: inline !important;
-  font-weight: 300;
-  transition: 0.3s;
-  text-decoration: underline;
-}
-
-.footer a:hover {
-  font-weight: 300;
-  color: #666;
-}
-
-.footer a.buttonIcon {
-  position: absolute;
-  top: 60px;
-  display: none;
-  width: 225px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.footer a.buttonIcon .boxes {
+/* Left Section - Harsh Vardhan */
+.footer-left {
   display: flex;
-  position: relative;
-  width: 44px;
-  height: 44px;
-  background-color: none;
-  color: #96989b;
-  font-size: 19.5px;
-  font-weight: lighter;
   align-items: center;
+  gap: 7px;
+}
+
+.footer-left h3 {
+  font-size: 24px; /* Increased font size for name */
+  font-weight: bold;
+  color: #000000; /* Set name color to black */
+  margin-right: 5px;
+  transition: color 0.3s, transform 0.7s; /* Smooth transition for color and zoom */
+}
+
+.footer-left h3:hover,
+.footer-left .copyright:hover {
+  color: #ffffff; /* Change color to white on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.footer-left .copyright {
+  font-size: 18px; /* Increased font size for copyright text */
+  color: #000000; /* Set copyright text color to black */
+  font-weight: bold; /* Make copyright text bold */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and zoom */
+}
+
+.footer-left .copyright:hover {
+  color: #ffffff; /* Change color to white on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Center Section - Navigation Links */
+.footer-center {
+  display: flex;
   justify-content: center;
-  cursor: pointer;
-  transition: 0.1s !important;
-  transition-delay: 0s !important;
+  gap: 30px; /* Increased space between navigation items */
 }
 
-.footer a.buttonIcon .boxes:hover {
-  color: #666;
+.footer-center a {
+  color: #000000; /* Set link color to black */
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and zoom */
+  font-size: 18px; /* Increased font size for links */
+  font-weight: 500; /* Make link text bold */
 }
 
-@media screen and (max-width: 915px) {
+.footer-center a:hover {
+  color: #ffffff; /* White on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Right Section - Links */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Increased spacing between links */
+}
+
+.footer-right a {
+  color: #000000; /* Set icon color to black */
+  font-size: 24px; /* Increased size for icons */
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and zoom */
+  font-weight: bold; /* Make icons bold */
+}
+
+.footer-right a:hover {
+  color: #ffffff; /* White on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Heart Icon for 'Made with Love' message */
+.footer span .icon-heart {
+  color: #000000; /* Set heart icon color to black */
+  font-size: 30px; /* Increased size for heart icon */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 915px) {
   .footer {
-    width: 90%;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Adjust padding */
   }
-  .footer a.buttonIcon {
-    display: flex;
+
+  .footer-left, 
+  .footer-center, 
+  .footer-right {
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer-center {
+    flex-direction: column; /* Stack center items vertically */
   }
 }
 
-@media screen and (max-width: 400px) {
-  .footer a.buttonIcon {
-    top: 75px;
-  }
-}
-
-@media screen and (max-width: 315px) {
-  .home .container {
-    font-size: 35px;
-  }
-
-  .home .container a.button {
-    font-size: 17px;
-  }
-  .aboutC .container .leftC .textMain {
-    font-size: 17px;
-  }
-
-  .aboutC .container .rightC .textMain {
-    font-size: 17px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .btn.btn-about {
-    margin-top: 90px; /* Increased the top margin of the button */
-  }
-
-  .aboutC .container {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 65%;
-  }
-
-  .aboutC .container .rightC .textMain {
-    width: 100%;
-  }
-
-  .aboutC .container .rightC .text {
-    width: 100%;
-    margin-bottom: 18px;
-  }
-
-  .aboutC .container .rightC .btnC {
-    width: 100%;
-  }
-
+@media (max-width: 400px) {
   .footer {
-    font-size: 12.5px;
+    font-size: 16px; /* Slightly reduced font size on smaller screens */
+  }
+
+  .footer-right {
+    gap: 10px; /* Reduce gap between links on smaller screens */
   }
 }
+
+
+
+/* now we dont need of this css right below i am not removing by anychance u want the back top button */
 
 /* Additional CSS for the Back to Top button */
 #back-to-top {

@@ -643,9 +643,19 @@ a:visited {
   color: #777;
   background-color: none;
 }
-
+.school {
+  margin-left: 527px;
+  margin-bottom: 12px;
+}
+.bach {
+  margin-left: 106px;
+  margin-bottom: 12px;
+}
 /* Responsive Styles */
-
+.col {
+  margin-left: 105px;
+  margin-bottom: 12px;
+}
 @media screen and (max-width: 768px) {
   .event-item {
     flex-direction: column;

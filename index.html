@@ -6,13 +6,40 @@
     <title>Minifolio</title>
     <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/button.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
     <!-- <link rel="stylesheet" href="button.css" /> -->
   </head>
   <body>
+    <!--Navbar-->
+    <nav class="navbar">
+      <div class="navbar-logo">MINIFOLIO</div>
+      <div class="navbar-right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Home -->
+    <div id="home" class="home">
     <!--
     <a href=""
       ><img
@@ -67,8 +94,21 @@
         class="profile-image"
       />
       <div class="container">
+        <div class="icons-container"></div>
         Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
         <a class="button" href="#about">Know more</a>
+        <a class="buttonIcon">
+          <div class="boxes" onclick="twitter()">
+            <i class="ri-twitter-line"></i>
+          </div>
+          <div class="boxes" onclick="linkedin()">
+            <i class="ri-linkedin-line"></i>
+          </div>
+          <div class="boxes" onclick="instagram()">
+            <i class="ri-instagram-line"></i>
+          </div>
+          <div class="boxes" onclick="link()"><i class="ri-link"></i></div>
+        </a>
          <div class="img-sec">
           <img src="portfolioimg.jpg" alt="profile-img" srcset="">
           <!-- add your img -->
@@ -108,12 +148,23 @@
           <br />
           <div class="textMain">Web UI & UX <br />Figma<br />HTML & CSS</div>
           <div class="btnC">
-            <a class="btn btn-custom btn-lg btn-about" href="#"> Click Me </a>
+            <a class="btn btn-custom btn-lg btn-about a" href="#"> Click Me </a>
+            &nbsp;
+            <a
+              class="btn btn-custom-nopadding btn-about btn-resume b"
+              style="height: 60px; width: 0px !important"
+              href="#"
+            >
+              <!--replace # in hreg tag to the url of your resume-->
+
+              <i class="ri-file-download-line" style="font-size: 24px"></i>
+            </a>
           </div>
         </div>
       </div>
       <div class="bottomC"></div>
     </div>
+
 
     <!-- <div class="projectC">
       <div class="main">
@@ -200,11 +251,18 @@
 
     <!-- Education section -->
     <section class="event-schedule">
+      <div class="eduC">
+
       <div class="aboutC">
         <div class="title">
           &ThickSpace;&ThickSpace;&MediumSpace;EDUCATION 🏛️
         </div>
         <div class="titleGap"></div>
+        <div class="titleGap"></div>
+
+        <div class="titleSmall" id="small-text">My Qualifications</div>
+        <div class="containerGap"></div>
+
         <div class="titleSmall" id="small-text">My Qualifications</div>
         <div class="containerGap"></div>
         
@@ -354,6 +412,8 @@
 
     <div class="px50"></div>
 
+    <div class="px50"></div>
+
     <!-- services section start -->
     <div class="servicesC" id="services">
       <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;SERVICES 🛠️</div>
@@ -425,6 +485,35 @@
     
     <!-- services section end -->
     <div class="px50" style="height: 25px !important"></div>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h3>Your Name</h3>
+        <span class="copyright">/ © 2024 Your Name</span>
+      </div>
+      <div class="footer-center">
+        <a href="#about">About</a> /
+        <a href="#education">Education</a> /
+        <a href="#services">Service</a> /
+        <a href="#contact">Contact</a>
+      </div>
+      
+      <div class="footer-right">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"><i class="ri-github-line"></i></a>
+        <a href="https://www.linkedin.com/in/yourusername/" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-line"></i></a>
+        <a href="https://www.instagram.com/yourusername/" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-line"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer"><i class="ri-twitter-line"></i></a>
+      </div>
+    </footer>
+    
+    
+    
+
+    <!--Back To Top-->
+    <!-- <a href="#"
+      ><div id="back-to-top"><i class="ri-mouse-line"></i></div
+    ></a> -->
+
      <!-- Contact Section -->
     <div id="contact" class="contactC" >
       <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;CONTACT 👋</div>

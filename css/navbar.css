@@ -15,6 +15,7 @@
   font-family: Montserrat;
   padding: 1em;
   transition: 0.3s;
+
     color: white;
     display: flex;
     position: fixed;
@@ -52,6 +53,7 @@
 .navbar-right a:hover {
   background-color: #01b3af;
   color: white;
+
 }
     color: #1a1a1a;
 }

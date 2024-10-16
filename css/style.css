@@ -155,6 +155,17 @@ a:visited {
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 120px;
+}
+
+.home .container .icons-container {
+  display: none;
+  position: absolute;
+  width: 50px;
+  left: 10vw;
+  height: 25px;
   margin-right: 3rem;
   margin-top: 3rem;
 
@@ -210,6 +221,42 @@ a:visited {
   transition: all 0.25s ease-out;
 }
 
+.home .container a.buttonIcon {
+  position: relative;
+  display: flex;
+  top: -187.5px;
+  left: -100px;
+  width: 50px;
+  height: 225px;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .container a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(to right, #f6f6f6 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.25s ease-out;
+  color: #3a3947;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.home .container a.buttonIcon .boxes:hover {
+  background-position: left;
+
+}
+
 .home .container a.button:hover {
   color: #fff;
   background-position: left;
@@ -218,6 +265,15 @@ a:visited {
 
 
 @media screen and (max-width: 915px) {
+  .home .container a.buttonIcon {
+    display: none;
+  }
+  .home .container {
+    padding-left: 0 !important;
+  }
+
+  .home .container {
+    font-size: 41px;
   .home .container .text-sec {
     font-size: 35px;
     text-align: center;
@@ -425,6 +481,17 @@ a:visited {
   background-color: none;
 }
 
+.aboutC .container .rightC .btnResume {
+  display: flex;
+  position: relative;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+  height: 90px;
+  min-height: 90px;
+  background-color: none;
+}
+
 @media screen and (max-width: 915px) {
   .aboutC .title {
     font-size: 43px;
@@ -474,6 +541,69 @@ a:visited {
 }
 
 /*================*/
+/*===Education Section===*/
+/*===============*/
+
+/*  Education Section Styling */
+.white-emoji {
+  color: white; /* Set emoji color to white */
+  font-size: 24px; /* Adjust the size if necessary */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #d1d5db;
+  transform: translateX(-50%);
+}
+
+.event-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  opacity: 0;
+  width: 800px;
+  padding-inline: 10px;
+  transform: scale(0.8);
+  animation: popUp 0.5s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Reverse layout for alternating items */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Empty Space to Align the Event Icons */
+.empty-space {
+  width: calc(43.75% + 10px);
+}
+
+/* Event Icon */
+.event-icon {
+  background-color: #01b3af;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+=======
 /*===Experience===*/
 /*===============*/
 
@@ -488,8 +618,196 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+/* Event Content */
+.event-content {
+  width: 40%;
+  background-color: #f8f8f8 !important;
+  padding: 27.5px;
+  border-radius: 7px;
+  width: 350px;
+  height: fit-content;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Event Title and Time */
+.event-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-schedule .title {
+  color: #272341;
+  letter-spacing: 0.5px;
+  font-size: 55px;
+  width: fit-content;
+}
+
+/* Animation Keyframes for Pop-Up Effect */
+@keyframes popUp {
+  to {
+    opacity: 1;
+    transform: scale(1); /* Final scale after animation */
+  }
+}
+
+/* Hover Effect */
+.event-content:hover {
+  scale: 1.01;
+  background-color: #f2f2f2 !important;
+}
+
+.event-content .text {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  color: #01b3af;
+  background-color: none;
+}
+
+.event-content .event-time {
+  color: #6b7280;
+  margin-top: 5px;
+  display: flex;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 13px;
+}
+.event-content .textMain {
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16.3px;
+  color: #777;
+  background-color: none;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+    width: 80vw;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: flex;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .timeline-line {
+    display: flex;
+  }
+}
+
+.eduC .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
   font-family: Montserrat;
   font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.eduC .titleSmall {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #96989b;
+}
+
+.eduC .titleGap {
+  height: 20px;
+  display: flex;
+}
+
+.eduC .containerGap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: none;
+}
+@media screen and (max-width: 576px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+    width: fit-content;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: flex;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .timeline-line {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .eduC .title {
+    font-size: 43px;
+    left: 0;
+    margin: auto;
+    left: -10px !important;
+    width: 100%;
+  }
+
+  .eduC .titleSmall {
+    font-size: 19.5px;
+    width: 100%;
+  }
+}
+/*================*/
   font-size: 55px;
   background-color: none;
   text-align: center;
@@ -587,7 +905,6 @@ a:visited {
   height: 400px;
   background-color: none;
 }
-=======
 /*===Services Section===*/
 /*===============*/
 
@@ -695,7 +1012,7 @@ a:visited {
   font-weight: bold;
   display: flex;
   font-size: 20px;
-  color: #272341;
+  color: #3a3947;
   font-family: "Poppins" !important;
   margin-bottom: 10px;
   justify-content: center;
@@ -709,6 +1026,21 @@ a:visited {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat" !important;
+}
+
+@media screen and (max-width: 915px) {
+  .servicesC .title {
+    font-size: 43px;
+    left: 0;
+    margin: auto;
+    left: -10px !important;
+    width: 100%;
+  }
+
+  .servicesC .titleSmall {
+    font-size: 19.5px;
+    width: 100%;
+  }
 }
 
 }
@@ -905,9 +1237,27 @@ a:visited {
 /*================*/
 /*===Footer===*/
 /*===============*/
-
+/* Main Footer Styling */
+/* Main Footer Styling */
 .footer {
   display: flex;
+  justify-content: space-between; /* Ensures spacing between left, center, and right sections */
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px; /* Increased padding for more height */
+  background-color: #02aba8; /* Background color for the footer */
+  font-size: 20px; /* Increased font size for the footer */
+  font-family: Poppins, sans-serif;
+  color: #000000; /* Set default text color to black */
+  font-weight: 300;
+  border-top: 1.89px solid #ddd;
+}
+
+/* Left Section - Harsh Vardhan */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   position: relative;
   width: 950px;
   background: #02aba8;
@@ -1009,29 +1359,40 @@ a:visited {
   font-size: 24px; /* Adjust the size if necessary */
 }
 
-.section-title {
-  font-size: 2.5rem;
+.footer-left h3 {
+  font-size: 24px; /* Increased font size for name */
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
+  color: #000000; /* Set name color to black */
+  margin-right: 5px;
+  transition: color 0.3s, transform 0.7s; /* Smooth transition for color and zoom */
 }
 
+.footer-left h3:hover,
+.footer-left .copyright:hover {
+  color: #ffffff; /* Change color to white on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.footer-left .copyright {
+  font-size: 18px; /* Increased font size for copyright text */
+  color: #000000; /* Set copyright text color to black */
+  font-weight: bold; /* Make copyright text bold */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and zoom */
 .timeline-container {
   position: relative;
 }
 
-.timeline-line {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background-color: #d1d5db;
-  transform: translateX(-50%);
+.footer-left .copyright:hover {
+  color: #ffffff; /* Change color to white on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
 }
 
-.event-item {
+/* Center Section - Navigation Links */
+.footer-center {
   display: flex;
+  justify-content: center;
+  gap: 30px; /* Increased space between navigation items */
+
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -1051,35 +1412,46 @@ a:visited {
     box-shadow 0.3s ease;
 }
 
-/* Reverse layout for alternating items */
-.reverse {
-  flex-direction: row-reverse;
+.footer-center a {
+  color: #000000; /* Set link color to black */
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and zoom */
+  font-size: 18px; /* Increased font size for links */
+  font-weight: 500; /* Make link text bold */
 }
 
+.footer-center a:hover {
+  color: #ffffff; /* White on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
 /* Empty Space to Align the Event Icons */
 .empty-space {
   width: calc(43.75% + 10px);
 }
 
-/* Event Icon */
-.event-icon {
-  background-color: #01b3af;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+/* Right Section - Links */
+.footer-right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  z-index: 10;
-  position: relative;
+  gap: 20px; /* Increased spacing between links */
 }
 
-.svg-icon {
-  width: 20px;
-  height: 20px;
-  color: white;
+.footer-right a {
+  color: #000000; /* Set icon color to black */
+  font-size: 24px; /* Increased size for icons */
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for color and zoom */
+  font-weight: bold; /* Make icons bold */
 }
 
+.footer-right a:hover {
+  color: #ffffff; /* White on hover */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Heart Icon for 'Made with Love' message */
+.footer span .icon-heart {
+  color: #000000; /* Set heart icon color to black */
+  font-size: 30px; /* Increased size for heart icon */
 /* Event Content */
 .event-content {
   width: 40%;
@@ -1106,13 +1478,32 @@ a:visited {
   width: fit-content;
 }
 
-/* Animation Keyframes for Pop-Up Effect */
-@keyframes popUp {
-  to {
-    opacity: 1;
-    transform: scale(1); /* Final scale after animation */
+/* Responsive Design for Smaller Screens */
+@media (max-width: 915px) {
+  .footer {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Adjust padding */
+  }
+
+  .footer-left, 
+  .footer-center, 
+  .footer-right {
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer-center {
+    flex-direction: column; /* Stack center items vertically */
   }
 }
+
+@media (max-width: 400px) {
+  .footer {
+    font-size: 16px; /* Slightly reduced font size on smaller screens */
+  }
+
+  .footer-right {
+    gap: 10px; /* Reduce gap between links on smaller screens */
 
 /* Hover Effect */
 .event-content:hover {
@@ -1135,12 +1526,45 @@ a:visited {
   .empty-space {
     display: flex;
   }
+}
 
-  .event-content {
-    width: 100%;
-    margin-top: 20px;
-  }
 
+
+/* now we dont need of this css right below i am not removing by anychance u want the back top button */
+
+/* Additional CSS for the Back to Top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px; /* the distance from the bottom as needed */
+  right: 20px; /* the distance from the right as needed */
+  width: 50px; /* the width of the button */
+  height: 50px; /* the height of the button */
+  background-color: #dddddd50; /* Initial background color (light gray) */
+  color: #3a3947; /* Initial text color (black) */
+  border: none;
+  font-size: 22px;
+  border-radius: 7px; /* the button rounded with border radius */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.02s, scale 0.3s; /* a smooth transition for background color, scale, and text color */
+  z-index: 999; /* Set a high z-index value to ensure it's above other elements */
+}
+
+/* Style the ion-icon inside the button */
+#back-to-top ion-icon {
+  font-size: 25px; /* the icon size */
+  margin: 0; /* Remove any margin */
+}
+
+/* Style the button on hover */
+#back-to-top:hover {
+  background-color: #efefef; /* Change the background color to a lighter shade of green on hover */
+}
+
+#back-to-top:active {
+  scale: 0.95;
   .timeline-line {
     display: flex;
     display: none;

@@ -8,6 +8,8 @@
 <br>
 
 <p align="center">  <img src="https://img.shields.io/badge/Version-0.3.2-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+=======
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.3.1-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>
@@ -310,6 +312,11 @@ Follow the instruction to customize the portfolio
     </div>
   </div>
 
+        Pursuing a Bachelor's degree in ABC, focusing on web development and software engineering.
+      </p>
+    </div>
+  </div>
+    
   <div class="event-item">
     <div class="empty-space"></div>
     <div class="event-icon">
@@ -386,6 +393,20 @@ Follow the instruction to customize the portfolio
         </div>
       </div>
     </div>
+        </div>
+      </div>
+    </div>
+    <div class="serviceItem">
+      <div class="serviceIcon">
+        <ion-icon name="stats-chart-outline"></ion-icon>
+      </div>
+      <div class="serviceText">
+        <div class="text">SEO Expert</div>
+        <div class="textMain">
+          Optimizing websites for better search engine ranking.
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 ```
@@ -415,6 +436,7 @@ Follow the instruction to customize the portfolio
     <div class="boxes" onclick="link()"><i class="ri-link"></i></div>
   </a>
 </div>
+<div class="footer">...</div>
 ```
 
 <br>
@@ -436,6 +458,9 @@ Minifolio is deployed by Github Page
 > **`1`** HTML
 
 > **`2`** CSS
+
+> **`3`** JavaScript
+
 
 > **`3`** JavaScript
 
@@ -500,5 +525,6 @@ The first 50,000 participants to have their first PR/MR accepted will have a tre
 ## ⌚ Contributors <a id="contributors"> </a>
 
 <br>
+
 
 > **<code><a href="https://github.com/divyanshudhruv/Minifolio/graphs/contributors">@ Contributors</a></code>**

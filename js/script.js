@@ -14,6 +14,7 @@ backToTopButton.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 575) {
     // If the user has scrolled down more than 575 pixels, show the button
+    // If the user has scrolled down more than 200 pixels, show the button
     backToTopButton.style.display = "block";
   } else {
     // Otherwise, hide the button

@@ -30,6 +30,7 @@
       <div class="navbar-logo">MINIFOLIO</div>
       <div class="navbar-right">
         <ul>
+        <ul id="navbarNoDropdown" class="a">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
@@ -48,6 +49,29 @@
         <!-- Input field for user to enter their name -->
         <input type="text" id="name-input" placeholder="Enter your name" />
 
+=======
+        <!--Dropdown container in-progress-->
+        <!-- <ul id="navbarDropdown" class="b">
+          <li>
+            <a href="#more" class="dropdown"
+              >Explore more &nbsp; <i class="ri-arrow-down-s-line"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="dropdown-container">
+          <div class="boxes"><a href="#home">Home</a></div>
+          <div class="boxes">About</div>
+          <div class="boxes">Education</div>
+          <div class="boxes">Services</div>
+        </div> -->
+      </div>
+    </nav>
+
+    <!--Home -->
+    <div id="home" class="home">
+      <div class="container">
+        <div class="icons-container"></div>
+        Hi, my name is <span>Your Name</span> <br />I'm <span id="role"> </span>
         <a class="button" href="#about">Know more</a>
         <a class="buttonIcon">
           <div class="boxes" onclick="twitter()">
@@ -62,6 +86,7 @@
           <div class="boxes" onclick="link()">
             <i class="ri-link"></i>
           </div>
+          <div class="boxes" onclick="link()"><i class="ri-link"></i></div>
         </a>
       </div>
     </div>
@@ -397,6 +422,7 @@
     ></a>
     <script src="homesection.js"></script>
     
+
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>
     <script src="js/copyRight.js"></script>

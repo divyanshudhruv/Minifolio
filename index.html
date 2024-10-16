@@ -29,12 +29,27 @@
     <nav class="navbar">
       <div class="navbar-logo">MINIFOLIO</div>
       <div class="navbar-right">
+        <ul>
         <ul id="navbarNoDropdown" class="a">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#services">Services</a></li>
         </ul>
+      </div>
+    </nav>
+
+    <!--Home --><!--Home -->
+    <div id="home" class="home">
+      <div class="container">
+        <div class="icons-container"></div>
+        Hi, my name is <span id="display-name">Your Name</span> <br />I'm
+        <span id="role"> </span>
+
+        <!-- Input field for user to enter their name -->
+        <input type="text" id="name-input" placeholder="Enter your name" />
+
+=======
         <!--Dropdown container in-progress-->
         <!-- <ul id="navbarDropdown" class="b">
           <li>
@@ -67,6 +82,9 @@
           </div>
           <div class="boxes" onclick="instagram()">
             <i class="ri-instagram-line"></i>
+          </div>
+          <div class="boxes" onclick="link()">
+            <i class="ri-link"></i>
           </div>
           <div class="boxes" onclick="link()"><i class="ri-link"></i></div>
         </a>
@@ -127,10 +145,36 @@
         <div class="titleGap"></div>
 
         <div class="titleSmall" id="small-text">My Qualifications</div>
+
         <div class="containerGap"></div>
 
         <div class="timeline-container">
           <div class="timeline-line"></div>
+          <input
+            type="text"
+            id="school-input"
+            class="school"
+            placeholder="Enter Your School Name"
+          />
+
+          <br />
+          <br />
+
+          <input
+            type="text"
+            class="school"
+            id="year-input"
+            placeholder="Enter the year"
+          />
+          
+          <br />
+          <br />
+
+          <textarea
+            id="info-input"
+            class="school"
+            placeholder="Enter the information"
+          ></textarea>
           <!-- First Event: School -->
           <div class="event-item">
             <div class="empty-space"></div>
@@ -160,7 +204,31 @@
               </p>
             </div>
           </div>
+          <input
+            type="text"
+            id="name-input"
+            class="bach"
+            placeholder="Enter University(Bachlers)"
+          />
 
+          <br />
+          <br />
+
+          <input
+            type="text"
+            class="bach"
+            id="name-input"
+            placeholder="Enter the year"
+          />
+          <br />
+          <br />
+
+          <textarea
+            id="info-input" class="col"
+            placeholder="Enter the information"
+          ></textarea>
+          
+          </div>
           <!-- Second Event: College -->
           <div class="event-item reverse">
             <div class="empty-space"></div>
@@ -198,6 +266,30 @@
               </p>
             </div>
           </div>
+          <input
+            type="text"
+            class="school"
+            id="name-input" name="grad"
+            placeholder="Enter  University(Masters) "
+          />
+
+          <br />
+          <br />
+
+          <input
+            type="text"
+            class="school"
+            id="name-input" name="grad"
+            placeholder="Enter the year"
+          />
+          <br />
+          <br />
+
+          <textarea
+            id="info-input"
+            class="school" name="grad"
+            placeholder="Enter the information"
+          ></textarea>
 
           <!-- Third Event: Master's Program -->
           <div class="event-item">
@@ -328,6 +420,8 @@
     <a href="#"
       ><div id="back-to-top"><i class="ri-mouse-line"></i></div
     ></a>
+    <script src="homesection.js"></script>
+    
 
     <script src="js/script.js"></script>
     <script src="js/typingAnimation.js"></script>

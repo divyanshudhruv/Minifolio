@@ -1088,3 +1088,41 @@ a:visited {
   line-height: 1.9em;
   background-color: none;
 }
+
+.achievements-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+.achievements-section h2 {
+    margin-bottom: 10px;
+}
+
+.achievements-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievements-section label {
+    margin-top: 10px;
+}
+
+.achievements-section input, 
+.achievements-section select, 
+.achievements-section textarea {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#achievements-list {
+    margin-top: 20px;
+}
+
+#achievements-list div {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+}

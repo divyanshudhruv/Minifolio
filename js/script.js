@@ -47,4 +47,57 @@ document.addEventListener('DOMContentLoaded', () => {
             navToggle.textContent = '☰';
         });
     }
+// Function to handle the form submission
+document.getElementById("achievement-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get input values
+    const category = document.getElementById("category").value;
+    const title = document.getElementById("title").value;
+    const description = document.getElementById("description").value;
+    const date = document.getElementById("date").value;
+
+    // Create a new achievement item
+    const achievementList = document.getElementById("achievements-list");
+    const achievementItem = document.createElement("div");
+    achievementItem.classList.add("achievement-item"); // Add a class for styling
+    achievementItem.innerHTML = `
+        <h3>${title}</h3>
+        <p>${description}</p>
+        <p>Category: ${category} | Date: ${date}</p>
+        <button onclick="editAchievement(this)">Edit</button>
+        <button onclick="deleteAchievement(this)">Delete</button>
+    `;
+    
+    // Append the new achievement item to the list
+    achievementList.appendChild(achievementItem);
+    
+    // Clear the form
+    document.getElementById("achievement-form").reset();
+});
+
+// Function to handle editing an achievement
+function editAchievement(button) {
+    const achievementItem = button.parentElement;
+    const title = achievementItem.querySelector("h3").innerText;
+    const description = achievementItem.querySelector("p:nth-child(2)").innerText;
+    const category = achievementItem.querySelector("p:nth-child(3)").innerText.split(" | ")[0].split(": ")[1];
+    const date = achievementItem.querySelector("p:nth-child(3)").innerText.split(" | ")[1].split(": ")[1];
+
+    // Populate the form with the achievement details for editing
+    document.getElementById("title").value = title;
+    document.getElementById("description").value = description;
+    document.getElementById("category").value = category;
+    document.getElementById("date").value = date;
+
+    // Remove the achievement item from the list
+    achievementItem.remove();
+}
+
+// Function to handle deleting an achievement
+function deleteAchievement(button) {
+    const achievementItem = button.parentElement;
+    achievementItem.remove();
+}
+
 });

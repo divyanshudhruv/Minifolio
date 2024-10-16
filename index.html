@@ -22,6 +22,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#achievement">Achievements</a></li>
           </ul>
         </div>
       </nav>
@@ -335,6 +336,37 @@
       </div>
     </div>
     <!--Contact section end-->
+   <div id="achievement" class="achievements-section">
+    <h2>Achievements</h2>
+    <p>Share your accomplishments with us!</p>
+    <form id="achievement-form">
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="academic">Academic Achievements</option>
+            <option value="professional">Professional Achievements</option>
+            <option value="personal">Personal Goals</option>
+            <option value="volunteer">Volunteer Work</option>
+            <option value="skills">Skills Development</option>
+        </select>
+        
+        <label for="title">Achievement Title:</label>
+        <input type="text" id="title" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        
+        <button type="submit">Add Achievement</button>
+    </form>
+    
+    <div id="achievements-list">
+        <!-- Dynamically generated achievements will appear here -->
+    </div>
+</div>
+
+
     <div class="footer">
       <!--since 'span' is an inline element so all the spans are displayed in one line one after the other, if we use 'div' then all the elements will apper in different boxes (try it out )-->
       <span

@@ -10,6 +10,7 @@
   top: 0;
   background-color: #ffffff70;
   width: 100%;
+  z-index: 999;
   /* backdrop-filter: blur(3px);  */
 
   font-family: Montserrat;

@@ -1131,7 +1131,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10%;
+  padding-top: 8%;
 }
 .footerNavbar p a {
   font-size: 1.2vw;

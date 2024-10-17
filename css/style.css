@@ -1026,7 +1026,7 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .skillsC .container {
     width: 500px;
     flex-wrap: wrap;

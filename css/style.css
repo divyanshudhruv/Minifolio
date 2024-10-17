@@ -877,6 +877,178 @@ a:visited {
 }
 
 /*================*/
+/*===Skills===*/
+/*===============*/
+
+.skillsC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skillsC .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.skillsC .titleGap {
+  height: 20px;
+}
+
+.skillsC .titleSmall {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #96989b;
+}
+
+.skillsC .container {
+  display: flex;
+  width: 700px;
+  height: fit-content;
+  min-height: fit-content;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin-top: 20px;
+  background-color: none;
+}
+
+.skillsC .container .boxes {
+  display: flex;
+  position: relative;
+  width: 320px;
+  height: 70px;
+  margin-bottom: 30px;
+
+  background-color: #f8f8f8;
+
+  transition: transform 0.3s;
+  /* border: 1.4px solid #f0f0f0; */
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.skillsC .container .boxes:hover {
+  scale: 1.05;
+  background-color: #f2f2f2;
+}
+.skillsC .container .boxes .left {
+  display: flex;
+  position: relative;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: #01b3af;
+}
+
+.skillsC .container .boxes .left .circle {
+  display: flex;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: radial-gradient(closest-side, #f8f8f8 71%, transparent 0% 0%),
+    conic-gradient(#01b3af 95%, rgb(219, 221, 226) 0);
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+}
+
+.skillsC .container .boxes .right {
+  display: flex;
+  position: relative;
+  right: 0;
+  width: 240px;
+  background-color: none;
+  align-items: center;
+  justify-content: start;
+  font-size: 15px;
+  padding-left: 10px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #6b7280;
+}
+
+.skillsC .container .buttonCont {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  height: fit-content;
+  min-height: 90px;
+  background-color: none;
+}
+
+@media screen and (max-width: 915px) {
+  .skillsC .title {
+    font-size: 43px;
+    width: 300px;
+  }
+
+  .skillsC .titleSmall {
+    font-size: 19.5px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skillsC .container {
+    width: 500px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and(max-width:480px) {
+  .skillsC .container .buttonCont {
+    margin-top: -30px !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skillsC .container .btn{
+    margin-top: 0 !important;
+  }
+  .skillsC .btn.btn-about {
+    margin-top: 0 !important; /* Increased the top margin of the button */
+  }
+}
+/*================*/
 /*===Footer===*/
 /*===============*/
 

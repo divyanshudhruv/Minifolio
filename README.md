@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<p align="center">  <img src="https://img.shields.io/badge/Version-0.3.2-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.3.3-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>
@@ -329,6 +329,50 @@ Follow the instruction to customize the portfolio
   </div>
 </div>
 ```
+
+<br>
+
+> ## 😎 Skills
+
+<br>
+
+> **`<a>`** Replace the href with your github profile link
+
+<br>
+
+```html
+<div class="container">
+  <div class="boxes">
+    <div class="left"><i class="ri-html5-fill"></i></div>
+    <div class="right">FRONTEND DEVELOPMENT</div>
+  </div>
+  <div class="boxes">
+    <div class="left"><i class="ri-nodejs-fill"></i></div>
+    <div class="right">BACKEND DEVELOPMENT</div>
+  </div>
+  <div class="boxes">
+    <div class="left">
+      <i class="ri-gamepad-line" style="font-size: 30px"></i>
+    </div>
+    <div class="right">GAME DEVELOPMENT</div>
+  </div>
+  <div class="boxes">
+    <div class="left">
+      <i class="ri-android-fill" style="font-size: 30px"></i>
+    </div>
+    <div class="right">APP DEVELOPMENT</div>
+  </div>
+  <div class="buttonCont">
+    <a
+      class="btn btn-custom btn-lg btn-skills"
+      href="https://github.com"
+      target="_blank"
+    >
+      View more
+    </a>
+  </div>
+</div>
+````
 
 <br>
 

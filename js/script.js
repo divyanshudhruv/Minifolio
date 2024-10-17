@@ -1,42 +1,38 @@
-// Get a reference to the button element
-const backToTopButton = document.getElementById("back-to-top");
+// Correctly declare the backToTopButton variable
+const backToTopButton = document.getElementById('backToTopButton');
 
-// Then Adding a click event listener to the button
+// Adding a click event listener to the button
 backToTopButton.addEventListener("click", () => {
-    // Scroll the page to the top smoothly
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+  // Scroll the page to the top smoothly
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
 
 // Show/hide the button based on the user's scroll position
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 575) {
-        // If the user has scrolled down more than 200 pixels, show the button
-        backToTopButton.style.display = "block";
-    } else {
-        // Otherwise, hide the button
-        backToTopButton.style.display = "none";
-    }
+  if (window.scrollY >= 575) {
+
+    // If the user has scrolled down more than 575 pixels, show the button
+    // If the user has scrolled down more than 200 pixels, show the button
+    backToTopButton.style.display = "block";
+  } else {
+    // Otherwise, hide the button
+    backToTopButton.style.display = "none";
+  }
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.getElementById('navToggle');
-    const navContent = document.getElementById('navContent');
-
-    navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        navContent.classList.toggle('active');
-        
-        // Change the button text based on state
-        if (navToggle.classList.contains('active')) {
-            navToggle.textContent = '+';  // This becomes an X when rotated 45 degrees
-        } else {
-            navToggle.textContent = '☰';
-        }
-    });
+function linkedin() {
+    window.open("https://linkedin.com")
+}
+function twitter() {
+    window.open("https://x.com")
+}
+function instagram() {
+    window.open("https://instagram.com")
+}
 
     // Close nav when clicking on a link
     const navLinks = navContent.getElementsByTagName('a');
@@ -101,3 +97,6 @@ function deleteAchievement(button) {
 }
 
 });
+function link() {
+    window.open("https://custom-link.com")
+}

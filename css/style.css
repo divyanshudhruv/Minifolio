@@ -11,15 +11,15 @@
 /*===============*/
 
 body {
-  background-color: #fff  ;
-  padding: 0  ;
-  margin: 0  ;
-  align-items: center  ;
-  justify-content: center  ;
-  display: flex  ;
-  flex-wrap: wrap  ;
-  transition: 0.3s  ;
-  outline: none  ;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.3s;
+  outline: none;
 }
 
 * {
@@ -36,6 +36,36 @@ html {
 /*================*/
 /*===Links===*/
 /*===============*/
+
+.icon {
+  height: 4vh;
+}
+.icon:hover {
+  height: 5vh;
+}
+
+#facebookicon {
+  position: absolute;
+  left: 7vh;
+  top: 40vh;
+}
+
+#linkedinicon {
+  position: absolute;
+  left: 7vh;
+  top: 49vh;
+}
+
+#linkicon {
+  position: absolute;
+  left: 7vh;
+  top: 63vh;
+}
+#twittericon {
+  position: absolute;
+  left: 7vh;
+  top: 56vh;
+}
 
 a {
   text-decoration: none;
@@ -111,6 +141,17 @@ a:visited {
   font-weight: 700;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 120px;
+}
+
+.home .container .icons-container {
+  display: none;
+  position: absolute;
+  width: 50px;
+  left: 10vw;
+  height: 25px;
 }
 
 .home .container span {
@@ -141,16 +182,57 @@ a:visited {
   background: linear-gradient(to right, #01b3af 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: right;
-  transition: all .25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.home .container a.buttonIcon {
+  position: relative;
+  display: flex;
+  top: -187.5px;
+  left: -100px;
+  width: 50px;
+  height: 225px;
+
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.home .container a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(to right, #f6f6f6 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.25s ease-out;
+  color: #3a3947;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.home .container a.buttonIcon .boxes:hover {
+  background-position: left;
 }
 
 .home .container a.button:hover {
   color: #fff;
   background-position: left;
-
 }
 
 @media screen and (max-width: 915px) {
+  .home .container a.buttonIcon {
+    display: none;
+  }
+  .home .container {
+    padding-left: 0 !important;
+  }
+
   .home .container {
     font-size: 41px;
     text-align: center;
@@ -317,6 +399,7 @@ a:visited {
   justify-content: start;
   flex-wrap: wrap;
   flex-direction: column;
+  transition: 0.3s !important;
 }
 
 .aboutC .container .rightC .text {
@@ -350,6 +433,17 @@ a:visited {
   justify-content: start;
   width: 100%;
   height: fit-content;
+  min-height: 90px;
+  background-color: none;
+}
+
+.aboutC .container .rightC .btnResume {
+  display: flex;
+  position: relative;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+  height: 90px;
   min-height: 90px;
   background-color: none;
 }
@@ -403,179 +497,259 @@ a:visited {
 }
 
 /*================*/
-/*===Projects===*/
+/*===Education Section===*/
 /*===============*/
-/*
-.projectC {
+
+/*  Education Section Styling */
+.white-emoji {
+  color: white; /* Set emoji color to white */
+  font-size: 24px; /* Adjust the size if necessary */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #d1d5db;
+  transform: translateX(-50%);
+}
+
+.event-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  opacity: 0;
+  width: 800px;
+  padding-inline: 10px;
+  transform: scale(0.8);
+  animation: popUp 0.5s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Reverse layout for alternating items */
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Empty Space to Align the Event Icons */
+.empty-space {
+  width: calc(43.75% + 10px);
+}
+
+/* Event Icon */
+.event-icon {
+  background-color: #01b3af;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+/* Event Content */
+.event-content {
+  width: 40%;
+  background-color: #f8f8f8 !important;
+  padding: 27.5px;
+  border-radius: 7px;
+  width: 350px;
+  height: fit-content;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Event Title and Time */
+.event-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-schedule .title {
+  color: #272341;
+  letter-spacing: 0.5px;
+  font-size: 55px;
+  width: fit-content;
+}
+
+/* Animation Keyframes for Pop-Up Effect */
+@keyframes popUp {
+  to {
+    opacity: 1;
+    transform: scale(1); /* Final scale after animation */
+  }
+}
+
+/* Hover Effect */
+.event-content:hover {
+  scale: 1.01;
+  background-color: #f2f2f2 !important;
+}
+
+.event-content .text {
   display: flex;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: fit-content;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  color: #01b3af;
   background-color: none;
 }
 
-.projectC .main {
+.event-content .event-time {
+  color: #6b7280;
+  margin-top: 5px;
   display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 13px;
+}
+.event-content .textMain {
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 16.3px;
+  color: #777;
+  background-color: none;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+    width: 80vw;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: flex;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .timeline-line {
+    display: flex;
+  }
+}
+
+.eduC .title {
+  display: flex;
+  position: relative;
   top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
-}
-
-.projectC .main .textBig {
-  display: flex;
-  position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
+  height: 75px;
+  align-items: center;
   justify-content: center;
   font-family: Montserrat;
   font-weight: bold;
-  font-size: 58px;
+  font-size: 55px;
   background-color: none;
   text-align: center;
-  line-height: 1.2em;
   color: #272341;
   letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
+  width: 100%;
 }
 
-.projectC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
+.eduC .titleSmall {
+  text-align: center;
   font-family: Poppins;
   font-weight: 300;
   font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
   color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
 }
 
-.projectC .main .btnCont {
+.eduC .titleGap {
+  height: 20px;
   display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
+}
 
-/*================*/
-/*===Contact===*/
-/*===============*/
-/*
-.contactC {
+.eduC .containerGap {
   display: flex;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 50px;
   background-color: none;
 }
+@media screen and (max-width: 576px) {
+  .event-item {
+    flex-direction: column;
+    margin: 1.5rem;
+    width: fit-content;
+  }
 
-.contactC .main {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  background-color: none;
+  .reverse {
+    flex-direction: column;
+  }
+
+  .empty-space {
+    display: flex;
+  }
+
+  .event-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .timeline-line {
+    display: flex;
+  }
 }
 
-.contactC .main .textBig {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 90px;
-  width: 100%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Montserrat;
-  font-weight: bold;
-  font-size: 58px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #272341;
-  letter-spacing: 0.5px;
-  flex-wrap: wrap;
-  flex-direction: row;
+@media screen and (max-width: 915px) {
+  .eduC .title {
+    font-size: 43px;
+    left: 0;
+    margin: auto;
+    left: -10px !important;
+    width: 100%;
+  }
+
+  .eduC .titleSmall {
+    font-size: 19.5px;
+    width: 100%;
+  }
 }
-
-.contactC .main .textSmall {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 200px;
-  width: 70%;
-  height: 230px;
-  align-items: start;
-  justify-content: center;
-  font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: none;
-  text-align: center;
-  line-height: 1.2em;
-  color: #96989b;
-  flex-wrap: wrap;
-  letter-spacing: 0.3px;
-  flex-direction: row;
-}
-
-.contactC .main .btnCont {
-  display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background-color: none;
-} */
-
 /*================*/
 /*===Services Section===*/
 /*===============*/
@@ -593,11 +767,23 @@ a:visited {
 }
 
 .servicesC .title {
-  text-align: center;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
   font-family: Montserrat;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 55px;
+  background-color: none;
+  text-align: center;
   color: #272341;
+  letter-spacing: 0.5px;
+  width: fit-content;
 }
 
 .servicesC .titleGap {
@@ -628,12 +814,15 @@ a:visited {
   background: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  /* border: 1.4px solid #f0f0f0; */
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .serviceItem:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+  background-color: #f2f2f2 !important;
 }
 
 .serviceIcon {
@@ -646,23 +835,30 @@ a:visited {
   text-align: center;
   font-family: "Poppins" !important;
   font-size: 15px;
-
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .serviceText .text {
   font-weight: bold;
+  display: flex;
   font-size: 20px;
-  color: #272341;
+  color: #3a3947;
   font-family: "Poppins" !important;
   margin-bottom: 10px;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .serviceText .textMain {
+  display: flex;
   font-size: 16px;
-  color: #555;
+  color: #777;
+  justify-content: center;
+  align-items: center;
   font-family: "Montserrat" !important;
-
 }
 /* Contact Section */
 .contactC {
@@ -810,7 +1006,193 @@ a:visited {
   box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.2);
 }
 
+@media screen and (max-width: 915px) {
+  .servicesC .title {
+    font-size: 43px;
+    left: 0;
+    margin: auto;
+    left: -10px !important;
+    width: 100%;
+  }
 
+  .servicesC .titleSmall {
+    font-size: 19.5px;
+    width: 100%;
+  }
+}
+
+/*================*/
+/*===Skills===*/
+/*===============*/
+
+.skillsC {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skillsC .title {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+
+.skillsC .titleGap {
+  height: 20px;
+}
+
+.skillsC .titleSmall {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #96989b;
+}
+
+.skillsC .container {
+  display: flex;
+  width: 700px;
+  height: fit-content;
+  min-height: fit-content;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  margin-top: 20px;
+  background-color: none;
+}
+
+.skillsC .container .boxes {
+  display: flex;
+  position: relative;
+  width: 320px;
+  height: 70px;
+  margin-bottom: 30px;
+
+  background-color: #f8f8f8;
+
+  transition: transform 0.3s;
+  /* border: 1.4px solid #f0f0f0; */
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.skillsC .container .boxes:hover {
+  scale: 1.05;
+  background-color: #f2f2f2;
+}
+.skillsC .container .boxes .left {
+  display: flex;
+  position: relative;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: #01b3af;
+}
+
+.skillsC .container .boxes .left .circle {
+  display: flex;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: radial-gradient(closest-side, #f8f8f8 71%, transparent 0% 0%),
+    conic-gradient(#01b3af 95%, rgb(219, 221, 226) 0);
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+}
+
+.skillsC .container .boxes .right {
+  display: flex;
+  position: relative;
+  right: 0;
+  width: 240px;
+  background-color: none;
+  align-items: center;
+  justify-content: start;
+  font-size: 15px;
+  padding-left: 10px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #6b7280;
+}
+
+.skillsC .container .buttonCont {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  height: fit-content;
+  min-height: 90px;
+  background-color: none;
+}
+
+@media screen and (max-width: 915px) {
+  .skillsC .title {
+    font-size: 43px;
+    width: 300px;
+  }
+
+  .skillsC .titleSmall {
+    font-size: 19.5px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skillsC .container {
+    width: 500px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and(max-width:480px) {
+  .skillsC .container .buttonCont {
+    margin-top: -30px !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skillsC .container .btn{
+    margin-top: 0 !important;
+  }
+  .skillsC .btn.btn-about {
+    margin-top: 0 !important; /* Increased the top margin of the button */
+  }
+}
 /*================*/
 /*===Footer===*/
 /*===============*/
@@ -848,6 +1230,7 @@ a:visited {
   display: inline !important;
   font-weight: 300;
   transition: 0.3s;
+  text-decoration: underline;
 }
 
 .footer a:hover {
@@ -855,9 +1238,49 @@ a:visited {
   color: #666;
 }
 
+.footer a.buttonIcon {
+  position: absolute;
+  top: 60px;
+  display: none;
+  width: 225px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-color: none;
+  color: #96989b;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.1s !important;
+  transition-delay: 0s !important;
+}
+
+.footer a.buttonIcon .boxes:hover {
+  color: #666;
+}
+
 @media screen and (max-width: 915px) {
   .footer {
-    width: 100%;
+    width: 90%;
+  }
+  .footer a.buttonIcon {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer a.buttonIcon {
+    top: 75px;
   }
 }
 
@@ -907,186 +1330,39 @@ a:visited {
   }
 }
 
-
-/*  Education Section Styling */
-.white-emoji {
-  color: white; /* Set emoji color to white */
-  font-size: 24px; /* Adjust the size if necessary */
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-.timeline-container {
-  position: relative;
-  margin-top: 2rem;
-}
-
-.timeline-line {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background-color: #d1d5db;
-  transform: translateX(-50%);
-}
-
-.event-item {
+/* Additional CSS for the Back to Top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px; /* the distance from the bottom as needed */
+  right: 20px; /* the distance from the right as needed */
+  width: 50px; /* the width of the button */
+  height: 50px; /* the height of the button */
+  background-color: #dddddd50; /* Initial background color (light gray) */
+  color: #3a3947; /* Initial text color (black) */
+  border: none;
+  font-size: 22px;
+  border-radius: 7px; /* the button rounded with border radius */
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-  position: relative;
-  opacity: 0; 
-  transform: scale(0.8); 
-  animation: popUp 0.5s forwards; 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
-
-/* Reverse layout for alternating items */
-.reverse {
-  flex-direction: row-reverse;
-}
-
-/* Empty Space to Align the Event Icons */
-.empty-space {
-  width: 40%;
-}
-
-/* Event Icon */
-.event-icon {
-  background-color: #01b3af;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 10;
-  position: relative;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, color 0.02s, scale 0.3s; /* a smooth transition for background color, scale, and text color */
+  z-index: 999; /* Set a high z-index value to ensure it's above other elements */
 }
 
-.svg-icon {
-  width: 20px;
-  height: 20px;
-  color: white;
+/* Style the ion-icon inside the button */
+#back-to-top ion-icon {
+  font-size: 25px; /* the icon size */
+  margin: 0; /* Remove any margin */
 }
 
-/* Event Content */
-.event-content {
-  width: 40%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
+/* Style the button on hover */
+#back-to-top:hover {
+  background-color: #efefef; /* Change the background color to a lighter shade of green on hover */
 }
 
-/* Event Title and Time */
-.event-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.event-time {
-  color: #6b7280;
-  margin-bottom: 10px;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 17px;
-}
-
-/* Animation Keyframes for Pop-Up Effect */
-@keyframes popUp {
-  to {
-    opacity: 1;
-    transform: scale(1); /* Final scale after animation */
-  }
-}
-
-/* Animation Delay for Staggered Effects */
-.event-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.event-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.event-item:nth-child(3) {
-  animation-delay: 0.3s;
-}
-.event-item:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-/* Hover Effect */
-.event-content:hover {
-  transform: scale(1.05); /* Scale up on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .event-item {
-    flex-direction: column;
-    margin: 1.5rem;
-  }
-  
-  .reverse {
-    flex-direction: column;
-  }
-
-  .empty-space {
-    display: none;
-  }
-
-  .event-content {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .event-icon {
-    margin: 0 auto;
-  }
-
-  .timeline-line {
-    display: none;
-  }
-  #span-title{
-   width: 15px;
-   height: 15px;
-  }
-}
-.text {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 25.5px;
-  color: #01b3af;
-  background-color: none;
-}
-
-.textMain {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: fit-content;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 20px;
-  color: #777;
-  line-height: 1.9em;
-  background-color: none;
+#back-to-top:active {
+  scale: 0.95;
 }
 
 .achievements-section {

@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<p align="center">  <img src="https://img.shields.io/badge/Version-0.3.3-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.4-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>
@@ -47,6 +47,9 @@
 > **`vRes` `26/12/2023`** - Resumed the project
 
 > **`v0.3` `08/10/2024`** - Added new enhancements
+
+> **`v0.4` `17/10/2024`** - Added various new sections
+
 
 <!--
 

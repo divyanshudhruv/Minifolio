@@ -335,7 +335,7 @@ Follow the instruction to customize the portfolio
 
 <br>
 
-> ## 😎 SKILLS
+> ## 😎 Skills
 
 <br>
 

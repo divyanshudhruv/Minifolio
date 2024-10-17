@@ -50,7 +50,6 @@
 
 > **`v0.4` `17/10/2024`** - Added various new sections
 
-
 <!--
 
 > **`v0.2`**
@@ -375,7 +374,7 @@ Follow the instruction to customize the portfolio
     </a>
   </div>
 </div>
-````
+```
 
 <br>
 

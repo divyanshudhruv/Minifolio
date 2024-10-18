@@ -37,3 +37,7 @@ function instagram() {
 function link() {
     window.open("https://custom-link.com")
 }
+
+function github() {
+  window.open("https://github.com")
+}

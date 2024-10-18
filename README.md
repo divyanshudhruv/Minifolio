@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<p align="center">  <img src="https://img.shields.io/badge/Version-0.4-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.4.1-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>
@@ -444,22 +444,28 @@ Follow the instruction to customize the portfolio
 
 > **`<onclick>`** Replace the link with your profile link in **script.js**
 
+> **`<bottomText>`** Replace the email with your work email
 <br>
 
 ```html
-<div class="footer">
-  <a class="buttonIcon">
-    <div class="boxes" onclick="twitter()">
-      <i class="ri-twitter-line"></i>
+<div class="topHeader">
+    <div class="left">2024</div>
+    <div class="right">Github</div>
+</div>
+<div class="linksSection">
+    <div class="left">
+      <div class="container">
+        <div class="topText">Get in touch</div>
+        <div class="bottomText">youremail@proton.me</div>
+      </div>
+      <div class="container">
+        <div class="topText">Connect</div>
+        <div class="bottomText" onclick="github()">Github</div>
+        <div class="bottomText" onclick="instagram()">Instagram</div>
+        <div class="bottomText" onclick="twitter()">Twitter (X)</div>
+        <div class="bottomText" onclick="linkedin()">Linkedin</div>
+      </div>
     </div>
-    <div class="boxes" onclick="linkedin()">
-      <i class="ri-linkedin-line"></i>
-    </div>
-    <div class="boxes" onclick="instagram()">
-      <i class="ri-instagram-line"></i>
-    </div>
-    <div class="boxes" onclick="link()"><i class="ri-link"></i></div>
-  </a>
 </div>
 ```
 

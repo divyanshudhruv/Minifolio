@@ -3,15 +3,14 @@
 .navbar {
     color: #1a1a1a;
     justify-content: space-between;
-    align-items: last baseline;
+    align-items: center;
     width: 100%;
     font-family: Montserrat;
     padding: 1em;
-    transition: 0.3s;
+    transition: top 0.3s ease-in-out;
     color: white;
     display: flex;
     background-color: #01b3af;
-    transition: 0.3s;
     position: fixed;
     top: 0;
     left: 0;

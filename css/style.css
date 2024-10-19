@@ -1246,6 +1246,77 @@ a:visited {
 }
 
 /*================*/
+/*===Contact Section===*/
+/*===============*/
+
+.contact-form{
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f8f8f8;
+}
+.contact-title{
+  text-align: center;
+  margin-top: -35px;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+.row{
+  display: flex;
+  gap: 35px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  align-content: center;
+}
+
+#name,#email{
+  width: 300px;
+  height: 40px;
+  margin-left: 21px;
+  padding: 3px;
+}
+
+#message{
+  resize: none;
+  width: 300px;
+  height: 65px;
+  padding: 3px;
+  margin-left: 3px;
+}
+#contact-btn{
+  padding: 15px 45px;
+  background-color: #01b3af;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+/*================*/
 /*===Footer===*/
 /*===============*/
 

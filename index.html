@@ -1,5 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minifolio</title>
+    <link rel="shortcut icon" href="Minifolio.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- <link rel="stylesheet" href="button.css" /> -->
+  </head>
+  <body>
+    <div id="home" class="home">
+      <nav class="navbar">
+        <div class="navbar-logo">MINIFOLIO</div>
+        <div class="navbar-right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#achievement">Achievements</a></li>
+          </ul>
+
 
 <head>
   <meta charset="UTF-8" />
@@ -311,6 +336,94 @@
         </div>
       </div>
     </div>
+    <!-- services section end -->
+     <!-- Contact Section -->
+    <div id="contact" class="contactC" >
+      <div class="title">&ThickSpace;&ThickSpace;&MediumSpace;CONTACT 👋</div>
+      <div class="titleGap"></div>
+      <div class="titleSmall">Get in Touch</div>
+      <div class="containerGap"></div>
+
+      <div class="container">
+        <div class="leftC">
+          <div class="text">Let's Connect!</div>
+          <br />
+          <div class="textMain">
+            I'm available for freelance work, collaborations, or any general
+            inquiries. Feel free to send me a message below.
+          </div>
+        </div>
+
+        <div class="rightC">
+          <form action="submit-form.php" method="POST">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+
+            <button class="button" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Contact section end-->
+   <div id="achievement" class="achievements-section">
+    <h2>Achievements</h2>
+    <p>Share your accomplishments with us!</p>
+    <form id="achievement-form">
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="academic">Academic Achievements</option>
+            <option value="professional">Professional Achievements</option>
+            <option value="personal">Personal Goals</option>
+            <option value="volunteer">Volunteer Work</option>
+            <option value="skills">Skills Development</option>
+        </select>
+        
+        <label for="title">Achievement Title:</label>
+        <input type="text" id="title" required>
+        
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        
+        <button type="submit">Add Achievement</button>
+    </form>
+    
+    <div id="achievements-list">
+        <!-- Dynamically generated achievements will appear here -->
+    </div>
+</div>
   </div>
   <!-- services section end -->
 

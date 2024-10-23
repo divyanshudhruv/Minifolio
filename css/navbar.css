@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .navbar {
+
+  color: #1a1a1a;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  justify-content: space-between;
+  align-items: last baseline;
+  top: 0;
+  background-color: #ffffff70;
+  width: 100%;
+  /* backdrop-filter: blur(3px);  */
+
+  font-family: Montserrat;
+  padding: 1em;
+  transition: 0.3s;
+
     color: #1a1a1a;
     justify-content: space-between;
     align-items: center;
@@ -15,13 +31,100 @@
     top: 0;
     left: 0;
     z-index: 1000;
+
 }
 
 .navbar-logo {
-    font-weight: bold;
-    font-size: 1.25em;
-    cursor: pointer;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
 }
+
+
+.navbar-right ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.navbar-right a {
+  padding: 0.4em 0.6em;
+  border-radius: 4.75px;
+}
+
+.navbar-right a:hover {
+  background-color: #01b3af;
+  color: white;
+}
+
+/* Dropdown container in-progress */
+/* 
+.navbar-right ul.a {
+  display: flex;
+}
+
+.navbar-right ul.b {
+  display: none !important;
+}
+
+.navbar-right a.dropdown {
+  padding: 0.8em 0.65em 0.8em 0.9em;
+  border-radius: 4.75px;
+}
+
+.navbar-right a.dropdown:hover {
+  background-color: #f6f6f6;
+  color: inherit !important;
+}
+
+.navbar-right .dropdown-container {
+  display: flex;
+  min-width: 156px;
+  height: fit-content;
+  min-height: 200px;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 16px;
+  top: 75px;
+  border-radius: 4.75px !important;
+  align-items: start;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.navbar-right .dropdown-container .boxes {
+  display: flex;
+  width: 156px;
+  height: 50px;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  transition: 0.3s;
+  cursor: pointer;
+}
+.navbar-right .dropdown-container .boxes a {
+  display: flex !important;
+}
+.navbar-right .dropdown-container .boxes a:hover {
+background-color: inherit !important;
+color: inherit !important;
+}
+
+.navbar-right .dropdown-container .boxes:hover {
+  background-color: #eaeaea;
+}
+@media screen and (max-width: 600px) {
+  .navbar-right ul.a {
+    display: none !important;
+  }
+
+  .navbar-right ul.b {
+    display: flex !important;
+  }
+} */
+
 
 .navbar-right a {
     padding: 0.4em 0.6em;
@@ -47,4 +150,5 @@
     font-size: 1rem;
     transition: color 0.3s;
 }
+
 

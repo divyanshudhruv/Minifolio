@@ -7,9 +7,13 @@
 <br>
 <br>
 
+
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.4.1-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+
 <p align="center">  <img src="https://img.shields.io/badge/Version-0.3.2-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
-=======
+
 <p align="center">  <img src="https://img.shields.io/badge/Version-0.3.1-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+
 
 <br>
 <br>
@@ -46,9 +50,18 @@
 
 > **`v0.2` `12/10/2023`** - Added new features
 
+
 > **`vRes` `26/12/2023`** - Resumed the project
 
 > **`v0.3` `08/10/2024`** - Added new enhancements
+
+> **`v0.4` `17/10/2024`** - Added various new sections
+
+
+> **`vRes` `26/12/2023`** - Resumed the project
+
+> **`v0.3` `08/10/2024`** - Added new enhancements
+
 
 <!--
 
@@ -312,11 +325,14 @@ Follow the instruction to customize the portfolio
     </div>
   </div>
 
+
+
         Pursuing a Bachelor's degree in ABC, focusing on web development and software engineering.
       </p>
     </div>
   </div>
     
+
   <div class="event-item">
     <div class="empty-space"></div>
     <div class="event-icon">
@@ -338,6 +354,52 @@ Follow the instruction to customize the portfolio
 ```
 
 <br>
+
+
+> ## 😎 Skills
+
+<br>
+
+> **`<a>`** Replace the href with your github profile link
+
+<br>
+
+```html
+<div class="container">
+  <div class="boxes">
+    <div class="left"><i class="ri-html5-fill"></i></div>
+    <div class="right">FRONTEND DEVELOPMENT</div>
+  </div>
+  <div class="boxes">
+    <div class="left"><i class="ri-nodejs-fill"></i></div>
+    <div class="right">BACKEND DEVELOPMENT</div>
+  </div>
+  <div class="boxes">
+    <div class="left">
+      <i class="ri-gamepad-line" style="font-size: 30px"></i>
+    </div>
+    <div class="right">GAME DEVELOPMENT</div>
+  </div>
+  <div class="boxes">
+    <div class="left">
+      <i class="ri-android-fill" style="font-size: 30px"></i>
+    </div>
+    <div class="right">APP DEVELOPMENT</div>
+  </div>
+  <div class="buttonCont">
+    <a
+      class="btn btn-custom btn-lg btn-skills"
+      href="https://github.com"
+      target="_blank"
+    >
+      View more
+    </a>
+  </div>
+</div>
+```
+
+<br>
+
 
 > ## 🛠️ Services
 
@@ -390,6 +452,8 @@ Follow the instruction to customize the portfolio
         <div class="text">SEO Expert</div>
         <div class="textMain">
           Optimizing websites for better search engine ranking.
+
+
         </div>
       </div>
     </div>
@@ -404,6 +468,7 @@ Follow the instruction to customize the portfolio
         <div class="text">SEO Expert</div>
         <div class="textMain">
           Optimizing websites for better search engine ranking.
+
         </div>
       </div>
     </div>
@@ -419,9 +484,30 @@ Follow the instruction to customize the portfolio
 
 > **`<onclick>`** Replace the link with your profile link in **script.js**
 
+> **`<bottomText>`** Replace the email with your work email
 <br>
 
 ```html
+
+<div class="topHeader">
+    <div class="left">2024</div>
+    <div class="right">Github</div>
+</div>
+<div class="linksSection">
+    <div class="left">
+      <div class="container">
+        <div class="topText">Get in touch</div>
+        <div class="bottomText">youremail@proton.me</div>
+      </div>
+      <div class="container">
+        <div class="topText">Connect</div>
+        <div class="bottomText" onclick="github()">Github</div>
+        <div class="bottomText" onclick="instagram()">Instagram</div>
+        <div class="bottomText" onclick="twitter()">Twitter (X)</div>
+        <div class="bottomText" onclick="linkedin()">Linkedin</div>
+      </div>
+    </div>
+
 <div class="footer">
   <a class="buttonIcon">
     <div class="boxes" onclick="twitter()">
@@ -435,6 +521,7 @@ Follow the instruction to customize the portfolio
     </div>
     <div class="boxes" onclick="link()"><i class="ri-link"></i></div>
   </a>
+
 </div>
 <div class="footer">...</div>
 ```
@@ -456,6 +543,13 @@ Minifolio is deployed by Github Page
 <br>
 
 > **`1`** HTML
+
+
+> **`2`** CSS
+
+> **`3`** JavaScript
+
+=======
 
 > **`2`** CSS
 
@@ -525,6 +619,5 @@ The first 50,000 participants to have their first PR/MR accepted will have a tre
 ## ⌚ Contributors <a id="contributors"> </a>
 
 <br>
-
 
 > **<code><a href="https://github.com/divyanshudhruv/Minifolio/graphs/contributors">@ Contributors</a></code>**

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .navbar {
+
   color: #1a1a1a;
   display: flex;
   position: fixed;
@@ -15,6 +16,22 @@
   font-family: Montserrat;
   padding: 1em;
   transition: 0.3s;
+
+    color: #1a1a1a;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: Montserrat;
+    padding: 1em;
+    transition: top 0.3s ease-in-out;
+    color: white;
+    display: flex;
+    background-color: #01b3af;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
 }
 
 .navbar-logo {
@@ -22,6 +39,7 @@
   font-size: 1.25em;
   cursor: pointer;
 }
+
 
 .navbar-right ul {
   display: flex;
@@ -106,3 +124,31 @@ color: inherit !important;
     display: flex !important;
   }
 } */
+
+
+.navbar-right a {
+    padding: 0.4em 0.6em;
+    border-radius: 4.75px;
+}
+
+.navbar-right a:hover {
+    color: white;
+}
+
+.navbar-right ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-right li {
+    margin: 0 15px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+

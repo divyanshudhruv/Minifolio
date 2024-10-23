@@ -23,6 +23,11 @@
 .btn:hover {
   background-color: #0056b3;
   transition: background-color 0.3s ease;
+
+.btn:hover{
+  background-color: #0056b3;
+    transition: background-color 0.3s ease;
+
 }
 
 .btn.btn-sm {
@@ -103,6 +108,7 @@
   border-radius: 8px !important;
 }
 
+
 .btn.btn-skills {
   font-family: Poppins !important;
   font-weight: 400 !important;
@@ -117,6 +123,22 @@
   font-size: 18.5px !important;
   border-radius: 8px !important;
 }
+
+.btn.btn-resume {
+  font-family: Poppins !important;
+  font-weight: 400 !important;
+  padding: 16.2px 30px !important;
+  font-size: 18.5px !important;
+  border-radius: 8px !important;
+}
+
+
+@media screen and (max-width: 480px) {
+  .btn-custom-nopadding {
+    display: flex !important;
+    margin-right: 15px !important;
+    padding: 16.2px 40px !important;
+  }
 
 
 @media screen and (max-width: 480px) {

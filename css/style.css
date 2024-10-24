@@ -507,12 +507,10 @@ a:visited {
 /*===Education Section===*/
 /*===============*/
 
-/*  Education Section Styling */
+/* Education Section Styling */
 .white-emoji {
-  color: white;
-  /* Set emoji color to white */
-  font-size: 24px;
-  /* Adjust the size if necessary */
+  color: white; /* Set emoji color to white */
+  font-size: 24px; /* Adjust the size if necessary */
 }
 
 .section-title {
@@ -520,10 +518,15 @@ a:visited {
   font-weight: bold;
   text-align: center;
   margin-bottom: 40px;
+  color: #272341; /* Ensure the title color contrasts with background */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .timeline-container {
   position: relative;
+  padding: 20px; /* Add padding for better spacing */
+  background: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners for a softer look */
 }
 
 .timeline-line {
@@ -534,6 +537,12 @@ a:visited {
   height: 100%;
   background-color: #d1d5db;
   transform: translateX(-50%);
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change line color on hover */
+.timeline-container:hover .timeline-line {
+  background-color: #01b3af; /* Change to highlight color on hover */
 }
 
 .event-item {
@@ -572,6 +581,13 @@ a:visited {
   justify-content: center;
   z-index: 10;
   position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.event-icon:hover {
+  background-color: #4ed7d1; /* Change color on hover */
+  transform: scale(1.1); /* Slightly scale icon on hover */
 }
 
 .svg-icon {
@@ -586,10 +602,15 @@ a:visited {
   background-color: #f8f8f8 !important;
   padding: 27.5px;
   border-radius: 7px;
-  width: 350px;
   height: fit-content;
   position: relative;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transitions for hover effects */
+}
+
+.event-content:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 /* Event Title and Time */
@@ -597,6 +618,7 @@ a:visited {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #272341; /* Ensure title is easily readable */
 }
 
 .event-schedule .title {
@@ -610,8 +632,7 @@ a:visited {
 @keyframes popUp {
   to {
     opacity: 1;
-    transform: scale(1);
-    /* Final scale after animation */
+    transform: scale(1); /* Final scale after animation */
   }
 }
 
@@ -626,7 +647,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #01b3af;
@@ -648,7 +669,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 16.3px;
   color: #777;
@@ -692,7 +713,7 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 55px;
   background-color: none;
@@ -700,11 +721,12 @@ a:visited {
   color: #272341;
   letter-spacing: 0.5px;
   width: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .eduC .titleSmall {
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #96989b;
@@ -723,6 +745,7 @@ a:visited {
   background-color: none;
 }
 
+/* Responsive adjustments for small devices */
 @media screen and (max-width: 576px) {
   .event-item {
     flex-direction: column;
@@ -762,6 +785,7 @@ a:visited {
     width: 100%;
   }
 }
+  
 
 /*================*/
 /*===Services Section===*/
@@ -777,6 +801,7 @@ a:visited {
   padding: 50px 0;
   overflow: hidden;
   position: relative;
+  background: #ffffff; /* Added background for contrast */
 }
 
 .servicesC .title {
@@ -789,14 +814,20 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 55px;
-  background-color: none;
-  text-align: center;
   color: #272341;
   letter-spacing: 0.5px;
   width: fit-content;
+  background: linear-gradient(to right, #01b3af, #4ed7d1); /* Added gradient background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Text color matching the gradient */
+  transition: transform 0.3s; /* Added transition for title */
+}
+
+.servicesC .title:hover {
+  transform: scale(1.05); /* Scale up on hover for a dynamic effect */
 }
 
 .servicesC .titleGap {
@@ -805,7 +836,7 @@ a:visited {
 
 .servicesC .titleSmall {
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #96989b;
@@ -822,31 +853,37 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: 240px; /* Increased width for a better layout */
   margin: 20px;
   background: #f8f8f8;
-  padding: 20px;
+  padding: 25px; /* Increased padding for better content spacing */
   border-radius: 10px;
-  transition: transform 0.3s;
-  /* border: 1.4px solid #f0f0f0; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Combined transitions */
 }
 
 .serviceItem:hover {
-  transform: translateY(-3px);
-  background-color: #f2f2f2 !important;
+  transform: translateY(-5px); /* Increased hover effect */
+  background-color: #eaeaea; /* Changed hover background color for clarity */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 .serviceIcon {
-  font-size: 40px;
+  font-size: 50px; /* Increased icon size for better visibility */
   color: #01b3af;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  transition: transform 0.3s, color 0.3s; /* Added transition for icon on hover */
+}
+
+.serviceItem:hover .serviceIcon {
+  transform: scale(1.1); /* Scale icon slightly on hover */
+  color: #4ed7d1; /* Change color on hover for emphasis */
 }
 
 .serviceText {
   text-align: center;
-  font-family: "Poppins" !important;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   flex-wrap: wrap;
   align-items: center;
@@ -856,30 +893,27 @@ a:visited {
 
 .serviceText .text {
   font-weight: bold;
-  display: flex;
   font-size: 20px;
   color: #3a3947;
-  font-family: "Poppins" !important;
   margin-bottom: 10px;
-  justify-content: center;
-  align-items: center;
+  transition: color 0.3s; /* Transition for text color */
+}
+
+.serviceText .text:hover {
+  color: #01b3af; /* Change color on hover for emphasis */
 }
 
 .serviceText .textMain {
-  display: flex;
   font-size: 16px;
   color: #777;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat" !important;
+  font-family: "Montserrat", sans-serif;
 }
 
+/* Media Queries */
 @media screen and (max-width: 915px) {
   .servicesC .title {
     font-size: 43px;
-    left: 0;
     margin: auto;
-    left: -10px !important;
     width: 100%;
   }
 
@@ -887,7 +921,19 @@ a:visited {
     font-size: 19.5px;
     width: 100%;
   }
+
+  .serviceItem {
+    width: 180px; /* Adjusted width for smaller screens */
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .serviceItem {
+    margin: 10px; /* Adjusted margin for very small screens */
+  }
+}
+
 
 /*================*/
 /*===Skills===*/
@@ -914,14 +960,13 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 55px;
-  background-color: none;
-  text-align: center;
   color: #272341;
   letter-spacing: 0.5px;
   width: fit-content;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Added text shadow for depth */
 }
 
 .skillsC .titleGap {
@@ -930,7 +975,7 @@ a:visited {
 
 .skillsC .titleSmall {
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #96989b;
@@ -940,13 +985,9 @@ a:visited {
   display: flex;
   width: 700px;
   height: fit-content;
-  min-height: fit-content;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: row;
-
   margin-top: 20px;
-  background-color: none;
 }
 
 .skillsC .container .boxes {
@@ -955,79 +996,129 @@ a:visited {
   width: 320px;
   height: 70px;
   margin-bottom: 30px;
-
   background-color: #f8f8f8;
-
-  transition: transform 0.3s;
-  /* border: 1.4px solid #f0f0f0; */
-  cursor: pointer;
-  transition: 0.3s;
   border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  transition: transform 0.3s, background-color 0.3s; /* Combined transitions */
+  cursor: pointer;
+  overflow: hidden; /* Prevent overflow on hover */
 }
 
 .skillsC .container .boxes:hover {
-  scale: 1.05;
+  transform: translateY(-3px); /* Increased hover lift */
   background-color: #f2f2f2;
+  animation: pulse 0.4s ease; /* Pulse effect on hover */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .skillsC .container .boxes .left {
   display: flex;
-  position: relative;
-  left: 0;
   width: 70px;
   height: 70px;
-  background-color: none;
   align-items: center;
   justify-content: center;
   font-size: 35px;
   color: #01b3af;
+  transition: transform 0.3s; /* Added transition for icon */
+}
+
+.skillsC .container .boxes:hover .left {
+  transform: scale(1.1); /* Scale effect on hover */
 }
 
 .skillsC .container .boxes .left .circle {
   display: flex;
-  position: relative;
   width: 45px;
   height: 45px;
-  border-radius: 100%;
+  border-radius: 50%;
   background: radial-gradient(closest-side, #f8f8f8 71%, transparent 0% 0%),
     conic-gradient(#01b3af 95%, rgb(219, 221, 226) 0);
   align-items: center;
   justify-content: center;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   color: #6b7280;
   font-size: 11px;
   font-weight: bold;
-  display: flex;
 }
 
 .skillsC .container .boxes .right {
   display: flex;
-  position: relative;
-  right: 0;
   width: 240px;
-  background-color: none;
   align-items: center;
   justify-content: start;
   font-size: 15px;
   padding-left: 10px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  letter-spacing: 0px;
   color: #6b7280;
+  position: relative;
+}
+
+.skillsC .container .boxes .right::before {
+  content: ""; /* Create an underline effect */
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #01b3af; /* Color for the underline */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.3s; /* Transition for the underline */
+}
+
+.skillsC .container .boxes:hover .right::before {
+  transform: scaleX(1); /* Show underline on hover */
 }
 
 .skillsC .container .buttonCont {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
   width: 100%;
   height: fit-content;
-  min-height: 90px;
-  background-color: none;
 }
 
+.skillsC .container .buttonCont .btn {
+  padding: 10px 20px;
+  background-color: #01b3af; /* Button background color */
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; /* Transition for button */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow to button */
+}
+
+.skillsC .container .buttonCont .btn:hover {
+  background-color: #028b8a; /* Darker on hover */
+  transform: translateY(-2px); /* Lift on hover */
+  animation: bounce 0.3s ease; /* Bounce effect on hover */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
 @media screen and (max-width: 915px) {
   .skillsC .title {
     font-size: 43px;
@@ -1043,26 +1134,20 @@ a:visited {
 @media screen and (max-width: 800px) {
   .skillsC .container {
     width: 500px;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
   }
 }
 
-@media screen and(max-width:480px) {
+@media screen and (max-width: 480px) {
   .skillsC .container .buttonCont {
     margin-top: -30px !important;
     align-items: center;
     justify-content: center;
   }
 
-  .skillsC .container .btn {
-    margin-top: 0 !important;
-  }
-
   .skillsC .btn.btn-about {
     margin-top: 0 !important;
-    /* Increased the top margin of the button */
   }
 }
 

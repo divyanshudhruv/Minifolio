@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
 function linkedin() {
     window.open("https://linkedin.com")
 }
-function twitter() {
+function x() {
     window.open("https://x.com")
 }
 function instagram() {

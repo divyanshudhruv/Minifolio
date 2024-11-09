@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<p align="center">  <img src="https://img.shields.io/badge/Version-0.4.1-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+<p align="center">  <img src="https://img.shields.io/badge/Version-0.4.2-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>

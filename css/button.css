@@ -3,7 +3,7 @@
 /*===============*/
 
 :root {
-  --accent: #02aba8; /*289997*/
+  --accent: #02aba8;
   --white: #ffffffff;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .btn.btn-about {
-  font-family: Poppins !important;
+  font-family: "Poppins",sans-serif !important;
   font-weight: 400 !important;
   padding: 16.2px 40.3px !important;
   font-size: 18.5px !important;
@@ -104,14 +104,14 @@
 }
 
 .btn.btn-skills {
-  font-family: Poppins !important;
+  font-family: "Poppins",sans-serif !important;
   font-weight: 400 !important;
   padding: 16.2px 40.3px !important;
   font-size: 18.5px !important;
   border-radius: 8px !important;
 }
 .btn.btn-resume {
-  font-family: Poppins !important;
+  font-family: "Poppins",sans-serif !important;
   font-weight: 400 !important;
   padding: 16.2px 30px !important;
   font-size: 18.5px !important;

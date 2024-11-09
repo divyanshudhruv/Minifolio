@@ -319,7 +319,7 @@ a:visited {
   height: 57.5px;
   align-items: center;
   justify-content: center;
-  font-family: Poppins;
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 18px;
   background-color: none;
@@ -373,7 +373,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 25.5px;
   color: #01b3af;
@@ -385,7 +385,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: #777;
@@ -413,7 +413,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 25.5px;
   color: #01b3af;
@@ -425,7 +425,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: #777;
@@ -648,7 +648,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 16.3px;
   color: #777;
@@ -704,7 +704,7 @@ a:visited {
 
 .eduC .titleSmall {
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #96989b;
@@ -805,7 +805,7 @@ a:visited {
 
 .servicesC .titleSmall {
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #96989b;
@@ -846,7 +846,7 @@ a:visited {
 
 .serviceText {
   text-align: center;
-  font-family: "Poppins" !important;
+  font-family: "Poppins",sans-serif !important;
   font-size: 15px;
   flex-wrap: wrap;
   align-items: center;
@@ -859,7 +859,7 @@ a:visited {
   display: flex;
   font-size: 20px;
   color: #3a3947;
-  font-family: "Poppins" !important;
+  font-family: "Poppins",sans-serif !important;
   margin-bottom: 10px;
   justify-content: center;
   align-items: center;
@@ -930,7 +930,7 @@ a:visited {
 
 .skillsC .titleSmall {
   text-align: center;
-  font-family: Poppins;
+  font-family: "Poppins",sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #96989b;
@@ -993,7 +993,7 @@ a:visited {
     conic-gradient(#01b3af 95%, rgb(219, 221, 226) 0);
   align-items: center;
   justify-content: center;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   color: #6b7280;
   font-size: 11px;
   font-weight: bold;
@@ -1066,90 +1066,7 @@ a:visited {
   }
 }
 
-/* 
-.footer {
-  display: flex;
-  position: relative;
-  width: 650px;
-  background-color: none;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 15px;
-  font-family: Poppins;
-  color: #96989b;
-  font-weight: 300;
-  letter-spacing: 1px;
-  border-top: 1.89px solid #ddd;
-  min-height: 60px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-} */
-
-/* 
-.footer span a {
-  display: inline !important;
-  font-weight: 300;
-  transition: 0.3s;
-  text-decoration: underline;
-}
-
-.footer a:hover {
-  font-weight: 300;
-  color: #666;
-}
-
-.footer a.buttonIcon {
-  position: absolute;
-  top: 60px;
-  display: none;
-  width: 225px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.footer a.buttonIcon .boxes {
-  display: flex;
-  position: relative;
-  width: 44px;
-  height: 44px;
-  background-color: none;
-  color: #96989b;
-  font-size: 19.5px;
-  font-weight: lighter;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.1s !important;
-  transition-delay: 0s !important;
-}
-
-.footer a.buttonIcon .boxes:hover {
-  color: #666;
-}
-
-@media screen and (max-width: 915px) {
-  .footer {
-    width: 90%;
-  }
-
-  .footer a.buttonIcon {
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .footer a.buttonIcon {
-    top: 75px;
-  }
-} */
-
+/*================*/
 @media screen and (max-width: 315px) {
   .home .container {
     font-size: 35px;
@@ -1193,9 +1110,7 @@ a:visited {
     width: 100%;
   }
 
-  /* .footer {
-    font-size: 12.5px;
-  } */
+  
 }
 
 /* Additional CSS for the Back to Top button */
@@ -1263,18 +1178,16 @@ a:visited {
   background-color: none;
   align-items: start;
   justify-content: center;
-  /* sice flex-wrap: wrap is done so we don't need to worry about the the footer's  responsiveness*/
   flex-wrap: wrap;
   left: 0;
   right: 0;
   margin: auto;
   text-align: center;
   font-size: 15px;
-  font-family: Poppins;
+  font-family: "Poppins",sans-serif;
   color: #96989b;
   font-weight: 300;
   letter-spacing: 1px;
-  /* border-top: 1.89px solid #ddd; */
   min-height: 50px;
   margin-bottom: 30px;
   padding-top: 5px;
@@ -1300,7 +1213,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   color: #272341;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   width: fit-content;
   height: 120px;
   left: 0;
@@ -1339,7 +1252,7 @@ a:visited {
   align-items: center;
   justify-content: center;
   color: #272341;
-  font-family: "Poppins";
+  font-family: "Poppins",sans-serif;
   width: fit-content;
   height: 120px;
   left: 0;

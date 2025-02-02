@@ -1,23 +1,67 @@
 'use strict';
-var e, t;
-new function (e) {
-    const t = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=+<>,./?[{()}]!@#$%^&*~`|".split(""),
-        n = e.querySelector(".source"),
-        o = e.querySelector(".target");
-    let r, i, l, s = 0;
+
+(function (e) {
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=+<>,./?[{()}]!@#$%^&*~`|".split("");
+    const source = e.querySelector(".source");
+    const target = e.querySelector(".target");
+
+    let interval, timeout, incrementInterval;
+    let index = 0;
+    let self = this;
+
     this.start = function () {
-        n.style.display = "none", o.style.display = "block", r = window.setInterval((() => {
-            s <= n.innerText.length && (o.innerText = n.innerText.substring(0, s) + function (e) {
-                let n = "";
-                for (let o = 0; o < e; o++) n += t[Math.floor(Math.random() * t.length)];
-                return n
-            }(n.innerText.length - s))
-        }), 15), i = window.setTimeout((() => {
-            l = window.setInterval((() => {
-                s > n.innerText.length - 1 && this.stop(), s++
-            }), 70)
-        }), 350)
-    }, this.stop = function () {
-        n.style.display = "block", o.style.display = "none", o.innerText = "", s = 0, void 0 !== r && (window.clearInterval(r), r = void 0), void 0 !== l && (window.clearInterval(l), l = void 0), void 0 !== i && (window.clearInterval(i), i = void 0)
+        source.style.display = "none";
+        target.style.display = "block";
+
+        // Random character substitution effect
+        interval = setInterval(() => {
+            if (index <= source.innerText.length) {
+                target.innerText = source.innerText.substring(0, index) + getRandomString(source.innerText.length - index);
+            }
+        }, 15);
+
+        // Delayed start of revealing the original text
+        timeout = setTimeout(() => {
+            incrementInterval = setInterval(() => {
+                if (index > source.innerText.length - 1) {
+                    self.stop();
+                }
+                index++;
+            }, 70);
+        }, 350);
+    };
+
+    this.stop = function () {
+        source.style.display = "block";
+        target.style.display = "none";
+        target.innerText = "";
+        index = 0;
+
+        if (interval !== undefined) clearInterval(interval);
+        if (incrementInterval !== undefined) clearInterval(incrementInterval);
+        if (timeout !== undefined) clearTimeout(timeout);
+    };
+
+    function getRandomString(length) {
+        let str = "";
+        for (let i = 0; i < length; i++) {
+            str += chars[Math.floor(Math.random() * chars.length)];
+        }
+        return str;
     }
-}(document.getElementById("error_text")).start(), "en" !== navigator.language.substring(0, 2).toLowerCase() && (e = document.createElement("script"), t = document.body, e.src = "", e.async = e.defer = !0, e.addEventListener("load", (() => t.removeChild(e))), t.appendChild(e));
+
+    this.start();
+})(document.getElementById("error_text"));
+
+// Handle different language settings
+if (navigator.language.substring(0, 2).toLowerCase() !== "en") {
+    let script = document.createElement("script");
+    let body = document.body;
+
+    script.src = "";  // Add the correct script source URL here
+    script.async = true;
+    script.defer = true;
+
+    script.addEventListener("load", () => body.removeChild(script));
+    body.appendChild(script);
+}

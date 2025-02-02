@@ -141,7 +141,7 @@ a:visited {
   background-color: none;
   color: #272341;
   font-size: 56px;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   font-weight: 700;
   align-items: center;
   justify-content: center;
@@ -180,7 +180,7 @@ a:visited {
   border: 2px solid #01b3af;
   color: #01b3af;
   font-size: 24px;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   font-weight: 700;
   cursor: pointer;
   background: linear-gradient(to right, #01b3af 50%, #fff 50%);
@@ -283,7 +283,7 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   font-weight: bold;
   font-size: 55px;
   background-color: none;
@@ -626,7 +626,7 @@ a:visited {
   position: relative;
   width: 100%;
   height: fit-content;
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-weight: 500;
   font-size: 18px;
   color: #01b3af;
@@ -637,7 +637,7 @@ a:visited {
   color: #6b7280;
   margin-top: 5px;
   display: flex;
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-weight: 500;
   font-size: 13px;
 }
@@ -692,7 +692,7 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   font-weight: bold;
   font-size: 55px;
   background-color: none;
@@ -789,7 +789,7 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   font-weight: bold;
   font-size: 55px;
   background-color: none;
@@ -827,8 +827,6 @@ a:visited {
   background: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
-  transition: transform 0.3s;
-  /* border: 1.4px solid #f0f0f0; */
   cursor: pointer;
   transition: 0.3s;
 }
@@ -871,13 +869,12 @@ a:visited {
   color: #777;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat" !important;
+  font-family: "Montserrat",sans-serif !important;
 }
 
 @media screen and (max-width: 915px) {
   .servicesC .title {
     font-size: 43px;
-    left: 0;
     margin: auto;
     left: -10px !important;
     width: 100%;
@@ -914,7 +911,7 @@ a:visited {
   height: 75px;
   align-items: center;
   justify-content: center;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   font-weight: bold;
   font-size: 55px;
   background-color: none;
@@ -958,7 +955,6 @@ a:visited {
 
   background-color: #f8f8f8;
 
-  transition: transform 0.3s;
   /* border: 1.4px solid #f0f0f0; */
   cursor: pointer;
   transition: 0.3s;
@@ -997,7 +993,6 @@ a:visited {
   color: #6b7280;
   font-size: 11px;
   font-weight: bold;
-  display: flex;
 }
 
 .skillsC .container .boxes .right {
@@ -1010,7 +1005,7 @@ a:visited {
   justify-content: start;
   font-size: 15px;
   padding-left: 10px;
-  font-family: "Montserrat";
+  font-family: "Montserrat",sans-serif;
   font-weight: normal;
   letter-spacing: 0px;
   color: #6b7280;
@@ -1325,7 +1320,7 @@ a:visited {
   font-size: 14px;
   font-weight: bold;
   color: #3a3947;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   letter-spacing: 0px;
   margin-bottom: 8px;
 }
@@ -1334,7 +1329,7 @@ a:visited {
   position: relative;
   display: flex;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Montserrat,sans-serif;
   font-weight: normal;
   color: #96989b;
   letter-spacing: 0px;
@@ -1406,7 +1401,7 @@ a:visited {
   align-items: start;
   justify-content: start;
   font-size: 14px;
-  font-family: Montserrat !important;
+  font-family: Montserrat,sans-serif !important;
   font-weight: normal !important;
   color: #96989b !important;
   letter-spacing: 0px;

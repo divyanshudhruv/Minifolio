@@ -35,7 +35,7 @@ body{
 #error_text span {
     color: #272341;
     background-color: none;
-    font-family: Montserrat;
+    font-family: Montserrat,sans-serif;
     font-weight: 700;
 }
 

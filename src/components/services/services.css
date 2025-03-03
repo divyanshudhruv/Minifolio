@@ -1,114 +1,114 @@
 .servicesC {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 60px;
-    padding: 50px 0;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+  padding: 50px 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .servicesC .title {
-    display: flex;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 75px;
-    align-items: center;
-    justify-content: center;
-    font-family: Montserrat, sans-serif;
-    font-weight: bold;
-    font-size: 55px;
-    background-color: none;
-    text-align: center;
-    color: #272341;
-    letter-spacing: 0.5px;
-    width: fit-content;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  background-color: none;
+  text-align: center;
+  color: #272341;
+  letter-spacing: 0.5px;
+  width: fit-content;
 }
 
 .servicesC .titleGap {
-    height: 20px;
+  height: 20px;
 }
 
 .servicesC .titleSmall {
-    text-align: center;
-    font-weight: 300;
-    font-size: 18px;
-    color: #96989b;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  color: #96989b;
 }
 
 .servicesC .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 .serviceItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    margin: 20px;
-    background: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 20px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .serviceItem:hover {
-    transform: translateY(-3px);
-    background-color: #f2f2f2 !important;
+  transform: translateY(-3px);
+  background-color: #f2f2f2 !important;
 }
 
 .serviceIcon {
-    font-size: 40px;
-    color: #01b3af;
-    margin-bottom: 10px;
+  font-size: 40px;
+  color: #01b3af;
+  margin-bottom: 20px;
 }
 
 .serviceText {
-    text-align: center;
-    font-size: 15px;
-    flex-wrap: wrap;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .serviceText .text {
-    font-weight: bold;
-    display: flex;
-    font-size: 20px;
-    color: #3a3947;
-    margin-bottom: 10px;
-    justify-content: center;
-    align-items: center;
+  font-weight: bold;
+  display: flex;
+  font-size: 20px;
+  color: #3a3947;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .serviceText .textMain {
-    display: flex;
-    font-size: 16px;
-    color: #777;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  font-size: 16px;
+  color: #777;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 915px) {
-    .servicesC .title {
-        font-size: 43px;
-        margin: auto;
-        left: -10px !important;
-        width: 100%;
-    }
+  .servicesC .title {
+    font-size: 43px;
+    margin: auto;
+    left: -10px !important;
+    width: 100%;
+  }
 
-    .servicesC .titleSmall {
-        font-size: 19.5px;
-        width: 100%;
-    }
+  .servicesC .titleSmall {
+    font-size: 19.5px;
+    width: 100%;
+  }
 }

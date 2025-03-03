@@ -145,11 +145,11 @@
 
 /* Responsive Styles */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 3068px) {
     .event-item {
         flex-direction: column;
         margin: 1.5rem;
-        width: 80vw;
+        width: 40vw;
     }
 
     .reverse {

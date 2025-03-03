@@ -1,0 +1,250 @@
+/*  Education Section Styling */
+.white-emoji {
+    color: white;
+    /* Set emoji color to white */
+    font-size: 24px;
+    /* Adjust the size if necessary */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline-container {
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #d1d5db;
+    transform: translateX(-50%);
+}
+
+.event-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    opacity: 0;
+    width: 800px;
+    padding-inline: 10px;
+    transform: scale(0.8);
+    animation: popUp 0.5s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Reverse layout for alternating items */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Empty Space to Align the Event Icons */
+.empty-space {
+    width: calc(43.75% + 10px);
+}
+
+/* Event Icon */
+.event-icon {
+    background-color: #01b3af;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+}
+
+.svg-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+/* Event Content */
+.event-content {
+    width: 40%;
+    background-color: #f8f8f8 !important;
+    padding: 27.5px;
+    border-radius: 7px;
+    width: 350px;
+    height: fit-content;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Event Title and Time */
+.event-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-schedule .title {
+    color: #272341;
+    letter-spacing: 0.5px;
+    font-size: 55px;
+    width: fit-content;
+}
+
+/* Animation Keyframes for Pop-Up Effect */
+@keyframes popUp {
+    to {
+        opacity: 1;
+        transform: scale(1);
+        /* Final scale after animation */
+    }
+}
+
+/* Hover Effect */
+.event-content:hover {
+    scale: 1.01;
+    background-color: #f2f2f2 !important;
+}
+
+.event-content .text {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-weight: 500;
+    font-size: 18px;
+    color: #01b3af;
+    background-color: none;
+}
+
+.event-content .event-time {
+    color: #6b7280;
+    margin-top: 5px;
+    display: flex;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.event-content .textMain {
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-weight: 300;
+    font-size: 16.3px;
+    color: #777;
+    background-color: none;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .event-item {
+        flex-direction: column;
+        margin: 1.5rem;
+        width: 80vw;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .empty-space {
+        display: flex;
+    }
+
+    .event-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .timeline-line {
+        display: flex;
+    }
+}
+
+.eduC .title {
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 55px;
+    background-color: none;
+    text-align: center;
+    color: #272341;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.eduC .titleSmall {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    color: #96989b;
+}
+
+.eduC .titleGap {
+    height: 20px;
+    display: flex;
+}
+
+.eduC .containerGap {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: none;
+}
+
+@media screen and (max-width: 576px) {
+    .event-item {
+        flex-direction: column;
+        margin: 1.5rem;
+        width: fit-content;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .empty-space {
+        display: flex;
+    }
+
+    .event-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .timeline-line {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .eduC .title {
+        font-size: 43px;
+        left: 0;
+        margin: auto;
+        left: -10px !important;
+        width: 100%;
+    }
+
+    .eduC .titleSmall {
+        font-size: 19.5px;
+        width: 100%;
+    }
+}

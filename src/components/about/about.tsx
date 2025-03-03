@@ -4,7 +4,8 @@ import "./about.css";
 export default function About() {
     return (
         <>
-            <div className="aboutC">
+            <div className="aboutC"       style={{ marginBottom: "60px" }}
+            >
                 <div className="title">     ABOUT 🫥</div>
                 <div className="titleGap" />
                 <div className="titleSmall">This and that</div>

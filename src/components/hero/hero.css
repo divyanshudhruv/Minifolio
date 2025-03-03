@@ -1,134 +1,131 @@
-
 .hero {
-    display: flex;
-    width: 1150px;
-    height: 100vh;
-    background-color: none;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero .container {
-    width: 95%;
-    height: 225px;
-    background-color: none;
-    color: #272341;
-    font-size: 56px;
-    font-family: Montserrat,sans-serif;
-    font-weight: 700;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 120px;
-  }
-  
-  .hero .container .icons-container {
-    display: none;
-    position: absolute;
-    width: 50px;
-    left: 10vw;
-    height: 25px;
-  }
-  
-  .hero .container span {
-    color: #01b3af;
-  }
-  
-  #role {
-    color: #272341;
-  }
-  
-  .hero .container #role {
-    color: #272341;
-  }
-  
-  .hero .container .typed-cursor {
-    color: #272341;
-  }
-  
-  .hero .container a.button {
-    position: relative;
-    display: flex;
-    top: 30px;
-    padding: 5.5px 13.5px;
-    width: fit-content;
-    height: fit-content;
-    border: 2px solid #01b3af;
-    color: #01b3af;
-    font-size: 24px;
-    font-family: Montserrat,sans-serif;
-    font-weight: 700;
-    cursor: pointer;
-    background: linear-gradient(to right, #01b3af 50%, #fff 50%);
-    background-size: 200% 100%;
-    background-position: right;
-    transition: all 0.25s ease-out;
-  }
-  
+  display: flex;
+  width: 1150px;
+  height: 100vh;
+  background-color: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .container {
+  width: 95%;
+  height: 225px;
+  background-color: none;
+  color: #272341;
+  font-size: 56px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 120px;
+}
+
+.hero .container .icons-container {
+  display: none;
+  position: absolute;
+  width: 50px;
+  left: 10vw;
+  height: 25px;
+  top: 103px !important;
+}
+
+.hero .container span {
+  color: #01b3af;
+}
+
+#role {
+  color: #272341;
+}
+
+.hero .container #role {
+  color: #272341;
+}
+
+.hero .container .typed-cursor {
+  color: #272341;
+}
+
+.hero .container a.button {
+  position: relative;
+  display: flex;
+  top: 30px;
+  padding: 5.5px 13.5px;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid #01b3af;
+  color: #01b3af;
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(to right, #01b3af 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.25s ease-out;
+}
+
+.hero .container a.buttonIcon {
+  position: relative;
+  display: flex;
+  top: -207.5px;
+  left: -100px;
+  width: 50px;
+  height: 225px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero .container a.buttonIcon .boxes {
+  display: flex;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(to right, #f6f6f6 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all 0.25s ease-out;
+  color: #3a3947;
+  font-size: 19.5px;
+  font-weight: lighter;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hero .container a.buttonIcon .boxes:hover {
+  background-position: left;
+}
+
+.hero .container a.button:hover {
+  color: #fff;
+  background-position: left;
+}
+
+@media screen and (max-width: 915px) {
   .hero .container a.buttonIcon {
-    position: relative;
-    display: flex;
-    top: -187.5px;
-    left: -100px;
-    width: 50px;
-    height: 225px;
-  
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .hero .container a.buttonIcon .boxes {
-    display: flex;
-    position: relative;
-    width: 44px;
-    height: 44px;
-    background: linear-gradient(to right, #f6f6f6 50%, #fff 50%);
-    background-size: 200% 100%;
-    background-position: right;
-    transition: all 0.25s ease-out;
-    color: #3a3947;
-    font-size: 19.5px;
-    font-weight: lighter;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  
-  .hero .container a.buttonIcon .boxes:hover {
-    background-position: left;
-  }
-  
-  .hero .container a.button:hover {
-    color: #fff;
-    background-position: left;
-  }
-  
-  @media screen and (max-width: 915px) {
-    .hero .container a.buttonIcon {
-      display: none;
-    }
-  
-    .hero .container {
-      padding-left: 0 !important;
-    }
-  
-    .hero .container {
-      font-size: 41px;
-      text-align: center;
-      line-height: 1.5em;
-      position: relative;
-    }
-  
-    .hero .container .button {
-      position: relative;
-      line-height: normal !important;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
+    display: none;
   }
 
-  
+  .hero .container {
+    padding-left: 0 !important;
+  }
+
+  .hero .container {
+    font-size: 41px;
+    text-align: center;
+    line-height: 1.5em;
+    position: relative;
+  }
+
+  .hero .container .button {
+    position: relative;
+    line-height: normal !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

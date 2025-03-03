@@ -5,7 +5,8 @@ import "./skills.css";
 export default function Skills() {
     return (
         <>
-            <div id="skills" />
+            <div id="skills"       style={{ marginBottom: "60px" }}
+            />
             <div className="skillsC">
                 <div className="title">     SKILLS 😎</div>
                 <div className="titleGap" />

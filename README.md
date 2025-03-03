@@ -7,12 +7,17 @@
 <br>
 <br>
 
-<p align="center">  <img src="https://img.shields.io/badge/Version-0.4.2-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
+<p align="center">  <img src="https://img.shields.io/badge/Version-1.0.0-808fff?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/Made%20for-developers-orange?style=for-the-badge"> &nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/github/stars/divyanshudhruv/Minifolio?style=for-the-badge&color=dfb317 ">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/GH--page-active-green?style=for-the-badge">&nbsp;&nbsp;&nbsp; <img src="https://img.shields.io/badge/license-mit-6fbfff?style=for-the-badge"></p>
 
 <br>
 <br>
 
-## 🚩 License
+> [!IMPORTANT]
+> 🎉 Special **`THANKS & SHOUTOUT`** to **@valdemirum** for their **`valuable`** ⭐ **`contributions`** and **`support`** in bringing this project to 🌌 **`Next.js`**! Your help made this transition 🎡 **`smooth`** and **`efficient`**, and we couldn’t have done it without 🙌 `you`.
+
+<br>
+
+ ## 🚩 License
 
 <br>
 
@@ -49,6 +54,9 @@
 > **`v0.3` `08/10/2024`** - Added new enhancements
 
 > **`v0.4` `17/10/2024`** - Added various new sections
+
+> **`v1.0` `03/03/2025`** - Conversion to NextJS
+
 
 <!--
 
@@ -108,7 +116,7 @@
 ```markdown
 1. Modern UI/UX
 2. One page layout
-3. Valid HTML5 and CSS3
+3. Valid HTML5 and CSS3 and NextJS
 4. Fully responsive
 ```
 -->
@@ -117,7 +125,7 @@
 
 > **`2`** One page layout
 
-> **`3`** Valid HTML5 and CSS3
+> **`3`** Valid HTML5 and CSS3 and NextJS
 
 > **`4`** Fully responsive
 
@@ -150,35 +158,35 @@ Follow the instruction to customize the portfolio
 > ## 🌳 Tree Diagram
 
 ```
-.
-└── Minifolio
-    ├── index.html
-    ├── css
-    │   ├── style.css
-    │   ├── 404.css
-    │   ├── navbar.css
-    │   └── button.css
-    │
-    ├── js
-    │   ├── script.js
-    │   ├── 404.js
-    │   ├── copyRight.js
-    │   └── typingAnimation.js
-    │
-    ├── logo
-    │   ├── minifolio.ico
-    │   ├── minifolio.png
-    │   └── minifolio.svg
-    │
-    └── images
-        ├── link.png
-        ├── facebook.png
-        ├── linkedin.png
-        └── twitter.png
+─ src/                 # Source code directory
+├── app/               # Next.js app directory
+│   ├── favicon.ico
+│   ├── globals.css    # Global styles
+│   ├── layout.tsx     # Layout component
+│   └── page.tsx       # Main page component
+│
+├── components/        # Reusable UI components
+│   ├── about/         # "About" section components
+│   ├── education/     # "Education" section components
+│   ├── footer/        # Footer components
+│   ├── hero/          # Hero/landing section
+│   ├── navbar/        # Navigation bar components
+│   ├── services/      # "Services" section components
+│   └── skills/        # "Skills" section components
+│
+├── ui/                # UI-specific shared components
+│   └── icons.tsx      # Icon components
+│
+└── utils/             # Utility/helper functions
+     └── fonts.ts       # Font configuration
 ```
 
-<br>
 
+
+<br><br>
+
+<details>
+    <summary>Old Documentation</summary>
 > ## 🏠 Home Page
 
 <Br>
@@ -469,14 +477,17 @@ Follow the instruction to customize the portfolio
 </div>
 ```
 
+</details>
 <br>
+<br>
+
 
 ## 📦 Deployment <a id="deployment"> </a>
 
 <br>
 
 ```rust
-Minifolio is deployed by Github Page
+Minifolio is deployed by Vercel
 ```
 
 <br>
@@ -485,7 +496,7 @@ Minifolio is deployed by Github Page
 
 <br>
 
-> **`1`** HTML
+> **`1`** NextJS
 
 > **`2`** CSS
 
@@ -493,6 +504,10 @@ Minifolio is deployed by Github Page
 
 > **`4`** Github
 
+> **`5`** TypeScript
+
+> **`6`** Vercel
+ 
 <br>
 
 ## ⭐ Star <a id="star"> </a>

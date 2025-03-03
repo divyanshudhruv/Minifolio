@@ -1,0 +1,239 @@
+
+.aboutC {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: none;
+    min-height: 600px;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .aboutC .title {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: 750px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 55px;
+    background-color: none;
+    text-align: center;
+    color: #272341;
+    letter-spacing: 0.5px;
+  }
+  
+  .aboutC .titleGap {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: none;
+  }
+  
+  .aboutC .containerGap {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: none;
+  }
+  
+  .aboutC .titleSmall {
+    display: flex;
+    top: 0;
+    position: relative;
+    width: 750px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 57.5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 18px;
+    background-color: none;
+    text-align: center;
+    color: #96989b;
+    flex-wrap: wrap;
+    letter-spacing: 0.3px;
+  }
+  
+  .aboutC .bottomC {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background-color: none;
+  }
+  
+  .aboutC .container {
+    display: flex;
+    position: relative;
+    width: 750px;
+    height: fit-content;
+    min-height: 292.5px;
+    background-color: none;
+    align-items: start;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  .aboutC .container .leftC {
+    display: flex;
+    position: relative;
+    width: 60%;
+    padding-right: 50px;
+    height: fit-content;
+    min-height: 292.5px;
+    background-color: none;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .aboutC .container .leftC .text {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-weight: 300;
+    font-size: 25.5px;
+    color: #01b3af;
+    background-color: none;
+  }
+  
+  .aboutC .container .leftC .textMain {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-weight: 300;
+    font-size: 20px;
+    color: #777;
+    line-height: 1.9em;
+    background-color: none;
+  }
+  
+  .aboutC .container .rightC {
+    display: flex;
+    position: relative;
+    width: 32%;
+    height: fit-content;
+    min-height: 292.5px;
+    background-color: none;
+    padding-top: 10px;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: 0.3s !important;
+  }
+  
+  .aboutC .container .rightC .text {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-weight: 300;
+    font-size: 25.5px;
+    color: #01b3af;
+    background-color: none;
+  }
+  
+  .aboutC .container .rightC .textMain {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    font-weight: 300;
+    font-size: 20px;
+    color: #777;
+    line-height: 1.9em;
+    background-color: none;
+  }
+  
+  .aboutC .container .rightC .btnC {
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content: start;
+    width: 100%;
+    height: fit-content;
+    min-height: 90px;
+    background-color: none;
+  }
+  
+  .aboutC .container .rightC .btnResume {
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content: start;
+    width: 100%;
+    height: 90px;
+    min-height: 90px;
+    background-color: none;
+  }
+  
+  @media screen and (max-width: 915px) {
+    .aboutC .title {
+      font-size: 43px;
+      left: 5px;
+      width: 300px;
+    }
+  
+    .aboutC .titleSmall {
+      font-size: 19.5px;
+      width: 200px;
+    }
+  
+    .aboutC .container {
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 65%;
+    }
+  
+    .aboutC .container .leftC {
+      width: 100%;
+      padding-right: 0;
+      min-height: 225px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .aboutC .container .rightC {
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+      min-height: 200px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .aboutC .container .rightC .textMain {
+      width: 50%;
+    }
+  
+    .aboutC .container .rightC .btnC {
+      width: 50%;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      max-height: 40px;
+    }
+  }

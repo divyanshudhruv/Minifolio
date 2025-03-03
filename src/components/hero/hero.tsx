@@ -33,7 +33,7 @@ export default function Hero() {
                 <div className="container">
                     <div className="icons-container" />
                     Hi, my name is <span>Your Name</span> <br />
-                    I'm{' '}
+                    I&apos;m{' '}
                     <span id="role" ref={el}>
                         {' '}
                     </span>

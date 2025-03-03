@@ -1,4 +1,3 @@
-import { Heart } from "lucide-react";
 import "./footer.css";
 import Link from "next/link";
 export default function Footer() {

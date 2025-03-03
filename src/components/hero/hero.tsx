@@ -5,7 +5,7 @@ import { Twitter, Linkedin, Instagram, Link } from 'lucide-react';
 import Typed from 'typed.js';
 
 import './hero.css';
-
+ 
 export default function Hero() {
     const el = useRef(null);
 

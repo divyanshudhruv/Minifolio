@@ -11,10 +11,10 @@ export default function About() {
                 <div className="containerGap" />
                 <div className={`container ${poppins.className}`}>
                     <div className="leftC">
-                        <div className="text">Hi, I'm a developer</div>
+                        <div className="text">Hi, I&apos;m a developer</div>
                         <br />
                         <div className="textMain">
-                            I design websites. That's the long and short of it.
+                            I design websites. That&apos;s the long and short of it.
                             UI and UX, Sketch, Design, and pretty decent HTML
                             and CSS — with Javascript and that nice dabble with
                             Java.

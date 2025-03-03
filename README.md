@@ -13,7 +13,7 @@
 <br>
 
 > [!IMPORTANT]
-> 🎉 Special **`THANKS & SHOUTOUT`** to **@valdemirum** for their **`valuable`** ⭐ **`contributions`** and **`support`** in bringing this project to 🌌 **`Next.js`**! Your help made this transition 🎡 **`smooth`** and **`efficient`**, and we couldn’t have done it without 🙌 `you`.
+> 🎉 Special **`THANKS & SHOUTOUT`** to **[@valdemirum](https://github.com/valdemirum)** for their **`valuable`** ⭐ **`contributions`** and **`support`** in bringing this project to 🌌 **`Next.js`**! Your help made this transition 🎡 **`smooth`** and **`efficient`**, and we couldn’t have done it without 🙌 `you`.
 
 <br>
 

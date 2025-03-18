@@ -73,7 +73,6 @@
 
 /* Event Content */
 .event-content {
-    width: 40%;
     background-color: #f8f8f8 !important;
     padding: 27.5px;
     border-radius: 7px;
@@ -237,7 +236,6 @@
 @media screen and (max-width: 915px) {
     .eduC .title {
         font-size: 43px;
-        left: 0;
         margin: auto;
         left: -10px !important;
         width: 100%;

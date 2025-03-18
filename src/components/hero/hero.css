@@ -86,7 +86,6 @@
   background: linear-gradient(to right, #f6f6f6 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: right;
-  transition: all 0.25s ease-out;
   color: #3a3947;
   font-size: 19.5px;
   font-weight: lighter;

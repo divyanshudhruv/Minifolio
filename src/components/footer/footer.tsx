@@ -53,8 +53,8 @@ export default function Footer() {
             &nbsp;<u>@divyanshudhruv</u>&nbsp;
           </Link>{" "}
           and{" "}
-          <Link href={"https://github.com/valdemirum"}>
-            &nbsp;<u>@valdemirum</u>&nbsp;
+          <Link href={"https://github.com/loeclos"}>
+            &nbsp;<u>@loeclos</u>&nbsp;
           </Link>
         </div>
       </div>

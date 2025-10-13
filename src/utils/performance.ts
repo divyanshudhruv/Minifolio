@@ -31,6 +31,10 @@ class PerformanceMonitor {
    * Start timing an operation
    */
   startTimer(name: string): void {
+    if (this.timers.has(name)) {
+      console.warn(`Timer '${name}' is already running. Overwriting is not allowed.`);
+      return;
+    }
     this.timers.set(name, performance.now());
   }
 
@@ -189,6 +193,8 @@ class PerformanceMonitor {
               console.log(`[Web Vitals] ${vital}: ${metric.value}`);
             });
           }
+        }).catch((error) => {
+          console.warn(`Web Vitals monitoring is optional and failed to load for ${vital}. This is expected if the package is not installed.`, error);
         });
       } catch (error) {
         console.warn(`Failed to load Web Vitals for ${vital}:`, error);
@@ -400,3 +406,7 @@ export function PerformanceBoundary({ children, fallback }: {
 }
 
 export default performanceMonitor;
+
+
+
+

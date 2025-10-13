@@ -10,6 +10,9 @@ import { useAccessibility } from '@/utils/accessibility';
 import { usePerformanceMonitoring } from '@/utils/performance';
 import { useErrorHandling } from '@/utils/error-handling';
 
+// Constants
+const FALLBACK_IMAGE_URL = '/api/placeholder/400/300';
+
 interface PortfolioItem {
   id: string;
   title: string;
@@ -32,7 +35,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
     id: '1',
     title: 'E-commerce Platform',
     description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.',
-    image: '/api/placeholder/400/300',
+    image: FALLBACK_IMAGE_URL,
     technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com/example/ecommerce',
@@ -42,7 +45,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
     id: '2',
     title: 'Task Management App',
     description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-    image: '/api/placeholder/400/300',
+    image: FALLBACK_IMAGE_URL,
     technologies: ['Vue.js', 'Firebase', 'WebSocket'],
     liveUrl: 'https://example.com/tasks',
     githubUrl: 'https://github.com/example/tasks'
@@ -51,7 +54,7 @@ const defaultPortfolioItems: PortfolioItem[] = [
     id: '3',
     title: 'Weather Dashboard',
     description: 'A responsive weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.',
-    image: '/api/placeholder/400/300',
+    image: FALLBACK_IMAGE_URL,
     technologies: ['Next.js', 'TypeScript', 'OpenWeather API'],
     liveUrl: 'https://example.com/weather',
     githubUrl: 'https://github.com/example/weather'
@@ -237,7 +240,7 @@ export default function EnhancedPortfolio({
                   loading="lazy"
                   onError={(e) => {
                     logWarning(`Failed to load image for project: ${item.title}`);
-                    e.currentTarget.src = '/api/placeholder/400/300';
+                    e.currentTarget.src = FALLBACK_IMAGE_URL;
                   }}
                 />
                 {item.featured && (
@@ -727,3 +730,7 @@ export default function EnhancedPortfolio({
     </section>
   );
 }
+
+
+
+

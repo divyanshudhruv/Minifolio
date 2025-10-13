@@ -93,7 +93,12 @@ class AccessibilityManager {
   }
 
   /**
-   * Get color contrast ratio between two colors
+   * Get color contrast ratio between two colors.
+   * 
+   * Note: This is a simplified implementation and may not be fully WCAG-compliant.
+   * For production use, it is strongly recommended to use a proper color contrast calculation library,
+   * such as 'wcag-contrast' (https://www.npmjs.com/package/wcag-contrast) or 'color-contrast-checker'.
+   * See WCAG guidelines: https://www.w3.org/WAI/WCAG21/Techniques/general/G18.html
    */
   getColorContrast(color1: string, color2: string): number {
     // Simplified contrast calculation - in production, use a proper library
@@ -142,9 +147,20 @@ class AccessibilityManager {
    */
   setupKeyboardNavigation(): void {
     // Add keyboard navigation for portfolio sections
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Tab') {
-        this.announce('Navigating with keyboard');
+    const importantSelectors = [
+      'nav', 'main', 'header', 'footer', 
+      '[role="navigation"]', '[role="main"]', '[role="banner"]', '[role="contentinfo"]', 
+      '[tabindex]', 'button', 'a', 'input', 'textarea', 'select'
+    ];
+    
+    document.addEventListener('focusin', (event) => {
+      const target = event.target as HTMLElement;
+      if (target && importantSelectors.some(sel => target.matches(sel))) {
+        const label = target.getAttribute('aria-label') || 
+                     target.getAttribute('aria-labelledby') || 
+                     target.id || 
+                     target.tagName.toLowerCase();
+        this.announce(`Focused on ${label}`, 'status');
       }
     });
   }
@@ -354,3 +370,7 @@ export const screenReaderStyles = `
 `;
 
 export default accessibilityManager;
+
+
+
+

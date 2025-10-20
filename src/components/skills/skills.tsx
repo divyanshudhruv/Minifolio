@@ -5,9 +5,9 @@ import "./skills.css";
 export default function Skills() {
     return (
         <>
-            <div id="skills"       style={{ marginBottom: "60px" }}
+            <div style={{ marginBottom: "60px" }}
             />
-            <div className="skillsC">
+            <div id="skills" className="skillsC">
                 <div className="title">     SKILLS 😎</div>
                 <div className="titleGap" />
                 <div className="titleGap" />
